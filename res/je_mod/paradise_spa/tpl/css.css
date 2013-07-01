@@ -1,0 +1,72 @@
+
+
+
+body
+{
+	background-color: black;
+}
+
+.service_div
+{
+	background-color: black;
+}
+
+/*стиль для анимации переливания*/
+.spark 
+{
+	background: transparent url('../img/spark_1.png') no-repeat 0 0px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	z-index: 900;
+}
+
+
+#gradient
+{
+	position: absolute;
+	width: 350px;
+	height: 1000px;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	-webkit-transform: rotate(30deg) translate3d(-490px, -500px, 0);
+	-webkit-transition-timing-function: linear;
+	-moz-transform: rotate(30deg) translate(-490px, -500px);
+	-moz-transition-timing-function: linear;
+	-ms-transform: rotate(30deg) translate(-490px, -500px);
+	-ms-transition-timing-function: linear;
+	transform: rotate(30deg) translate(-490px, -500px);
+	transition-timing-function: linear;
+}
+
+#logo_img_upper
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
+
+.content_stl
+{
+	height: 100%;
+	overflow: hidden;
+	/*width: 1024px;*/
+	width:900px; 
+	margin:0 auto;
+	font-size: 14px;
+	font-family: Ubuntu,Verdana,sans-serif;
+	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
+}
+
+.menu_item
+{
+	z-index: 900;
+	position: absolute;
+	color:gold;
+	font-size:160%;
+	cursor:pointer;
+}
