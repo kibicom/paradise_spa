@@ -8,14 +8,11 @@
 -->
 
 
-	<div id="main_sec" style="margin:0 auto" class="">
-		<img src="res/je_mod/paradise_spa/img/main_logo_2_03_03_01.png" alt="...">
-        <img id="logo_img_upper" src="res/je_mod/paradise_spa/img/main_logo_1_03_01.png" alt="...">
-		<!--img src="res/je_mod/paradise_spa/img/main_logo_3_0.png" alt="...">
-		<img id="logo_img_upper" src="res/je_mod/paradise_spa/img/main_logo_3_1.png" alt="..."-->
-		<div 	id="glow"
-				style="top: 0;left: 0;height: 470px;">
-			<div id="gradient"></div>
+	<div class="main_logo">
+		<img class="logo_img_back" src="res/je_mod/paradise_spa/img/main_logo_back.png" alt="...">
+        <img class="logo_img_upper" src="res/je_mod/paradise_spa/img/main_logo_up.png" alt="...">
+		<div class="glow">
+			<div class="gradient" id="gradient"></div>
 		</div>
         <div class="spark" style="left: 175px; top: 115px; background-position-y: -4140px; "></div>
         <div class="spark" style="left: 270px; top: 190px; background-position-y: -3840px; "></div>

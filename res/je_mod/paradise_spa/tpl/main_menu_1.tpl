@@ -8,7 +8,7 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item" style="top:400px;left:350px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:400px;left:120px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -27,7 +27,7 @@
 			
 			>
 
-			f:hash_set^key:page&val:about>
+			f:hash_set^key:page&val:home>
 
 			f:waiter_hide
 		
@@ -42,7 +42,7 @@
 	
 </div>
 
-<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:450px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:150px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -61,7 +61,7 @@
 			
 			>
 
-			f:hash_set^key:page&val:about>
+			f:hash_set^key:page&val:service_and_price>
 
 			f:waiter_hide
 		
@@ -75,7 +75,7 @@
 	</div>
 	
 </div>
-<div 	class="toolbar_item_div div_left menu_item" style="top:470px;left:630px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:470px;left:180px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -94,7 +94,7 @@
 			
 			>
 
-			f:hash_set^key:page&val:about>
+			f:hash_set^key:page&val:gallery>
 
 			f:waiter_hide
 		
@@ -103,6 +103,72 @@
 		<div class="js_btn_label_stl_smpl">
 			<div>
 				Галерея
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:210px"
+		data-josi-ev-resp="click"
+		data-josi-kvl-str=
+		"
+			f:waiter_show
+			
+			>
+			
+			f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/virtual_tour.tpl&
+			node_class_query:.service_div&
+			replace:true&
+			rooted:false&
+			append:false&
+			parse_arr:false
+			
+			>
+
+			f:hash_set^key:page&val:gallery>
+
+			f:waiter_hide
+		
+		">
+	<div class="" style="border-radius: 5px;">
+		<div class="js_btn_label_stl_smpl">
+			<div>
+				Виртуальный тур
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div 	class="toolbar_item_div div_left menu_item" style="top:400px;left:150px"
+		data-josi-ev-resp="click"
+		data-josi-kvl-str=
+		"
+			f:waiter_show
+			
+			>
+			
+			f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/about.tpl&
+			node_class_query:.service_div&
+			replace:true&
+			rooted:false&
+			append:false&
+			parse_arr:false
+			
+			>
+
+			f:hash_set^key:page&val:gallery>
+
+			f:waiter_hide
+		
+		">
+	<div class="" style="border-radius: 5px;">
+		<div class="js_btn_label_stl_smpl">
+			<div>
+				Контакты
 			</div>
 		</div>
 	</div>

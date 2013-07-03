@@ -11,27 +11,55 @@ body
 	background-color: black;
 }
 
-/*стиль для анимации переливания*/
-.spark 
+/****main logo****/
+
+.logo_img_back
 {
-	background: transparent url('../img/spark_1.png') no-repeat 0 0px;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	z-index: 900;
 }
 
+.logo_img_upper
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
 
-#gradient
+.main_logo
+{
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	z-index: 1;
+	margin: 0 auto;
+}
+
+.glow 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 470px;
+	width: 851px;
+	z-index: 400;
+	background: transparent;
+	overflow: hidden;
+/*	-webkit-mask-box-image: url('/images/contour.png');*/
+}
+
+.gradient 
 {
 	position: absolute;
 	width: 350px;
 	height: 1000px;
+/*	top: -700px;*/
+/*	left: -500px;*/
 	background-color: transparent;
-	background-image: -webkit-gradient(linear, left center, right center, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
-	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-	background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: -webkit-gradient(linear, left center, right center, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+	background-image: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+
 	-webkit-transform: rotate(30deg) translate3d(-490px, -500px, 0);
 	-webkit-transition-timing-function: linear;
 	-moz-transform: rotate(30deg) translate(-490px, -500px);
@@ -40,14 +68,36 @@ body
 	-ms-transition-timing-function: linear;
 	transform: rotate(30deg) translate(-490px, -500px);
 	transition-timing-function: linear;
+
+/*	-webkit-animation-name: grad2_trans;*/
+/*	-webkit-animation-delay: 3s;*/
+/*	-webkit-animation-duration: 5s;*/
+/*	-webkit-animation-fill-mode: both;*/
+/*	-webkit-animation-iteration-count: infinite;*/
 }
 
-#logo_img_upper
+@keyframes grad1_trans 
 {
+    0% { transform: rotate(30deg) translate(-490px, -450px); }
+    100% { transform: rotate(30deg) translate(610px, -400px); }
+}
+
+@keyframes grad2_trans 
+{
+    0% { transform: rotate(80deg) translate(-770px, -200px); }
+    50% { transform: rotate(80deg) translate(300px, -350px); }
+    70% { transform: rotate(-100deg) translate(0px, 300px); }
+    100% { transform: rotate(-100deg) translate(600px, 200px); }
+}
+
+/*стиль блестяшки*/
+.spark 
+{
+	background: transparent url('../img/spark.png') no-repeat 0px 0px;
+	width: 60px;
+	height: 60px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 500;
+	z-index: 900;
 }
 
 .content_stl
@@ -55,7 +105,7 @@ body
 	height: 100%;
 	overflow: hidden;
 	/*width: 1024px;*/
-	width:900px; 
+	width:1024px; 
 	margin:0 auto;
 	font-size: 14px;
 	font-family: Ubuntu,Verdana,sans-serif;
@@ -65,8 +115,17 @@ body
 .menu_item
 {
 	z-index: 900;
-	position: absolute;
+	position: relative;
 	color:gold;
 	font-size:160%;
 	cursor:pointer;
+}
+
+.gallery_btn
+{
+	/*position: relative;*/
+	width: 150px;
+	height: 100%;
+	/*top: 100px;
+	left: 100px;*/
 }
