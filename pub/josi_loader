@@ -17,10 +17,11 @@
 	<meta name="generator" content="Geany 0.20" />
 	
 	<!--стили-->
+	
+	<link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/all.css"/>
 	<link rel="stylesheet" type="text/css" href="res/je_mod/form/tpl/css.css"/>
 	<link rel="stylesheet" type="text/css" href="res/je_mod/form/tpl/waiter/waiter.css"/>
 	<link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/css.css"/>
-	<!--link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/all.css"/>
 	
 	<!--link rel="stylesheet" type="text/css" href="res/tpl/css.css"/-->
 	<!--link rel="stylesheet" type="text/css" href="res/tpl/aquaon/css.css"/-->
@@ -118,7 +119,7 @@
 				// currently applied transition
 				var currGradAnimation=0;
 			
-				$('#gradient').bind("animationend webkitAnimationEnd", function() 
+				$('.gradient').bind("animationend webkitAnimationEnd", function() 
 				{
 					currGradAnimation++;
 					if (currGradAnimation == gradAnimationSeq.length) 

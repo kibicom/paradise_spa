@@ -8,7 +8,7 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item" style="top:400px;left:120px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:150px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -34,15 +34,13 @@
 		">
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_stl_smpl">
-			<div>
-				Главная
-			</div>
+			<img class="" src="res/je_mod/paradise_spa/img/menu/btn_main.png" alt="Главная">
 		</div>
 	</div>
 	
 </div>
 
-<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:150px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:490px;left:170px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -69,13 +67,13 @@
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				Услуги и цены
+				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price.png" alt="Услуги и цены">
 			</div>
 		</div>
 	</div>
 	
 </div>
-<div 	class="toolbar_item_div div_left menu_item" style="top:470px;left:180px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:550px;left:180px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -102,13 +100,13 @@
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				Галерея
+				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_gallery.png" alt="Галерея">
 			</div>
 		</div>
 	</div>
 	
 </div>
-<div 	class="toolbar_item_div div_left menu_item" style="top:450px;left:210px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:520px;left:170px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -135,13 +133,13 @@
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				Виртуальный тур
+				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour.png" alt="Виртуальный тур">
 			</div>
 		</div>
 	</div>
 	
 </div>
-<div 	class="toolbar_item_div div_left menu_item" style="top:400px;left:150px"
+<div 	class="toolbar_item_div div_left menu_item" style="top:470px;left:110px"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
@@ -168,7 +166,7 @@
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				Контакты
+				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_about.png" alt="Контакты">
 			</div>
 		</div>
 	</div>

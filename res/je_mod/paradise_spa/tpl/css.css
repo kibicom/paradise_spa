@@ -39,8 +39,8 @@ body
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 470px;
-	width: 851px;
+	height: 100%px;
+	width: 1024px;
 	z-index: 400;
 	background: transparent;
 	overflow: hidden;

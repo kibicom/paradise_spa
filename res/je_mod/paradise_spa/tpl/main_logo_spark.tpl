@@ -9,7 +9,7 @@
 
 
 	<div class="main_logo">
-		<img class="logo_img_back" src="res/je_mod/paradise_spa/img/main_logo_back.png" alt="...">
+		<img class="logo_img_back" src="res/je_mod/paradise_spa/img/main_logo_back.jpg" alt="...">
         <img class="logo_img_upper" src="res/je_mod/paradise_spa/img/main_logo_up.png" alt="...">
 		<div class="glow">
 			<div class="gradient" id="gradient"></div>
@@ -30,7 +30,7 @@
         <div class="spark" style="left: 150px; top: 310px; background-position-y: -300px; "></div>
         <div class="spark" style="left: 350px; top: 290px; background-position-y: -4140px; "></div>
     </div>
-    <div id="inner_bg" style="display: none;">
+    <!--div id="inner_bg" style="display: none;">
 		<img src="res/je_mod/paradise_spa/img/bg_inner_blended.jpg" alt="..."  />
 		<div class="spark_sm" style="left: 404px; top: 530px;"></div>
 		<div class="spark_sm" style="left: 451px; top: 496px;"></div>
@@ -42,7 +42,7 @@
 	</div>
 	<div id="diamond_blk" style="display: none;">
 		<img src="res/je_mod/paradise_spa/img/diamond-sm.png" alt="Брюль"/>
-	</div>
+	</div-->
 
 
 	
