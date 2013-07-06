@@ -16,6 +16,13 @@
 			
 			>
 			
+			f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_mi_click_1
+			
+			>
+			
 			f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&

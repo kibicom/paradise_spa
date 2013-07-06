@@ -34,7 +34,14 @@
 			
 			>
 
-			f:hash_set^key:page&val:gallery>
+			f:ymap
+			^
+			map_node_class_name:map_node&
+			rooted:false
+			
+			>
+
+			f:hash_set^key:page&val:about>
 
 			f:waiter_hide
 		

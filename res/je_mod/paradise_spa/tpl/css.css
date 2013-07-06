@@ -1,5 +1,6 @@
 
 
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
 
 body
 {
@@ -33,6 +34,20 @@ body
 	
 	-webkit-animation: logo_blur 1s 0s;
 	-webkit-animation-fill-mode: forwards;
+}
+
+.logo_blur_2
+{
+	-webkit-filter: blur(6px);
+	-webkit-transform: scale(0.8); 
+	top:-80px; 
+	display:block;
+}
+
+.blur_bg_stl
+{
+	position: absolute;
+	z-index: 0;
 }
 
 .main_logo
@@ -114,14 +129,27 @@ body
 
 @keyframes logo_blur
 {
-	from{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0}
-	to{-webkit-filter: blur(6px); ; -webkit-transform: scale(0.9); top:-80px}
+	0%{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0; display:none}
+	99%{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0; display:none}
+	100%{-webkit-filter: blur(6px); -webkit-transform: scale(0.8); top:-80px; display:block}
 }
 
 @-webkit-keyframes logo_blur
 {
 	from{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0}
 	to{-webkit-filter: blur(6px); ; -webkit-transform: scale(0.9); top:-80px}
+}
+
+@keyframes logo_bg_opacity
+{
+	0%{opacity: 1;background: rgba(255, 255, 255, 1) url('../img/bg.jpg') no-repeat 0 0px;}
+	100%{opacity: 1;background: rgba(255, 255, 255, 0) url('../img/bg.jpg') no-repeat 0 0px;}
+}
+
+@-webkit-keyframes logo_bg_opacity
+{
+	0%{opacity: 1;background: rgba(255, 255, 255, 1) url('../img/bg.jpg') no-repeat 0 0px;}
+	100%{opacity: 1;background: rgba(255, 255, 255, 0) url('../img/bg.jpg') no-repeat 0 0px;}
 }
 
 /*стиль блестяшки*/
@@ -145,6 +173,69 @@ body
 	font-family: Ubuntu,Verdana,sans-serif;
 	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
 }
+
+.content_2_stl
+{
+	
+	height: 70%;
+	overflow: hidden;
+	/*width: 1024px;*/
+	width:1024px; 
+	margin:0 auto;
+	font-size: 14px;
+	font-family: Ubuntu,Verdana,sans-serif;
+	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
+	margin-top: 210px;
+}
+
+.main_bg_stl
+{
+	height: 100%;
+	overflow: hidden;
+	/*width: 1024px;*/
+	width:1024px; 
+	margin:0 auto;
+	font-size: 14px;
+	font-family: Ubuntu,Verdana,sans-serif;
+	background: transparent url('../img/bg.jpg') no-repeat 0 0px;
+}
+
+.main_blur_bg_stl
+{
+	height: 100%;
+	overflow: hidden;
+	/*width: 1024px;*/
+	width:1024px; 
+	margin:0 auto;
+	font-size: 14px;
+	font-family: Ubuntu,Verdana,sans-serif;
+	/*background: rgba(255, 255, 255, 1) url('../img/blur_bg.jpg') no-repeat 0 0px;*/
+	
+	/*opacity: 0;*/
+	
+	background: transparent url('../img/blur_bg.jpg') no-repeat 0 0px;
+	
+	/*
+	animation: logo_bg_opacity 0.8s 5s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: logo_bg_opacity 0.8s 5s;
+	-webkit-animation-fill-mode: forwards;
+	*/
+}
+
+.foot_stl
+{
+	height: 100%;
+	overflow: hidden;
+	/*width: 1024px;*/
+	width:1024px; 
+	margin:0 auto;
+	font-size: 14px;
+	font-family: Ubuntu,Verdana,sans-serif;
+	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
+}
+
 
 .menu_item
 {
@@ -298,4 +389,13 @@ body
 {
     from {top:406px}
 	to {top:50px}
+}
+
+/*** страницы ***/
+
+/* виртуальный тур */
+
+.vt_apples_stl
+{
+	margin:0 auto;
 }

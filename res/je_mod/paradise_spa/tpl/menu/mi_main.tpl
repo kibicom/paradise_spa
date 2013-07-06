@@ -34,6 +34,13 @@
 			
 			>
 
+			f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_main_logo_init
+			
+			>
+
 			f:hash_set^key:page&val:home>
 
 			f:waiter_hide

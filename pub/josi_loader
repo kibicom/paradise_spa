@@ -111,32 +111,7 @@
 			
 				//App.start();
 			
-				var gradAnimationSeq=
-				[
-					{ '-webkit-animation-name': "grad1_trans", '-webkit-animation-duration': '3s', '-webkit-animation-delay': '4s',
-					  '-moz-animation-name': "grad1_trans", '-moz-animation-duration': '3s', '-moz-animation-delay': '4s',
-					  'animation-name': "grad1_trans", 'animation-duration': '3s', 'animation-delay': '4s'},
-					{ '-webkit-animation-name': "grad2_trans", '-webkit-animation-duration': '10s', '-webkit-animation-delay': '0',
-					  '-moz-animation-name': "grad2_trans", '-moz-animation-duration': '10s', '-moz-animation-delay': '0',
-					  'animation-name': "grad2_trans", 'animation-duration': '10s', 'animation-delay': '0'}
-				];
-				// currently applied transition
-				var currGradAnimation=0;
-			
-				$('.gradient').bind("animationend webkitAnimationEnd", function() 
-				{
-					currGradAnimation++;
-					if (currGradAnimation == gradAnimationSeq.length) 
-					{
-						currGradAnimation = 0;
-					}
-					//console.log(App.gradAnimationSeq[App.currGradAnimation]);
-					$(this).css(gradAnimationSeq[currGradAnimation]);
-				}).css(gradAnimationSeq[0]);
-			
-				SparkAnim.init();
-				//SparkAnim.play();
-			
+				
 			
 				return;
 			});
@@ -157,6 +132,7 @@
 			{
 				f_mi_click_1:function(args)
 				{
+					
 					//поднимаем меню вверх
 					$('.mi_main').addClass("anim_mi_main_up");
 					$('.mi_gallery').addClass("anim_mi_gallery_up");
@@ -164,18 +140,62 @@
 					$('.mi_virtual_tour').addClass("anim_mi_virtual_tour_up");
 					$('.mi_about').addClass("anim_mi_about_up");
 					
+					
 					//скрываем фон и градиент
-					$('.logo_img_back').addClass("hidden");
-					$('.glow').addClass("hidden");
+					$('.main_logo').addClass('hidden');
+					//$('.logo_img_back').addClass("hidden");
+					//$('.logo_img_upper').addClass("hidden");
+					//$('.glow').addClass("hidden");
+					
 					
 					//уплывает фон
-					$('.logo_img_upper').addClass("logo_blur_1");
+					//$('.logo_img_upper').addClass("logo_blur_2");
 					
 					//выключаем звездочки
 					$('.spark').css({"display":"none"});
 					
+					//включаем header и footer
+					$('.head').removeClass("hidden");
+					$('.foot').removeClass("hidden");
+					
 					t_uti.f_fdone(args.fdone);
-				}
+				},
+				
+				f_main_logo_init:function(args)
+				{
+					//выключаем header и footer
+					$('.head').addClass("hidden");
+					$('.foot').addClass("hidden");
+					
+					var gradAnimationSeq=
+					[
+						{ '-webkit-animation-name': "grad1_trans", '-webkit-animation-duration': '3s', '-webkit-animation-delay': '4s',
+						  '-moz-animation-name': "grad1_trans", '-moz-animation-duration': '3s', '-moz-animation-delay': '4s',
+						  'animation-name': "grad1_trans", 'animation-duration': '3s', 'animation-delay': '4s'},
+						{ '-webkit-animation-name': "grad2_trans", '-webkit-animation-duration': '10s', '-webkit-animation-delay': '0',
+						  '-moz-animation-name': "grad2_trans", '-moz-animation-duration': '10s', '-moz-animation-delay': '0',
+						  'animation-name': "grad2_trans", 'animation-duration': '10s', 'animation-delay': '0'}
+					];
+					// currently applied transition
+					var currGradAnimation=0;
+				
+					$('.gradient').bind("animationend webkitAnimationEnd", function() 
+					{
+						currGradAnimation++;
+						if (currGradAnimation == gradAnimationSeq.length) 
+						{
+							currGradAnimation = 0;
+						}
+						//console.log(App.gradAnimationSeq[App.currGradAnimation]);
+						$(this).css(gradAnimationSeq[currGradAnimation]);
+					}).css(gradAnimationSeq[0]);
+				
+					SparkAnim.init();
+					//SparkAnim.play();
+			
+					t_uti.f_fdone(args.fdone);
+			
+				},
 			}
 		});
 		
@@ -214,7 +234,14 @@
 		<!--новый правильный лоадер выключен пока не реализован механизм 
 		{{f:tpl^page_path:loader.scl&service:{{f:show_val^service&key:service}}&k:v}}-->
 
-		<!--{{f:tpl^page_path:loader.scl&service:res/je_mod/paradise_spa/tpl/main.tpl}}-->
+		{{f:tpl^page_path:loader.scl&service:res/je_mod/paradise_spa/tpl/main.tpl}}
+		
+		f:f
+		^
+		mod_name:paradise_spa&
+		f_name:f_main_logo_init
+		
+		>
 
 		f:waiter_hide"
 		data-josi-ev-resp="load">
