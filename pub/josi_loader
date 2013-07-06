@@ -18,7 +18,7 @@
 	
 	<!--стили-->
 	
-	<link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/all.css"/>
+	<!--link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/all.css"/-->
 	<link rel="stylesheet" type="text/css" href="res/je_mod/form/tpl/css.css"/>
 	<link rel="stylesheet" type="text/css" href="res/je_mod/form/tpl/waiter/waiter.css"/>
 	<link rel="stylesheet" type="text/css" href="res/je_mod/paradise_spa/tpl/css.css"/>
@@ -71,6 +71,8 @@
 		        {src: 'res/je_mod/paradise_spa/img/gallery/e5d3ee67be4defede668f64978afc05e.png', title: "Гламур"}        
 			]
 		}
+		
+		
 	</script>
 
 	
@@ -104,6 +106,8 @@
 
 				//излучение события load
 				t_josi.f_ev_load_emit();
+			
+				//var je_mod={};
 			
 				//App.start();
 			
@@ -140,6 +144,42 @@
 	
 	</script>
 
+	<!--загрузка галереи-->
+	<script type="text/javascript">
+		
+		var je_mod={};
+		
+		require(
+		["tlib/tuti"],
+		function(t_uti)
+		{
+			je_mod["paradise_spa"]=
+			{
+				f_mi_click_1:function(args)
+				{
+					//поднимаем меню вверх
+					$('.mi_main').addClass("anim_mi_main_up");
+					$('.mi_gallery').addClass("anim_mi_gallery_up");
+					$('.mi_service_and_price').addClass("anim_mi_service_and_price_up");
+					$('.mi_virtual_tour').addClass("anim_mi_virtual_tour_up");
+					$('.mi_about').addClass("anim_mi_about_up");
+					
+					//скрываем фон и градиент
+					$('.logo_img_back').addClass("hidden");
+					$('.glow').addClass("hidden");
+					
+					//уплывает фон
+					$('.logo_img_upper').addClass("logo_blur_1");
+					
+					//выключаем звездочки
+					$('.spark').css({"display":"none"});
+					
+					t_uti.f_fdone(args.fdone);
+				}
+			}
+		});
+		
+	</script>
 
 	<script src="res/zoomSlider/zoomSlider.js" type="text/javascript"></script>
     <link href="res/zoomSlider/themes/1/zoomslider.css" rel="stylesheet" type="text/css" />

@@ -11,13 +11,13 @@ var config=
 	source:"index.php",
 	deb:
 	{
-		deb_group:"josi",
+		//deb_group:"josi",
 		//deb_group:"josi_store",
 		//deb_group:"ttask",
 		//deb_group:"josi_form",
 		//deb_group:"inject_if_empty",
 		//deb_group:"popup",
-		deb_group:"trans",
+		//deb_group:"trans",
 		//deb_group:"sti_report",
 		//deb_group:"struct_req",
 		//deb_group:"select_item",
@@ -57,6 +57,7 @@ var config=
 		//deb_group:"gaq",
 		//deb_group:"tev_loader",
 		//deb_group:"tpl_done_content",
+		deb_group:"t_mod",
 	},
 	unjax:
 	{

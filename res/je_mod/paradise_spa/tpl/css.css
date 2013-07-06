@@ -15,6 +15,7 @@ body
 
 .logo_img_back
 {
+
 }
 
 .logo_img_upper
@@ -23,6 +24,15 @@ body
 	top: 0;
 	left: 0;
 	z-index: 500;
+}
+
+.logo_blur_1
+{
+	animation: logo_blur 1s 0s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: logo_blur 1s 0s;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .main_logo
@@ -37,10 +47,10 @@ body
 .glow 
 {
 	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 1024px;
+	top: 5%;
+	left: 62px;
+	height: 90%;
+	width: 900px;
 	z-index: 400;
 	background: transparent;
 	overflow: hidden;
@@ -90,10 +100,34 @@ body
     100% { transform: rotate(-100deg) translate(600px, 200px); }
 }
 
+@-webkit-keyframes grad1_trans {
+    0% { -webkit-transform: rotate(30deg) translate3d(-490px, -450px, 0); }
+    100% { -webkit-transform: rotate(30deg) translate3d(610px, -400px, 0); }
+}
+
+@-webkit-keyframes grad2_trans {
+    0% { -webkit-transform: rotate(80deg) translate3d(-770px, -200px, 0); }
+    50% { -webkit-transform: rotate(80deg) translate3d(300px, -350px, 0); }
+    70% { -webkit-transform: rotate(-100deg) translate3d(0px, 300px, 0); }
+    100% { -webkit-transform: rotate(-100deg) translate3d(600px, 200px, 0); }
+}
+
+@keyframes logo_blur
+{
+	from{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0}
+	to{-webkit-filter: blur(6px); ; -webkit-transform: scale(0.9); top:-80px}
+}
+
+@-webkit-keyframes logo_blur
+{
+	from{-webkit-filter: blur(0px); -webkit-transform: scale(1); top:0}
+	to{-webkit-filter: blur(6px); ; -webkit-transform: scale(0.9); top:-80px}
+}
+
 /*стиль блестяшки*/
 .spark 
 {
-	background: transparent url('../img/spark.png') no-repeat 0px 0px;
+	background: transparent url('../img/main_logo/spark.png') no-repeat 0px 0px;
 	width: 60px;
 	height: 60px;
 	position: absolute;
@@ -128,4 +162,140 @@ body
 	height: 100%;
 	/*top: 100px;
 	left: 100px;*/
+}
+
+/*** меню ***/
+
+.js_btn_label_img_stl_smpl
+{
+	text-align:center;
+}
+
+/*Главная*/
+.mi_main_down_stl
+{
+	top: 406px;
+	left: 214px;
+}
+
+.anim_mi_main_up
+{
+	animation: mi_main_up 0.8s 0s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: mi_main_up 0.8s 0s;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes mi_main_up
+{
+    from {top:406px}
+	to {top:50px}
+}
+@-webkit-keyframes mi_main_up
+{
+    0%{top:406px}
+	100%{top:50px}
+}
+
+
+.mi_service_and_price_down_stl
+{
+	top: 451px;
+	left: 186px;
+}
+
+.anim_mi_service_and_price_up
+{
+	animation: mi_service_and_price_up  0.8s 100ms;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: mi_service_and_price_up 0.8s 100ms;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes mi_service_and_price_up
+{
+    from {top:451px}
+	to {top:25px}
+}
+@-webkit-keyframes mi_service_and_price_up
+{
+    0%{top:451px}
+	100%{top:25px}
+}
+
+
+.mi_gallery_down_stl
+{
+	top: 476px;
+	left: 178px;
+}
+
+.anim_mi_gallery_up
+{
+	animation: mi_gallery_up 0.8s 200ms;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: mi_gallery_up 0.8s 200ms;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes mi_gallery_up
+{
+    from {top:476px}
+	to {top:5px}
+}
+@-webkit-keyframes mi_gallery_up
+{
+    from {top:476px}
+	to {top:5px}
+}
+
+
+.mi_virtual_tour_down_stl
+{
+	top: 458px;
+	left: 161px;
+}
+
+.anim_mi_virtual_tour_up
+{
+	animation: mi_virtual_tour_up 0.8s 300ms;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: mi_virtual_tour_up 0.8s 300ms;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes mi_virtual_tour_up
+{
+    from {top:458px}
+	to {top:25px}
+}
+@-webkit-keyframes mi_virtual_tour_up
+{
+    from {top:458px}
+	to {top:25px}
+}
+
+.mi_about_down_stl
+{
+	top: 406px;
+	left: 101px;
+}
+
+.anim_mi_about_up
+{
+	animation: mi_about_up 0.8s 400ms ;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: mi_about_up 0.8s 400ms ;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes mi_about_up
+{
+    from {top:406px}
+	to {top:50px}
+}
+@-webkit-keyframes mi_about_up
+{
+    from {top:406px}
+	to {top:50px}
 }
