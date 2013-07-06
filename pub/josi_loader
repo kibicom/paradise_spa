@@ -155,6 +155,7 @@
 					$('.spark').css({"display":"none"});
 					
 					//включаем header и footer
+					$('.content_1').css({"height":"70%"});
 					$('.head').removeClass("hidden");
 					$('.foot').removeClass("hidden");
 					
@@ -166,6 +167,8 @@
 					//выключаем header и footer
 					$('.head').addClass("hidden");
 					$('.foot').addClass("hidden");
+					
+					$('.content_1').css({"height":"100%"});
 					
 					var gradAnimationSeq=
 					[

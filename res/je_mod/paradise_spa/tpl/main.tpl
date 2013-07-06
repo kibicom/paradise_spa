@@ -15,7 +15,7 @@
 		</div>
 		
 		<!--{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/blur_bg.tpl}}-->
-		<div 	class="content_stl" style="height:70%" >
+		<div 	class="content_1 content_stl" style="height:100%" >
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main_logo_spark.tpl}}
 			<!--{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main_menu_1.tpl}}-->
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/float_menu.tpl}}
