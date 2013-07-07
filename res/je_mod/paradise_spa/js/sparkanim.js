@@ -14,8 +14,12 @@ SparkAnim =
     isPaused: false,
     runSmallSparks: false,
 
+	timeout:null,
+
 	init: function()
 	{
+		clearTimeout(this.timeout);
+		
         var sparks = [];
         var sparksSm = [];
         $('.spark').each(function () {
@@ -32,7 +36,7 @@ SparkAnim =
         });
         this.sparks = sparks;
         this.sparksSmall = sparksSm;
-		this.play();
+		//this.play();
 	},
 
 	iter: function () 
@@ -56,7 +60,7 @@ SparkAnim =
             SparkAnim.currIter = 0;
         }
 
-        setTimeout(SparkAnim.iter, SparkAnim.TIMEOUT);
+        this.timeout=setTimeout(SparkAnim.iter, SparkAnim.TIMEOUT);
 	},
 
     pause: function ()
@@ -64,10 +68,15 @@ SparkAnim =
         this.isPaused = true;
 	},
 
+	stop:function()
+	{
+		clearTimeout(this.timeout);
+	},
+
     play: function ()
     {
         this.isPaused = false;
-        setTimeout(SparkAnim.iter, 0);
+        this.timeout=setTimeout(SparkAnim.iter, 0);
     },
 
     toggleSmall: function (enable)
@@ -75,3 +84,5 @@ SparkAnim =
         this.runSmallSparks = enable;
 	}
 };
+
+spark_anim_bak=SparkAnim;

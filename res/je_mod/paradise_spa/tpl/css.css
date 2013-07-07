@@ -2,6 +2,33 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
 
+.font_serif_gold_stl
+{
+	font-family: 'Noto Serif', serif;
+	color: #F8ED81;
+}
+
+.font_serif_white_stl
+{
+	font-family: 'Noto Serif', serif;
+	color: #fff;
+}
+
+.f_s_1_stl
+{
+	font-size:140%;
+}
+
+.f_s_2_stl
+{
+	font-size:80%;
+}
+
+.f_s_3_stl
+{
+	font-size:90%;
+}
+
 body
 {
 	background-color: black;
@@ -57,7 +84,51 @@ body
 	position: absolute;
 	z-index: 1;
 	margin: 0 auto;
+	
 }
+
+.main_logo_show_anim
+{
+	animation: anim_opacity_on 2s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_opacity_on 2s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.main_logo_hide_anim
+{
+	animation: anim_opacity_off 2s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_opacity_off 2s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes anim_opacity_on
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes anim_opacity_on
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes anim_opacity_off
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@-webkit-keyframes anim_opacity_off
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
 
 .glow 
 {
@@ -176,16 +247,18 @@ body
 
 .content_2_stl
 {
-	
-	height: 70%;
-	overflow: hidden;
+	top: 200px;
+	position: fixed;
+	bottom: 120px;
+	/*height: 85%;*/
+	overflow: auto;
 	/*width: 1024px;*/
 	width:1024px; 
 	margin:0 auto;
 	font-size: 14px;
 	font-family: Ubuntu,Verdana,sans-serif;
 	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
-	margin-top: 210px;
+	/*margin-top: 210px;*/
 }
 
 .main_bg_stl
@@ -226,13 +299,15 @@ body
 
 .foot_stl
 {
-	height: 100%;
+	position: fixed;
+	bottom: 0px;
+	height: 120px;
 	overflow: hidden;
 	/*width: 1024px;*/
 	width:1024px; 
 	margin:0 auto;
 	font-size: 14px;
-	font-family: Ubuntu,Verdana,sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
 }
 
@@ -266,7 +341,8 @@ body
 .mi_main_down_stl
 {
 	top: 406px;
-	left: 214px;
+	left: 170px;
+	
 }
 
 .anim_mi_main_up
@@ -280,19 +356,19 @@ body
 @keyframes mi_main_up
 {
     from {top:406px}
-	to {top:50px}
+	to {top:50px;left: 130px;}
 }
 @-webkit-keyframes mi_main_up
 {
     0%{top:406px}
-	100%{top:50px}
+	100%{top:50px;left: 130px;}
 }
 
 
 .mi_service_and_price_down_stl
 {
 	top: 451px;
-	left: 186px;
+	left: 170px;
 }
 
 .anim_mi_service_and_price_up
@@ -306,19 +382,20 @@ body
 @keyframes mi_service_and_price_up
 {
     from {top:451px}
-	to {top:25px}
+	to {top:25px;left: 130px;}
 }
 @-webkit-keyframes mi_service_and_price_up
 {
     0%{top:451px}
-	100%{top:25px}
+	100%{top:25px;left: 150px;}
 }
 
 
 .mi_gallery_down_stl
 {
 	top: 476px;
-	left: 178px;
+	/*left: 178px;*/
+	left:137px;
 }
 
 .anim_mi_gallery_up
@@ -332,19 +409,20 @@ body
 @keyframes mi_gallery_up
 {
     from {top:476px}
-	to {top:5px}
+	to {top:5px;left: 130px;}
 }
 @-webkit-keyframes mi_gallery_up
 {
     from {top:476px}
-	to {top:5px}
+	to {top:5px;left: 130px;}
 }
 
 
 .mi_virtual_tour_down_stl
 {
 	top: 458px;
-	left: 161px;
+	/*left: 161px;*/
+	left:145px;
 }
 
 .anim_mi_virtual_tour_up
@@ -358,18 +436,19 @@ body
 @keyframes mi_virtual_tour_up
 {
     from {top:458px}
-	to {top:25px}
+	to {top:25px;left: 130px;}
 }
 @-webkit-keyframes mi_virtual_tour_up
 {
     from {top:458px}
-	to {top:25px}
+	to {top:25px;left: 150px;}
 }
 
 .mi_about_down_stl
 {
 	top: 406px;
-	left: 101px;
+	/*left: 101px;*/
+	left: 65px;
 }
 
 .anim_mi_about_up
@@ -383,12 +462,12 @@ body
 @keyframes mi_about_up
 {
     from {top:406px}
-	to {top:50px}
+	to {top:50px;left: 130px;}
 }
 @-webkit-keyframes mi_about_up
 {
     from {top:406px}
-	to {top:50px}
+	to {top:50px;left: 100px;}
 }
 
 /*** страницы ***/
@@ -398,4 +477,22 @@ body
 .vt_apples_stl
 {
 	margin:0 auto;
+}
+
+.waiter_div
+{
+	position: fixed;
+	width: 16%;
+	z-index: 10000;
+	top: 40%;
+	left: 42%;
+	/*background: #903;
+	padding: 10px;*/
+	text-align: center;
+	/*border-radius: 5px;*//
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: white;
+	font-size: 22px;
 }

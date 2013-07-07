@@ -40,7 +40,7 @@
 		
 		">
 	<div class="" style="border-radius: 5px;">
-		<div class="js_btn_label_img_stl_smpl">
+		<div class="js_btn_label_img_stl_smpl" style="margin-left: 50px;margin-bottom: -30px;">
 			<img class="" src="res/je_mod/paradise_spa/img/menu/main_apple.png">
 		</div>
 		<div class="js_btn_label_stl_smpl">

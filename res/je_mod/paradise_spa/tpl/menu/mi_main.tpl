@@ -47,7 +47,7 @@
 		
 		">
 	<div class="" style="border-radius: 5px;">
-		<div class="js_btn_label_img_stl_smpl">
+		<div class="js_btn_label_img_stl_smpl" style="margin-left: 70px;margin-bottom: -30px;">
 			<!--div style="background: transparent url('res/je_mod/paradise_spa/img/menu/main_apple.png') no-repeat 0px 0px;"></div-->
 			<img class="" src="res/je_mod/paradise_spa/img/menu/main_apple.png">
 		</div>

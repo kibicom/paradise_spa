@@ -11,7 +11,7 @@
 	<div class="main_logo">
 		<img class="logo_img_back" src="res/je_mod/paradise_spa/img/main_logo/main_logo_back.jpg" alt="...">
         <img class="logo_img_upper" src="res/je_mod/paradise_spa/img/main_logo/main_logo_up.png" alt="...">
-		<div class="glow">
+		<div class="glow hidden">
 			<div class="gradient" id="gradient"></div>
 		</div>
         <div class="spark" style="left: 380px; top: 120px; background-position-y: -4140px; "></div>

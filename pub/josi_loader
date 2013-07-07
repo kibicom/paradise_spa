@@ -130,8 +130,15 @@
 		{
 			je_mod["paradise_spa"]=
 			{
+				args:
+				{
+					is_init:false,
+				},
+				
 				f_mi_click_1:function(args)
 				{
+					
+					$('.glow').addClass("hidden");
 					
 					//поднимаем меню вверх
 					$('.mi_main').addClass("anim_mi_main_up");
@@ -140,9 +147,45 @@
 					$('.mi_virtual_tour').addClass("anim_mi_virtual_tour_up");
 					$('.mi_about').addClass("anim_mi_about_up");
 					
-					
+					//плавно скрываем лого
+					//$('.content_1').removeClass("main_logo_show_anim");
+					$('.content_2').addClass("hidden");
+					$('.main_logo').addClass("main_logo_hide_anim");
+					$('.main_logo').bind("animationend webkitAnimationEnd", function() 
+					{
+						$('.blur_bg').addClass("main_logo_show_anim");
+						$('.blur_bg').removeClass("hidden");
+					});
+						//$('.main_logo').addClass("hidden");
+						if ($('.content_2').hasClass("hidden"))
+						{
+							$('.content_2').addClass("main_logo_show_anim");
+							$('.content_2').removeClass("hidden");
+							$('.content_2').bind("animationend webkitAnimationEnd", function() 
+							{
+								$('.main_logo').addClass("hidden");
+								
+							});
+						}
+						/*
+						else
+						{
+							$('.content_2').addClass("main_logo_show_anim");
+							$('.main_logo').bind("animationend webkitAnimationEnd", function() 
+							{
+								$('.content_2').addClass("main_logo_show_anim");
+								$('.content_2').removeClass("hidden");
+								$('.content_2').bind("animationend webkitAnimationEnd", function() 
+								{
+									$('.main_logo').addClass("hidden");
+									
+								});
+							});
+						}
+						*/
+					//});
 					//скрываем фон и градиент
-					$('.main_logo').addClass('hidden');
+					//$('.main_logo').addClass('hidden');
 					//$('.logo_img_back').addClass("hidden");
 					//$('.logo_img_upper').addClass("hidden");
 					//$('.glow').addClass("hidden");
@@ -155,47 +198,117 @@
 					$('.spark').css({"display":"none"});
 					
 					//включаем header и footer
-					$('.content_1').css({"height":"70%"});
+					//$('.content_1').css({"height":"70%"});
 					$('.head').removeClass("hidden");
 					$('.foot').removeClass("hidden");
 					
 					t_uti.f_fdone(args.fdone);
 				},
 				
-				f_main_logo_init:function(args)
+				f_mi_main_click_1:function(args)
 				{
+					
 					//выключаем header и footer
 					$('.head').addClass("hidden");
 					$('.foot').addClass("hidden");
 					
-					$('.content_1').css({"height":"100%"});
+					je_mod["paradise_spa"]["args"].f_main_logo_init();
+			
+					t_uti.f_fdone(args.fdone);
+				},
+				
+				f_main_logo_init:function(args)
+				{
+					/*
+					if (!je_mod["paradise_spa"]["args"]["is_init"])
+					{
+						je_mod["paradise_spa"]["args"]["is_init"]=true;
+						
+						//SparkAnim.init();
+						
+						//t_uti.f_fdone(args.fdone);
+						//return;
+					}
+					*/
+					
+					//alert("123");
 					
 					var gradAnimationSeq=
-					[
-						{ '-webkit-animation-name': "grad1_trans", '-webkit-animation-duration': '3s', '-webkit-animation-delay': '4s',
-						  '-moz-animation-name': "grad1_trans", '-moz-animation-duration': '3s', '-moz-animation-delay': '4s',
-						  'animation-name': "grad1_trans", 'animation-duration': '3s', 'animation-delay': '4s'},
-						{ '-webkit-animation-name': "grad2_trans", '-webkit-animation-duration': '10s', '-webkit-animation-delay': '0',
-						  '-moz-animation-name': "grad2_trans", '-moz-animation-duration': '10s', '-moz-animation-delay': '0',
-						  'animation-name': "grad2_trans", 'animation-duration': '10s', 'animation-delay': '0'}
-					];
-					// currently applied transition
-					var currGradAnimation=0;
-				
-					$('.gradient').bind("animationend webkitAnimationEnd", function() 
-					{
-						currGradAnimation++;
-						if (currGradAnimation == gradAnimationSeq.length) 
+						[
+							{ '-webkit-animation-name': "grad1_trans", '-webkit-animation-duration': '3s', '-webkit-animation-delay': '1s',
+							  '-moz-animation-name': "grad1_trans", '-moz-animation-duration': '3s', '-moz-animation-delay': '1s',
+							  'animation-name': "grad1_trans", 'animation-duration': '3s', 'animation-delay': '1s'},
+							{ '-webkit-animation-name': "grad2_trans", '-webkit-animation-duration': '10s', '-webkit-animation-delay': '0',
+							  '-moz-animation-name': "grad2_trans", '-moz-animation-duration': '10s', '-moz-animation-delay': '0',
+							  'animation-name': "grad2_trans", 'animation-duration': '10s', 'animation-delay': '0'}
+						];
+						var currGradAnimation=0;
+					
+						//alert("123");
+					
+						$('.gradient').bind("animationend webkitAnimationEnd", function() 
 						{
-							currGradAnimation = 0;
+							
+							currGradAnimation++;
+							if (currGradAnimation == gradAnimationSeq.length) 
+							{
+								currGradAnimation = 0;
+							}
+							//console.log(App.gradAnimationSeq[App.currGradAnimation]);
+							//alert(currGradAnimation);
+							
+							$('.gradient').css(gradAnimationSeq[currGradAnimation]);
+							//console.log("error", $('.gradient'), gradAnimationSeq, gradAnimationSeq[currGradAnimation]);
+							
+						}).css(gradAnimationSeq[0]);
+					
+					// currently applied transition
+					
+					//выключаем header и footer
+					//$('.head').addClass("hidden");
+					//$('.foot').addClass("hidden");
+					$('.blur_bg').removeClass("main_logo_show_anim");
+					$('.blur_bg').addClass("hidden");
+					$('.main_logo').removeClass("main_logo_hide_anim");
+					$('.main_blur_bg_stl').removeClass("hidden");
+					$('.content_1').removeClass("hidden");
+					$('.content_1').addClass("main_logo_show_anim");
+					
+					$('.content_1').bind("animationend webkitAnimationEnd", function() 
+					{
+					
+						$('.head').addClass("hidden");
+						
+						//je_mod["paradise_spa"]["args"]["is_init"]=true;
+						
+						//$('.content_1').css({"height":"100%"});
+						
+						$('.glow').removeClass("hidden");
+						
+						
+						
+					
+					
+					
+						//SparkAnim=spark_anim_bak;
+						//SparkAnim.stop();
+						SparkAnim.init();
+						//alert(je_mod["paradise_spa"]["args"]["is_init"]);
+						if (!je_mod["paradise_spa"]["args"]["is_init"])
+						{
+							je_mod["paradise_spa"]["args"]["is_init"]=true;
+							
+							//alert ("123");
+							
+							SparkAnim.play();
+							
+							//t_uti.f_fdone(args.fdone);
+							//return;
 						}
-						//console.log(App.gradAnimationSeq[App.currGradAnimation]);
-						$(this).css(gradAnimationSeq[currGradAnimation]);
-					}).css(gradAnimationSeq[0]);
-				
-					SparkAnim.init();
-					//SparkAnim.play();
-			
+						
+						//SparkAnim.play();
+					
+					})
 					t_uti.f_fdone(args.fdone);
 			
 				},
@@ -270,7 +383,7 @@
 	
 	{{f:tpl^tpl_path:res/je_mod/form/tpl/popup/form.tpl}}
 
-	{{f:tpl^tpl_path:res/je_mod/form/tpl/waiter.tpl}}
+	{{f:tpl^tpl_path:res/je_mod/paradise_spa/tpl/waiter.tpl}}
 	
 	{{f:tpl^tpl_path:res/je_mod/formtpl//city_selector/form.tpl}}
 	

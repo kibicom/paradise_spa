@@ -13,21 +13,21 @@
 <div style="background_: transparent url('res/je_mod/paradise_spa/img/main_header_1.jpg') no-repeat 0 -650px; width:100%; height:100%">
 	<div style="width: 650px;height: 100%;margin: 0 auto;">
 		<div style="width:200px; float:left">
-			<div style="font-family: 'Noto Serif', serif;font-size: 80%;color: white;margin-top: -10px;">
+			<div class="font_serif_white_stl f_s_2_stl" style="margin-top: -10px;">
 				телефоны:
 			</div>
-			<div style="font-family: 'Noto Serif', serif;font-size: 140%;color: #F8ED81;">
+			<div class="font_serif_gold_stl f_s_1_stl" >
 				+7(961)210 99 99
 			</div>
-			<div style="font-family: 'Noto Serif', serif;font-size: 140%;color: #F8ED81;">
+			<div class="font_serif_gold_stl f_s_1_stl" >
 				+7(961)444 44 94
 			</div>
 		</div>
-		<div style="width:300px; float:right; margin-top: 20px;">
-			<div style="font-family: 'Noto Serif', serif;font-size: 70%;color: white;">
+		<div class="font_serif_white_stl f_s_2_stl" style="width:300px; float:right; margin-top: 20px;">
+			<div>
 				Спа комплекс "Рай SPA" русская баня, сауна.
 			</div>
-			<div style="font-family: 'Noto Serif', serif;font-size: 70%;color: white;">
+			<div>
 				г.Краснодар, ул. Адыгейская набережная, 186
 			</div>
 		</div>
