@@ -40,6 +40,13 @@
 			rooted:false
 			
 			>
+			
+			f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_show_content_2_1
+			
+			>
 
 			f:hash_set^key:page&val:about>
 
@@ -52,7 +59,8 @@
 		</div>
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_about.png" alt="Контакты">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_about.png" alt="Контакты">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_about_alt.png" alt="Контакты">
 			</div>
 		</div>
 	</div>

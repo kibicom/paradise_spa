@@ -29,21 +29,28 @@
 	font-size:90%;
 }
 
+html
+{
+	/*overflow:hidden;*/
+}
+
 body
 {
 	background-color: black;
+	/*overflow:hidden;*/
 }
 
 .service_div
 {
 	background-color: black;
+	overflow:hidden;
 }
 
 /****main logo****/
 
 .logo_img_back
 {
-
+	overflow:hidden;
 }
 
 .logo_img_upper
@@ -52,6 +59,7 @@ body
 	top: 0;
 	left: 0;
 	z-index: 500;
+	overflow:hidden;
 }
 
 .logo_blur_1
@@ -75,6 +83,8 @@ body
 {
 	position: absolute;
 	z-index: 0;
+	overflow:hidden;
+	
 }
 
 .main_logo
@@ -98,12 +108,31 @@ body
 
 .main_logo_hide_anim
 {
-	animation: anim_opacity_off 2s;
+	animation: anim_opacity_off 1s;
 	animation-fill-mode: forwards;
 	
-	-webkit-animation: anim_opacity_off 2s;
+	-webkit-animation: anim_opacity_off 1s;
 	-webkit-animation-fill-mode: forwards;
 }
+
+.main_logo_show_anim_2
+{
+	animation: anim_opacity_on 0.5s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_opacity_on 0.5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.main_logo_hide_anim_2
+{
+	animation: anim_opacity_off 0.5s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_opacity_off 0.5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
 
 @keyframes anim_opacity_on
 {
@@ -484,7 +513,7 @@ body
 	position: fixed;
 	width: 16%;
 	z-index: 10000;
-	top: 40%;
+	top: 20%;
 	left: 42%;
 	/*background: #903;
 	padding: 10px;*/

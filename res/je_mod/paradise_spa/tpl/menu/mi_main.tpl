@@ -25,8 +25,8 @@
 			
 			f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/main.tpl&
-			node_class_query:.service_div&
+			tpl_path:res/je_mod/paradise_spa/tpl/main_page.tpl&
+			node_class_query:.content_2&
 			replace:true&
 			rooted:false&
 			append:false&
@@ -37,7 +37,7 @@
 			f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_main_logo_init
+			f_name:f_show_content_2_1
 			
 			>
 
@@ -54,7 +54,8 @@
 		<div class="js_btn_label_stl_smpl">
 			<!--div style="background: transparent url('res/je_mod/paradise_spa/img/menu/btn_main.png') no-repeat 0px 0px; background-position: center top;
     background-size: 100% auto;"></div-->
-			<img class="" src="res/je_mod/paradise_spa/img/menu/btn_main.png" alt="Главная">
+			<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_main.png" alt="Главная">
+			<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_main_alt.png" alt="Главная">
 		</div>
 	</div>
 	

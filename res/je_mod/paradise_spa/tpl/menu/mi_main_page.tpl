@@ -34,13 +34,6 @@
 			
 			>
 
-			f:f
-			^
-			mod_name:paradise_spa&
-			f_name:f_show_content_2_1
-			
-			>
-			
 			f:hash_set^key:page&val:service_and_price>
 
 			f:waiter_hide
@@ -52,8 +45,7 @@
 		</div>
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price.png" alt="Услуги и цены">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price_alt.png" alt="Услуги и цены">
+				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price.png" alt="Услуги и цены">
 			</div>
 		</div>
 	</div>

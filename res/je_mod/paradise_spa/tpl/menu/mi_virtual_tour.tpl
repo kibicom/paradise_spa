@@ -34,6 +34,13 @@
 			
 			>
 
+			f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_show_content_2_1
+			
+			>
+			
 			f:hash_set^key:page&val:gallery>
 
 			f:waiter_hide
@@ -45,7 +52,8 @@
 		</div>
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour.png" alt="Виртуальный тур">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour.png" alt="Виртуальный тур">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour_alt.png" alt="Виртуальный тур">
 			</div>
 		</div>
 	</div>

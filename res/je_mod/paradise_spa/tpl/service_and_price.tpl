@@ -7,61 +7,22 @@
         Основной шаблон paradise spa
 -->
 
-<div class="" style="width:65%; height:100%; margin:0 auto; text-align: justify;padding-left: 10px;">
-	<div class="font_serif_gold_stl f_s_3_stl" style="width:100%; padding-bottom: 20px;">
-		Случалось ли вам мечтать о настоящем отдыхе, о полной релаксации и возможности отключиться от всех забот и тревог? Большинство из нас хотят об этого вот уже много времени, и сейчас эти мечты наконец-то стали явью! Гостинично-банный спа-комплекс в Краснодаре ждет вас, чтобы предложить отдых премиум-класса! Это не просто сауна с бассейном: это полноценный островок эксклюзивного отдыха на воде и не только, ведь здесь к вашим услугам и русская баня, и турецкий хамам, и уютная гостиница, и 
+<div class="" style="background_: transparent url('res/je_mod/paradise_spa/img/bg.jpg') no-repeat 0 0px;
+		width:1024px;height:100%;margin:0 auto">
 
-		<h3>ЧЕМ НАШ СПА КОМПЛЕКС ПОРАДУЕТ ПОСЕТИТЕЛЕЙ</h3>
-
-		Для любителей расслабиться, отдохнуть душой и телом наш комплекс предлагает не только водные процедуры, но и все виды массажа в исполнении умелых и привлекательных мастериц. Закрепить результат поможет и vip сауна, особенно если вам нужно снять напряжение и провести за спокойной беседой часок-другой. Предпочитаете влажные объятия турецкого хамама – здесь вас ждет лучший в городе вариант, также с возможностями ароматерапии! Любите простую русскую баню с вениками и добела 
+	<div class="head" style="height:45%">
+		
 	</div>
-	<div class="font_serif_gold_stl f_s_3_stl" style="width:100%; padding-bottom: 20px;">
-		<div style="width:25%; height:100%; float:left;text-align: center;">
-			<div></div>
-			<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/autor_kitchen.png" alt=""/>
-			<div class="f_s_3_stl" style="text-align: justify; margin: 5px">
-			
-				<h3>АВТОРСКАЯ КУХНЯ</h3>
 
-				Наше меню разработано одним из лучших шеф-поваров г.Санкт-Петербурга, в соответствии с трем правилами:
-				- использовать только самые свежие и качественные продукты,
-				- очень вкусно - это норма,
-				- непрестанно радовать гостей новинками и сезонными предложениями.
-			
-			</div>
-		</div>
-		<div style="width:25%; height:100%; float:left;text-align: center;">
-			<div></div>
-			<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/baths_sauns.png" alt=""/>
-			<div class="f_s_3_stl" style="text-align: justify;; margin: 5px">
-				<h3>БАНИ, САУНЫ.</h3>
+	<div class="content content_stl" style="height:10%; width:100%; color:#fff;text-align: center;font-size: 130%;">
+		Скоро...
+	</div>	
 
-				Русская баня является кузницей здоровья человека. Отличие русской бани в комплексе "Rай-SPA" от других в том, что печь уставновленная в нашей парной исполнена с использованием натурального камня змеевик.
-				Cауна способна очистить и тело, и душу. Очень полезно попариться в сауне после физических нагрузок и занятий спортом.
-			</div>
-		</div>
-		<div style="width:25%; height:100%; float:left;text-align: center;">
-			<div></div>
-			<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/turkish_hamam.png" alt=""/>
-			<div class="f_s_3_stl" style="text-align: justify;; margin: 5px">
-				<h3>ТУРЕЦКИЙ ХАМАМ</h3>
+	<div class="foot" style="height:45%">
+		
+	</div>	
 
-				Мягкая и комфортная для каждого парная с температурой воздуха до 50 С и влажностью воздуха 100%.
-				Идеальное место для таких  Спа- процедур  как : пилинг, обертывания и массаж.
-			</div>
-		</div>
-		<div style="width:25%; height:100%; float:left;text-align: center;">
-			<div></div>
-			<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/jacuzzi.png" alt=""/>
-			<div class="f_s_3_stl" style="text-align: justify;; margin: 5px">
-				<h3>ДЖАКУЗИ</h3>
-
-				Так же после горячей русской баньки вы можете понежиться в джакузи. Она снабжена специальными форсунками, через которые подается воздух или струи воды. Эффект от такого массажа помогает при многих расстройствах, таких как ревматизм, повышенный тонус мышц, нервное перенапряжение, хроническая усталость и другие.
-			</div>
-		</div>
-	</div>
 </div>
-
 
 	
 	

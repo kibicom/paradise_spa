@@ -133,88 +133,164 @@
 				args:
 				{
 					is_init:false,
+					from_logo:true,
 				},
 				
+				/***меню***/
 				f_mi_click_1:function(args)
 				{
 					
-					$('.glow').addClass("hidden");
+					console.log("error", "f_mi_click_1", je_mod["paradise_spa"].args.from_logo);
 					
+					if (je_mod["paradise_spa"].args.from_logo)
+					{
+						//лого можно увидеть только после обновления страницы поэтому
+						//ставить false
+						je_mod["paradise_spa"].args.from_logo=false;
+						
+						je_mod["paradise_spa"].f_hide_logo_1(
+						{
+							//когда лого будет скрыт
+							fdone:function()
+							{
+								//поднимаем вверх меню
+								je_mod["paradise_spa"].f_menu_2_up(
+								{
+									//когда меню будет поднято
+									fdone:function()
+									{
+										//плавно показываем content_2
+										je_mod["paradise_spa"].f_show_page_2_1(
+										{
+											fdone:function()
+											{
+												
+											}
+										});
+										
+										//продолжаем выполнение kvl
+										t_uti.f_fdone(args.fdone);
+									}
+								});
+							}
+						});
+					}
+					else
+					{
+						
+						//плавно скрываем content_2
+						je_mod["paradise_spa"].f_hide_content_2_1(
+						{
+							fdone:function()
+							{
+								//продолжаем выполнение kvl
+								//в результате чего будет залит новый контент
+								//и там же будет вызвана команда отображения нового контента
+								t_uti.f_fdone(args.fdone);
+								
+								/*
+								//плавно показываем content_2
+								je_mod["paradise_spa"].f_show_content_2_1(
+								{
+									fdone:function()
+									{
+										
+									}
+								});
+								*/
+							}
+						});
+					}
+					
+					return;
+					
+				},
+				
+				f_mi_init:function(args)
+				{
+					
+					$(".menu_item").hover(function(args)
+					{
+						$(this).addClass("mi_hover");
+						$(this).find(".mi_name_img").addClass("hidden");
+						$(this).find(".mi_name_img_alt").removeClass("hidden");
+					}, function(args)
+					{
+						$(this).removeClass("mi_hover");
+						if (!$(this).hasClass("mi_active"))
+						{
+							$(this).find(".mi_name_img_alt").addClass("hidden");
+							$(this).find(".mi_name_img").removeClass("hidden");
+						}
+					});
+					
+					$(".menu_item").click(je_mod["paradise_spa"].f_mi_togle);
+					
+					t_uti.f_fdone(args.fdone);
+					
+					return;
+					
+				},
+				
+				f_mi_togle:function(args)
+				{
+					//убираем подстветку с текущего активного
+					$(".menu_item.mi_active").find(".mi_name_img_alt").addClass("hidden");
+					$(".menu_item.mi_active").find(".mi_name_img").removeClass("hidden");
+					
+					//снимаем его активность
+					$(".menu_item").removeClass("mi_active");
+					
+					//добавляем активность элементу на который сейчас клацнули
+					$(".menu_item.mi_hover").addClass("mi_active");
+				},
+				
+				f_menu_2_up:function(args)
+				{
 					//поднимаем меню вверх
 					$('.mi_main').addClass("anim_mi_main_up");
 					$('.mi_gallery').addClass("anim_mi_gallery_up");
 					$('.mi_service_and_price').addClass("anim_mi_service_and_price_up");
 					$('.mi_virtual_tour').addClass("anim_mi_virtual_tour_up");
 					$('.mi_about').addClass("anim_mi_about_up");
-					
-					//плавно скрываем лого
-					//$('.content_1').removeClass("main_logo_show_anim");
-					$('.content_2').addClass("hidden");
-					$('.main_logo').addClass("main_logo_hide_anim");
-					$('.main_logo').bind("animationend webkitAnimationEnd", function() 
+					$('.mi_about').bind("animationend webkitAnimationEnd", function() 
 					{
-						$('.blur_bg').addClass("main_logo_show_anim");
-						$('.blur_bg').removeClass("hidden");
+						
+						//вызываем callback
+						t_uti.f_fdone(args.fdone);
+						
 					});
-						//$('.main_logo').addClass("hidden");
-						if ($('.content_2').hasClass("hidden"))
-						{
-							$('.content_2').addClass("main_logo_show_anim");
-							$('.content_2').removeClass("hidden");
-							$('.content_2').bind("animationend webkitAnimationEnd", function() 
-							{
-								$('.main_logo').addClass("hidden");
-								
-							});
-						}
-						/*
-						else
-						{
-							$('.content_2').addClass("main_logo_show_anim");
-							$('.main_logo').bind("animationend webkitAnimationEnd", function() 
-							{
-								$('.content_2').addClass("main_logo_show_anim");
-								$('.content_2').removeClass("hidden");
-								$('.content_2').bind("animationend webkitAnimationEnd", function() 
-								{
-									$('.main_logo').addClass("hidden");
-									
-								});
-							});
-						}
-						*/
-					//});
-					//скрываем фон и градиент
-					//$('.main_logo').addClass('hidden');
-					//$('.logo_img_back').addClass("hidden");
-					//$('.logo_img_upper').addClass("hidden");
-					//$('.glow').addClass("hidden");
-					
-					
-					//уплывает фон
-					//$('.logo_img_upper').addClass("logo_blur_2");
-					
-					//выключаем звездочки
-					$('.spark').css({"display":"none"});
-					
-					//включаем header и footer
-					//$('.content_1').css({"height":"70%"});
-					$('.head').removeClass("hidden");
-					$('.foot').removeClass("hidden");
-					
-					t_uti.f_fdone(args.fdone);
 				},
 				
-				f_mi_main_click_1:function(args)
+				
+				
+				/***лого***/
+				f_hide_logo_1:function(args)
 				{
 					
-					//выключаем header и footer
-					$('.head').addClass("hidden");
-					$('.foot').addClass("hidden");
+					//скрываем градиент
+					$('.glow').addClass("hidden");
+					$('.gradient').addClass("hidden");
+					$('.gradient').removeAttr( 'style' );
 					
-					je_mod["paradise_spa"]["args"].f_main_logo_init();
-			
-					t_uti.f_fdone(args.fdone);
+					//запускам анимацию постепенного исчезновения лого
+					$('.main_logo').addClass("main_logo_hide_anim");
+					
+					//когда анимация выполниться
+					$('.main_logo').bind("animationend webkitAnimationEnd", function() 
+					{
+						//ставим класс скрытости
+						$('.main_logo').addClass("hidden");
+						//убираем класс анимации
+						$('.main_logo').removeClass("main_logo_hide_anim");
+						
+						//вызываем callback
+						t_uti.f_fdone(args.fdone);
+						
+					});
+					
+					$('.spark').css({"display":"none"});
+					
 				},
 				
 				f_main_logo_init:function(args)
@@ -312,6 +388,67 @@
 					t_uti.f_fdone(args.fdone);
 			
 				},
+				
+				/***контент***/
+				f_show_page_2_1:function(args)
+				{
+					//показываем резко верх и низ
+					$('.head').removeClass("hidden");
+					$('.foot').removeClass("hidden");
+					
+					//je_mod["paradise_spa"].f_show_content_2_1(args);
+					t_uti.f_fdone(args.fdone);
+				},
+				
+				f_show_content_2_1:function(args)
+				{
+					console.log("error","f_show_content_2_1", args);
+					$('.content_2').addClass("main_logo_show_anim_2");
+					$('.content_2').removeClass("hidden");
+					
+					var f=function() 
+					{
+						$('.content_2').unbind(".show");
+						
+						//$('.content_2').removeClass("main_logo_show_anim_2");
+						t_uti.f_fdone(args.fdone);
+					};
+					
+					$('.content_2').bind("animationend.show webkitAnimationEnd.show", f);
+				},
+				
+				f_hide_content_2_1:function(args)
+				{
+					$('.content_2').removeClass("hidden");
+					$('.content_2').addClass("main_logo_hide_anim_2");
+					
+					var f=function() 
+					{
+						$('.content_2').unbind(".hide");
+						
+						$('.content_2').removeClass("main_logo_hide_anim_2");
+						$('.content_2').addClass("hidden");
+						
+						t_uti.f_fdone(args.fdone);
+					};
+					
+					$('.content_2').bind("animationend.hide webkitAnimationEnd.hide", f);
+				},
+				
+				f_mi_main_click_1:function(args)
+				{
+					
+					//выключаем header и footer
+					$('.head').addClass("hidden");
+					$('.foot').addClass("hidden");
+					
+					je_mod["paradise_spa"]["args"].f_main_logo_init();
+			
+					t_uti.f_fdone(args.fdone);
+				},
+				
+				
+				
 			}
 		});
 		
@@ -344,6 +481,7 @@
 </head>
 
 <body 	class="body claro body_stl_smpl" 
+		ontouchmove_="event.preventDefault() ;"
 		data-josi-kvl-str="
 		f:waiter_show>
 		
@@ -356,6 +494,13 @@
 		^
 		mod_name:paradise_spa&
 		f_name:f_main_logo_init
+		
+		>
+		
+		f:f
+		^
+		mod_name:paradise_spa&
+		f_name:f_mi_init
 		
 		>
 
