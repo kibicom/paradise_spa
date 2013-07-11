@@ -1,50 +1,5 @@
 
-
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
-
-.font_serif_gold_stl
-{
-	font-family: 'Noto Serif', serif;
-	color: #F8ED81;
-}
-
-.font_serif_white_stl
-{
-	font-family: 'Noto Serif', serif;
-	color: #fff;
-}
-
-.font_open_sans_gold_stl
-{
-	font-family: 'Open Sans Light', serif;
-	color: #F8ED81;
-}
-
-.font_open_sans_white_stl
-{
-	font-family: 'Open Sans Light', serif;
-	color: #fff;
-}
-
-.italic
-{
-	font-style: italic;
-}
-
-.f_s_1_stl
-{
-	font-size:140%;
-}
-
-.f_s_2_stl
-{
-	font-size:80%;
-}
-
-.f_s_3_stl
-{
-	font-size:90%;
-}
+/***общее***/
 
 html
 {
@@ -57,13 +12,17 @@ body
 	/*overflow:hidden;*/
 }
 
+
+/***conntent***/
+
 .service_div
 {
 	background-color: black;
 	overflow:hidden;
 }
 
-/****main logo****/
+
+/***logo***/
 
 .logo_img_back
 {
@@ -152,31 +111,6 @@ body
 }
 
 
-@keyframes anim_opacity_on
-{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@-webkit-keyframes anim_opacity_on
-{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@keyframes anim_opacity_off
-{
-	0%{opacity: 1;}
-	100%{opacity: 0;}
-}
-
-@-webkit-keyframes anim_opacity_off
-{
-	0%{opacity: 1;}
-	100%{opacity: 0;}
-}
-
-
 .glow 
 {
 	position: absolute;
@@ -218,6 +152,45 @@ body
 /*	-webkit-animation-fill-mode: both;*/
 /*	-webkit-animation-iteration-count: infinite;*/
 }
+
+/*стиль блестяшки*/
+.spark 
+{
+	background: transparent url('../img/main_logo/spark.png') no-repeat 0px 0px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	z-index: 900;
+}
+
+
+
+/***анимации***/
+
+@keyframes anim_opacity_on
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes anim_opacity_on
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes anim_opacity_off
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@-webkit-keyframes anim_opacity_off
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
 
 @keyframes grad1_trans 
 {
@@ -270,94 +243,123 @@ body
 	100%{opacity: 1;background: rgba(255, 255, 255, 0) url('../img/bg.jpg') no-repeat 0 0px;}
 }
 
-/*стиль блестяшки*/
-.spark 
+
+/***шрифты***/
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
+
+.font_serif_gold_stl
 {
-	background: transparent url('../img/main_logo/spark.png') no-repeat 0px 0px;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	z-index: 900;
+	font-family: 'Noto Serif', serif;
+	color: #F8ED81;
 }
 
-.content_stl
+.font_serif_white_stl
 {
-	height: 100%;
-	overflow: hidden;
-	/*width: 1024px;*/
-	width:1024px; 
-	margin:0 auto;
-	font-size: 14px;
-	font-family: Ubuntu,Verdana,sans-serif;
-	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
+	font-family: 'Noto Serif', serif;
+	color: #fff;
 }
 
-.content_2_stl
+.font_open_sans_gold_stl
 {
-	top: 200px;
+	font-family: 'Open Sans Light', serif;
+	color: #F8ED81;
+}
+
+.font_open_sans_white_stl
+{
+	font-family: 'Open Sans Light', serif;
+	color: #fff;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.f_s_1_stl
+{
+	font-size:140%;
+}
+
+.f_s_2_stl
+{
+	font-size:80%;
+}
+
+.f_s_3_stl
+{
+	font-size:90%;
+}
+
+/******** СТРАНИЦЫ **********/
+
+/*** основной шаблон ***/
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
+
+.font_serif_gold_stl
+{
+	font-family: 'Noto Serif', serif;
+	color: #F8ED81;
+}
+
+.font_serif_white_stl
+{
+	font-family: 'Noto Serif', serif;
+	color: #fff;
+}
+
+.font_open_sans_gold_stl
+{
+	font-family: 'Open Sans Light', serif;
+	color: #F8ED81;
+}
+
+.font_open_sans_white_stl
+{
+	font-family: 'Open Sans Light', serif;
+	color: #fff;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.f_s_1_stl
+{
+	font-size:140%;
+}
+
+.f_s_2_stl
+{
+	font-size:80%;
+}
+
+.f_s_3_stl
+{
+	font-size:90%;
+}
+
+.waiter_div
+{
 	position: fixed;
-	bottom: 120px;
-	/*height: 85%;*/
-	overflow: auto;
-	/*width: 1024px;*/
-	width:1024px; 
-	margin:0 auto;
-	font-size: 14px;
-	font-family: Ubuntu,Verdana,sans-serif;
-	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
-	/*margin-top: 210px;*/
+	width: 16%;
+	z-index: 10000;
+	top: 20%;
+	left: 42%;
+	/*background: #903;
+	padding: 10px;*/
+	text-align: center;
+	/*border-radius: 5px;*//
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: white;
+	font-size: 22px;
 }
 
-.main_bg_stl
-{
-	height: 100%;
-	overflow: hidden;
-	/*width: 1024px;*/
-	width:1024px; 
-	margin:0 auto;
-	font-size: 14px;
-	font-family: Ubuntu,Verdana,sans-serif;
-	background: transparent url('../img/bg.jpg') no-repeat 0 0px;
-}
 
-.main_blur_bg_stl
-{
-	height: 100%;
-	overflow: hidden;
-	/*width: 1024px;*/
-	width:1024px; 
-	margin:0 auto;
-	font-size: 14px;
-	font-family: Ubuntu,Verdana,sans-serif;
-	/*background: rgba(255, 255, 255, 1) url('../img/blur_bg.jpg') no-repeat 0 0px;*/
-	
-	/*opacity: 0;*/
-	
-	background: transparent url('../img/blur_bg.jpg') no-repeat 0 0px;
-	
-	/*
-	animation: logo_bg_opacity 0.8s 5s;
-	animation-fill-mode: forwards;
-	
-	-webkit-animation: logo_bg_opacity 0.8s 5s;
-	-webkit-animation-fill-mode: forwards;
-	*/
-}
-
-.foot_stl
-{
-	position: fixed;
-	bottom: 0px;
-	height: 120px;
-	overflow: hidden;
-	/*width: 1024px;*/
-	width:1024px; 
-	margin:0 auto;
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
-	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
-}
-
+/*** основное меню ***/
 
 .menu_item
 {
@@ -375,13 +377,6 @@ body
 	height: 100%;
 	/*top: 100px;
 	left: 100px;*/
-}
-
-/*** меню ***/
-
-.js_btn_label_img_stl_smpl
-{
-	text-align:center;
 }
 
 /*Главная*/
@@ -517,54 +512,3 @@ body
 	to {top:50px;left: 100px;}
 }
 
-/*** страницы ***/
-
-/* виртуальный тур */
-
-.vt_apples_stl
-{
-	margin:0 auto;
-}
-
-.waiter_div
-{
-	position: fixed;
-	width: 16%;
-	z-index: 10000;
-	top: 20%;
-	left: 42%;
-	/*background: #903;
-	padding: 10px;*/
-	text-align: center;
-	/*border-radius: 5px;*//
-	-moz-box-shadow:none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: white;
-	font-size: 22px;
-}
-
-/*** сервис и услуги ***/
-
-.p_sp_text_link
-{
-	text-align:right; 
-	text-decoration: underline;
-	font-family: 'Noto Serif', serif;
-	color: #fff;
-	font-style: italic;
-}
-
-.p_sp_price
-{
-	text-align:right; 
-	font-family: 'Noto Serif', serif;
-	color: #fff;
-}
-
-.p_sp_mi_stl
-{
-	width:30%;
-	float:left;
-	text-align:center;
-}
