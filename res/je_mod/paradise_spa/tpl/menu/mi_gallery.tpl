@@ -16,12 +16,21 @@
 			
 			>
 			
+			f:hash_set^key:page&val:gallery
+			
+			>
+			
+			f:hash_set^key:part&val:hall
+			
+			>
+			
 			f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_mi_click_1
 			
 			>
+			
 			
 			f:tpl_struct_arr
 			^
@@ -33,19 +42,22 @@
 			parse_arr:false
 			
 			>
-
+			
+			f:f
+			^
+			mod_name:			gallery&
+			f_name:				f_init
+			
+			>
+			
 			f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_show_content_2_1
 			
 			>
-			
-			f:hash_set^key:page&val:gallery>
 
-			f:waiter_hide
-		
-		">
+			f:waiter_hide">
 	<div class="" style="border-radius: 5px;">
 		<div class="js_btn_label_img_stl_smpl" style="margin-left: 50px;margin-bottom: -30px;">
 			<img class="" src="res/je_mod/paradise_spa/img/menu/main_apple.png">

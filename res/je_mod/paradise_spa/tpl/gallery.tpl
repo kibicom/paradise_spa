@@ -7,46 +7,35 @@
         Основной шаблон paradise spa
 -->
 
-<div class="" style="background: transparent url('res/je_mod/paradise_spa/img/bg.jpg') no-repeat 0 0px;
-		width:1024px;height:100%;margin:0 auto">
 
-	<div class="head" style="height:45%">
-		
-	</div>
-
-	<div class="content content_stl" style="height:10%; width:100%; color:#fff;text-align: center;font-size: 130%;">
-		Скоро...
-	</div>	
-
-	<div class="foot" style="height:45%">
-		
-	</div>	
-
-</div>
-
-<div class="hidden" style="background: transparent url('res/je_mod/paradise_spa/img/gallery_bg.jpg') no-repeat 0 0px;
+<div class="" style="background: transparent url('res/je_mod/paradise_spa/img/gallery_bg.jpg') no-repeat 0 0px;
 		width:1024px;height:100%;margin:0 auto">
 
 	<div class="head hidden">
 		{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main_menu_2.tpl}}
 	</div>
 
-	<div 	class="content content_stl" >
-		<div id="gallery_popup" class="popup" style="margin: 0 auto; position: static;">
-            <a class="close_lnk _close_lnk" href="javascript:void(0)">Закрыть</a>
-            <div class="popup_in" style="margin: 0 auto;background: transparent; top: 108px;position: relative;">
-                <div id="gallery_title" class="hidden">Пусто</div>
-                <div onclick="Gallery.onPrevClick()" class="gallery_btn div_left">
-					<img class="" src="res/je_mod/paradise_spa/img/gallery_arrow.png" alt="Виртуальный тур">
-                </div>
-                <a href="javascript:Gallery.onPrevClick()" id="gallery_prev_btn" class="disabled_btn hidden">Prev</a>
-                <a href="javascript:Gallery.onNextClick()" id="gallery_next_btn" class="hidden">Next</a>
-                <img style="height:500px;width:500px" id="gallery_img" src="res/zoomSlider/images/empty.png" alt="загрузка" class="fidget div_left"/>
-                <div onclick="Gallery.onNextClick()"  class="gallery_btn div_left">
-					<img class="" src="res/je_mod/paradise_spa/img/gallery_arrow.png" alt="Виртуальный тур">
-                </div>
-            </div>
-        </div>
+	<div 	class="content_1 content_stl" >
+		<div style="height: 70px;width: 70%;margin: 0 auto;">
+			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/gallery_menu.tpl}}
+		</div>
+		<div class="content_2_stl content_2 hidden" style="top:100px; bottom:0px; max-height: 700px;">
+			<div style="width:900px;margin:0 auto;height: 100%;overflow: hidden;">
+				[[
+					f:tpl_struct_arr
+					^
+					tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+					node_class_query:&
+					replace:true&
+					rooted:true&
+					append:false&
+					parse_arr:false&
+					
+					left_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+					right_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
+				]]
+			</div>
+		</div>
 	</div>	
 
 	<div class="foot">

@@ -18,7 +18,8 @@ Gallery = {
         $('#gallery_popup').show();
     },
 
-    onNextClick: function (el) {
+    onNextClick: function (el) 
+    {
         if (this.imageIndex + 1 < galleries[this.currentGallery].length) {
             this.imageIndex++
         }

@@ -22,9 +22,9 @@
 
 //echo 123;
 
-//echo $SERVER["DOCUMENT_ROOT"];
+echo $SERVER["DOCUMENT_ROOT"];
 
-require_once("res/conf/conf.php");			//конфигурация магазина
+require_once("res/conf/conf.php");			//конфигурация запускаемого сервиса
 
 
 //по умолчанию запрос главной страницы интернет магазина
@@ -32,6 +32,7 @@ if ($_SERVER['QUERY_STRING']==="")
 {
 	$_SERVER['QUERY_STRING']="kvl.0.f=tpl&kvl.1.page_path=josi_loader&kvl.1.service=res/je_mod/paradise_spa/main.tpl";
 }
+
 
 require_once("res/josi/php/dev/index.php");
 

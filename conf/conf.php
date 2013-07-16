@@ -42,6 +42,8 @@ $josi_conf=array
 			"path"=>"",
 		)
 	)
-)
+);
+
+$res_img_path="/git/kibicom/paradise_spa/res/je_mod/paradise_spa/img/gallery/";
 
 ?>

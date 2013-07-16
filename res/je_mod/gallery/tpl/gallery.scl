@@ -1,0 +1,37 @@
+
+<!--
+        gallery.scl
+        
+        Copyright 2012 Жлобенцев Владимир <dnclive@gmail.com>
+        
+        Основной шаблон paradise spa
+-->
+
+
+	f:f
+	^
+	mod_name:gallery&
+	f_name:f_load
+
+	>
+
+	f:tpl_struct_arr
+	^
+	tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+	node_class_query:&
+	replace:true&
+	rooted:true&
+	append:false&
+	parse_arr:false&
+	
+	left_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+	right_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
+
+	>
+
+	f:f
+	^
+	mod_name:			gallery&
+	f_name:				f_thumb_prepare
+	
+	

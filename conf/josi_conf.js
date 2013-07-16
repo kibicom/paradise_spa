@@ -70,5 +70,4 @@ var config=
 var service_conf=
 {
 	title:"JoSi engine",
-	
 }
