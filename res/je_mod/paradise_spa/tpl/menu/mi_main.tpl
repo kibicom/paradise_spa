@@ -8,7 +8,7 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item mi_main mi_main_down_stl "  style_="-webkit-animation: mi_main_up 3s 4s;"
+<div 	class="toolbar_item_div div_left menu_item mi_main menu_item_stl mi_main_down_stl "  style_="-webkit-animation: mi_main_up 3s 4s;"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"

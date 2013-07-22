@@ -30,16 +30,13 @@
 					"
 						f:waiter_show
 						
-						>
-						
-						f:f
+						>f:f
 						^
 						mod_name:gallery&
 						f_name:f_prev
 						
-						>
-						
-						f:tpl_struct_arr
+						<!--
+						>f:tpl_struct_arr
 						^
 						tpl_path:res/je_mod/gallery/tpl/main_img.tpl&
 						node_class_query:.je_mod_gallery_main_img_div&
@@ -47,10 +44,15 @@
 						rooted:false&
 						append:false&
 						parse_arr:false
+						-->
 						
-						>
-
-						f:waiter_hide
+						>f:f
+						^
+						mod_name:gallery&
+						f_name:f_change_img&
+						how:fade
+						
+						>f:waiter_hide
 					
 					"
 					>
@@ -88,9 +90,9 @@
 						mod_name:gallery&
 						f_name:f_next
 						
-						>
 						
-						f:tpl_struct_arr
+						<!--
+						>f:tpl_struct_arr
 						^
 						tpl_path:res/je_mod/gallery/tpl/main_img.tpl&
 						node_class_query:.je_mod_gallery_main_img_div&
@@ -98,10 +100,15 @@
 						rooted:false&
 						append:false&
 						parse_arr:false
+						-->
 						
-						>
-
-						f:waiter_hide
+						>f:f
+						^
+						mod_name:gallery&
+						f_name:f_change_img&
+						how:fade
+						
+						>f:waiter_hide
 					
 					"
 					
@@ -129,9 +136,9 @@
 					mod_name:gallery&
 					f_name:f_prev
 					
-					>
 					
-					f:tpl_struct_arr
+					<!--
+					>f:tpl_struct_arr
 					^
 					tpl_path:res/je_mod/gallery/tpl/main_img.tpl&
 					node_class_query:.je_mod_gallery_main_img_div&
@@ -140,9 +147,15 @@
 					append:false&
 					parse_arr:false
 					
-					>
+					-->
 
-					f:waiter_hide
+					>f:f
+					^
+					mod_name:gallery&
+					f_name:f_change_img&
+					how:fade
+					
+					>f:waiter_hide
 				
 				"
 		>
@@ -155,27 +168,28 @@
 				"
 					f:waiter_show
 					
-					>
-					
-					f:f
+					>f:f
 					^
 					mod_name:gallery&
 					f_name:f_next
 					
-					>
-					
-					f:tpl_struct_arr
+					<!--
+					>f:tpl_struct_arr
 					^
 					tpl_path:res/je_mod/gallery/tpl/main_img.tpl&
 					node_class_query:.je_mod_gallery_main_img_div&
 					replace:true&
 					rooted:false&
 					append:false&
-					parse_arr:false
+					parse_arr:false-->
 					
-					>
-
-					f:waiter_hide
+					>f:f
+					^
+					mod_name:gallery&
+					f_name:f_change_img&
+					how:fade
+					
+					>f:waiter_hide
 				
 				"
 		>

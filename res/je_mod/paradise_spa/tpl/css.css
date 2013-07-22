@@ -359,13 +359,23 @@ body
 }
 
 
-.menu_item
+.menu_item_stl
 {
 	z-index: 900;
 	position: relative;
 	color:gold;
 	font-size:160%;
 	cursor:pointer;
+}
+
+.sub_menu_item_stl
+{
+	/*z-index: 900;
+	position: relative;
+	color:gold;
+	font-size:160%;*/
+	cursor:pointer;
+	margin:0 auto;
 }
 
 .gallery_btn

@@ -124,3 +124,48 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 
 }
+
+@keyframes anim_fade_in
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes anim_fade_in
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes anim_fade_out
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@-webkit-keyframes anim_fade_out
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+
+.je_mod_gallery_img_fade_in_stl
+{
+	animation: anim_fade_in 2s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_fade_in 2s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+.je_mod_gallery_img_fade_out_stl
+{
+	animation: anim_fade_out 2s;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation: anim_fade_out 2s;
+	-webkit-animation-fill-mode: forwards;
+}
+

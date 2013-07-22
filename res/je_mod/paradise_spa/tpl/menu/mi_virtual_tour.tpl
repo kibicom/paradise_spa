@@ -8,7 +8,7 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item mi_virtual_tour mi_virtual_tour_down_stl"
+<div 	class="toolbar_item_div div_left menu_item menu_item_stl mi_virtual_tour mi_virtual_tour_down_stl"
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"

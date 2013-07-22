@@ -8,13 +8,15 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item mi_service_and_price mi_service_and_price_down_stl "
+<div 	class="toolbar_item_div div_left menu_item menu_item_stl mi_service_and_price mi_service_and_price_down_stl "
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 			
 			>
+			
+			f:hash_set^key:page&val:service_and_price>
 			
 			f:f
 			^
@@ -40,8 +42,15 @@
 			f_name:f_show_content_2_1
 			
 			>
+		
+			f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_mi_init&
+			menu_group:sub_menu&
+			menu_group_class_name:sub_menu_item
 			
-			f:hash_set^key:page&val:service_and_price>
+			>
 
 			f:waiter_hide
 		

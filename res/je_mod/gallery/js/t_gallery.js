@@ -33,7 +33,7 @@ require
 				img_service:"image.php?",
 				gallery:
 				{
-					hall:
+					hotel:
 					[
 						"00eb78a1c961ea1c14f78e20e600ac9c.jpg",
 						"1c25967b68da8a3105465be73e3d7a52.jpg",
@@ -73,6 +73,8 @@ require
 				{
 					thumb_band_class_name:"je_mod_gallery_thumb_band",
 				},
+				
+				current_image_i:2,
 			},
 			
 			f_init:function(args)
@@ -81,6 +83,12 @@ require
 				args=args||{};
 				
 				self.f_thumb_prepare(args);
+				
+				self.args.current_image_i=1;
+				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var img_src=self._f_img_src({part:part, i:0});
+				
+				self.f_set_img({img_src:img_src});
 				
 				t_uti.f_fdone(args.fdone);
 			},
@@ -102,6 +110,8 @@ require
 				}
 				
 				var img_src=self._f_img_src({part:part, i:prev_i});
+				
+				self.f_set_img({img_src:img_src});
 				
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.part", val:part});
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.img_src", val:img_src});
@@ -135,6 +145,8 @@ require
 				
 				var img_src=self._f_img_src({part:part, i:prev_i});
 				
+				self.f_set_img({img_src:img_src});
+				
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.part", val:part});
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.img_src", val:img_src});
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.current_i", val:prev_i});
@@ -166,6 +178,8 @@ require
 				self.args.current_i=0;
 				
 				var img_src=self._f_img_src({part:part, i:self.args.current_i});
+				
+				self.f_set_img({img_src:img_src});
 				
 				console.log("je_mod.gallery", "f_load", "img_src", img_src);
 				
@@ -273,7 +287,7 @@ require
 					var band_left=self._f_zero_band_left()-offset;
 					
 					t_attr.set(node, "style", {left:band_left+"px"});
-					console.log("je_mod.gallery", "f_set_band_pos", args, thumb_img_w, node_w, band_left);
+					console.log("je_mod.gallery", "f_set_band_pos", args, thumb_img_w, band_left);
 				});
 				
 			},
@@ -299,7 +313,96 @@ require
 				
 			},
 			
+			f_set_img:function(args)
+			{
+				console.log("je_mod.gallery", "f_set_img", args);
+				var self=this;
+				var cii=self.args.current_image_i;
+				var img_src=args.img_src;
+				
+				var thumb_band_class_name=self.args.thumb.thumb_band_class_name;
+				
+				var img_2_set=".je_mod_gallery_main_img_1";
+				var img_src_res="je_mod.gallery.img_src_1";
+				
+				self.args.current_image_i=1;
+				
+				if (cii==1)
+				{
+					img_2_set=".je_mod_gallery_main_img_2";
+					img_src_res="je_mod.gallery.img_src_2";
+					self.args.current_image_i=2;
+				}
+				
+				t_res.f_struct_res_arr_set({key:img_src_res, val:img_src});
+				
+				t_query(img_2_set).forEach(function(node)
+				{
+					console.log("je_mod.gallery", "f_set_img", args, img_src);
+					t_attr.set(node, "src", img_src);
+				});
+				
+				console.log("je_mod.gallery_1", "f_set_img", args, cii, img_src, img_2_set, img_src_res, self.args.current_image_i);
+				
+			},
 			
+			f_change_img:function(args)
+			{
+				var self=this;
+				var cii=self.args.current_image_i;
+				var how=args.kvl_1_mix.how||"fast";
+				
+				var img_2_hide=".je_mod_gallery_main_img_1";
+				var img_2_show=".je_mod_gallery_main_img_2";
+				
+				if (cii==2)
+				{
+					img_2_hide=".je_mod_gallery_main_img_2";
+					img_2_show=".je_mod_gallery_main_img_1";
+				}
+				
+				console.log("je_mod.gallery_1", "f_change_img", args, cii, img_2_hide, img_2_show, cii, how, args.kvl_1_mix.how);
+				
+				if (how=="fast")
+				{
+					t_query(img_2_hide).addClass("hidden");
+					t_query(img_2_show).removeClass("hidden");
+				}
+				if (how=="fade")
+				{
+					t_query(img_2_hide).forEach(function(node)
+					{
+						t_attr.set(node, "style", {opacity:0});
+					});
+					t_query(img_2_hide).removeClass("je_mod_gallery_img_fade_out_stl");
+					t_query(img_2_hide).addClass("je_mod_gallery_img_fade_in_stl");
+					
+					t_query(img_2_show).forEach(function(node)
+					{
+						t_attr.set(node, "style", {opacity:1});
+					});
+					t_query(img_2_show).removeClass("je_mod_gallery_img_fade_in_stl");
+					t_query(img_2_show).addClass("je_mod_gallery_img_fade_out_stl");
+					/*
+					$(img_2_hide).bind("animationend webkitAnimationEnd", function() 
+					{
+						t_query(img_2_hide).addClass("hidden");
+					});
+					$(img_2_hide).bind("animationend webkitAnimationEnd", function() 
+					{
+						t_query(img_2_show).removeClass("hidden");
+					});
+					*/
+				}
+				else
+				{
+					t_query(img_2_hide).addClass("hidden");
+					t_query(img_2_show).removeClass("hidden");
+				}
+				
+				t_uti.f_fdone(args.fdone);
+				
+			},
 			
 		}
 	}

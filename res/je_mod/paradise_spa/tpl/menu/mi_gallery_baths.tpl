@@ -8,25 +8,22 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item mi_ballery_baths "
+<div 	class="toolbar_item_div div_left menu_item sub_menu_item_stl mi_ballery_baths "
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 			
-			>			
-
-			f:hash_set^key:page&val:gallery>
-			f:hash_set^key:part&val:baths>
+			>f:hash_set^key:page&val:gallery
+			>f:hash_set^key:part&val:baths
 			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_mi_click_1
+			f_name:f_hide_content&
+			node_class_name:content_2
 			
-			>
-			
-			f:tpl_struct_arr
+			>f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&
 			node_class_query:.service_div&
@@ -35,23 +32,19 @@
 			append:false&
 			parse_arr:false
 			
-			>
-			
-			f:f
+			>f:f
 			^
 			mod_name:			gallery&
 			f_name:				f_init
 			
-			>
-			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_show_content_2_1
+			f_name:f_show_content&
+			node_class_name:content_2&
+			how:
 			
-			>
-
-			f:waiter_hide
+			>f:waiter_hide
 		
 		">
 	<div class="" style="border-radius: 5px;">
