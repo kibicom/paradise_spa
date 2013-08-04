@@ -14,8 +14,11 @@
 		"
 			f:waiter_show
 			
+			>f:hash_set^key:prev_page&val_key:hash.page
+			>f:hash_set^key:prev_part&val_key:hash.part
+			
 			>f:hash_set^key:page&val:gallery
-			>f:hash_set^key:part&val:hotel
+			>f:hash_set^key:part&val:baths_east
 			
 			>f:f
 			^
@@ -49,6 +52,13 @@
 			f_name:f_show_content&
 			node_class_name:content_2&
 			how:fast
+			
+			>f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_mi_init&
+			menu_group:sub_menu&
+			menu_group_class_name:sub_menu_item&
 			
 			>f:waiter_hide">
 	<div class="" style="border-radius: 5px;">

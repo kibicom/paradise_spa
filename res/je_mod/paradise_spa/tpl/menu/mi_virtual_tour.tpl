@@ -14,16 +14,21 @@
 		"
 			f:waiter_show
 			
-			>
+			>f:hash_set^key:page&val:virtual_tour
+			>f:hash_set^key:page&val:page
 			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_mi_click_1
 			
-			>
+			>f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_hide_content&
+			node_class_name:content_2
 			
-			f:tpl_struct_arr
+			>f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/virtual_tour.tpl&
 			node_class_query:.content_2&
@@ -32,17 +37,11 @@
 			append:false&
 			parse_arr:false
 			
-			>
-
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_show_content_2_1
 			
-			>
-			
-			f:hash_set^key:page&val:gallery>
-
 			f:waiter_hide
 		
 		">

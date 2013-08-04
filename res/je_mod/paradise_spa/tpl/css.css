@@ -182,7 +182,7 @@ body
 	position: absolute;
 	top: 5%;
 	left: 62px;
-	height: 90%;
+	height: 400px;
 	width: 900px;
 	z-index: 400;
 	background: transparent;
@@ -294,11 +294,11 @@ body
 
 .content_2_stl
 {
-	top: 200px;
+	top: 170px;
 	position: fixed;
 	bottom: 120px;
 	/*height: 85%;*/
-	overflow: auto;
+	overflow: hidden;
 	/*width: 1024px;*/
 	width:1024px; 
 	margin:0 auto;
@@ -402,6 +402,12 @@ body
 	
 }
 
+.mi_main_up_stl
+{
+	top:50px;
+	left: 130px;
+}
+
 .anim_mi_main_up
 {
 	animation: mi_main_up 0.8s 0s;
@@ -426,6 +432,12 @@ body
 {
 	top: 451px;
 	left: 170px;
+}
+
+.mi_service_and_price_up_stl
+{
+	top: 25px;
+	left: 130px;
 }
 
 .anim_mi_service_and_price_up
@@ -455,6 +467,12 @@ body
 	left:137px;
 }
 
+.mi_gallery_up_stl
+{
+	top:5px;
+	left: 130px;
+}
+
 .anim_mi_gallery_up
 {
 	animation: mi_gallery_up 0.8s 200ms;
@@ -482,6 +500,13 @@ body
 	left:145px;
 }
 
+.mi_virtual_tour_up_stl
+{
+	top:25px;
+	left: 130px;
+}
+
+
 .anim_mi_virtual_tour_up
 {
 	animation: mi_virtual_tour_up 0.8s 300ms;
@@ -507,6 +532,13 @@ body
 	/*left: 101px;*/
 	left: 65px;
 }
+
+.mi_about_up_stl
+{
+	top:50px;
+	left: 100px;
+}
+
 
 .anim_mi_about_up
 {

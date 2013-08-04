@@ -8,25 +8,37 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item sub_menu_item_stl mi_gallery_baths "
+<div 	class="toolbar_item_div menu_item sub_menu_item_stl mi_gallery_baths "
 		data-josi-ev-resp="click"
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 			
 			>f:hash_set^key:page&val:gallery
-			>f:hash_set^key:part&val:hotel
+			>f:hash_set^key:part&val:hotel_playboy
 			
 			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_hide_content&
 			node_class_name:content_2
+
+			>f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+			node_class_query:.content_2&
+			replace:true&
+			rooted:false&
+			append:false&
+			parse_arr:false&
+			
+			left_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+			right_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
 			
 			>f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&
-			node_class_query:.service_div&
+			tpl_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_hotel.tpl&
+			node_class_query:.gallery_menu_2&
 			replace:true&
 			rooted:false&
 			append:false&
@@ -44,6 +56,13 @@
 			node_class_name:content_2&
 			how:
 			
+			>f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_mi_init&
+			menu_group:sub_menu&
+			menu_group_class_name:sub_menu_item&
+			
 			>f:waiter_hide
 		
 		">
@@ -53,8 +72,8 @@
 		</div-->
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_hotel.png" alt="Гостинечные номера">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_hotel_alt.png" alt="Гостинечные номера">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_hotel.png" alt="Гостинечные номера">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_hotel_alt.png" alt="Гостинечные номера">
 			</div>
 		</div>
 	</div>

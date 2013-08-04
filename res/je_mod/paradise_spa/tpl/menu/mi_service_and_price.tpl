@@ -13,37 +13,38 @@
 		data-josi-kvl-str=
 		"
 			f:waiter_show
-			
-			>
-			
-			f:hash_set^key:page&val:service_and_price>
-			
-			f:f
+
+			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_mi_click_1
 			
-			>
+			>f:hash_set^key:page&val:service_and_price
+			>f:hash_set^key:part&val:page
 			
-			f:tpl_struct_arr
+			>f:f
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/service_and_price.tpl&
+			mod_name:paradise_spa&
+			f_name:f_hide_content&
+			node_class_name:content_2
+			
+			>f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/service_and_price_page.tpl&
 			node_class_query:.content_2&
 			replace:true&
 			rooted:false&
 			append:false&
 			parse_arr:false
 			
-			>
-
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_show_content_2_1
+			f_name:f_show_content&
+			node_class_name:content_2
 			
-			>
-		
-			f:f
+			
+			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_mi_init&

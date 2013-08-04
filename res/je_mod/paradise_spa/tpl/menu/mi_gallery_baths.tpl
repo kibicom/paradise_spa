@@ -15,7 +15,7 @@
 			f:waiter_show
 			
 			>f:hash_set^key:page&val:gallery
-			>f:hash_set^key:part&val:baths
+			>f:hash_set^key:part&val:baths_east
 			
 			>f:f
 			^
@@ -25,8 +25,20 @@
 			
 			>f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&
-			node_class_query:.service_div&
+			tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+			node_class_query:.content_2&
+			replace:true&
+			rooted:false&
+			append:false&
+			parse_arr:false&
+			
+			left_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+			right_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
+			
+			>f:tpl
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_baths.tpl&
+			node_class_query:.gallery_menu_2&
 			replace:true&
 			rooted:false&
 			append:false&
@@ -42,7 +54,14 @@
 			mod_name:paradise_spa&
 			f_name:f_show_content&
 			node_class_name:content_2&
-			how:
+			how:&
+			
+			>f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_mi_init&
+			menu_group:sub_menu&
+			menu_group_class_name:sub_menu_item&
 			
 			>f:waiter_hide
 		
@@ -53,8 +72,8 @@
 		</div-->
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_about.png" alt="Контакты">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_about_alt.png" alt="Контакты">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_baths.png" alt="Наши бани">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_baths_alt.png" alt="Наши бани">
 			</div>
 		</div>
 	</div>

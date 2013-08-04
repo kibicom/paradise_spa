@@ -15,9 +15,8 @@
 		</div>
 		
 		{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/blur_bg.tpl}}
+
 		<div 	class="content_1 content_stl hidden" style="height:100%" ontouchmove_="return true;">
-			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main_logo_spark.tpl}}
-			<!--{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main_menu_1.tpl}}-->
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/float_menu.tpl}}
 			<div class="content_2_stl content_2 hidden">
 			

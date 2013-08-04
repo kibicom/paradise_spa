@@ -130,8 +130,8 @@
 		var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 		
 		require(
-		["tlib/tuti"],
-		function(t_uti)
+		["tlib/tuti", "tlib/tres",],
+		function(t_uti, t_res)
 		{
 			je_mod["paradise_spa"]=
 			{
@@ -147,7 +147,13 @@
 					
 					//console.log("error", "f_mi_click_1", je_mod["paradise_spa"].args.from_logo);
 					
-					if (je_mod["paradise_spa"].args.from_logo)
+					part=t_res.f_struct_res_arr_get(
+					{
+						key:"hash.part",
+					});
+					
+					//if (je_mod["paradise_spa"].args.from_logo)
+					if(part=="logo")
 					{
 						//лого можно увидеть только после обновления страницы поэтому
 						//ставить false
@@ -164,6 +170,7 @@
 									//когда меню будет поднято
 									fdone:function()
 									{
+										
 										//плавно показываем content_2
 										je_mod["paradise_spa"].f_show_page_2_1(
 										{
@@ -184,9 +191,9 @@
 					{
 						
 						//плавно скрываем content_2
-						je_mod["paradise_spa"].f_hide_content_2_1(
-						{
-							fdone:function()
+						//je_mod["paradise_spa"].f_hide_content_2_1(
+						//{
+							//fdone:function()
 							{
 								//продолжаем выполнение kvl
 								//в результате чего будет залит новый контент
@@ -204,7 +211,7 @@
 								});
 								*/
 							}
-						});
+						//});
 					}
 					
 					return;
@@ -332,11 +339,22 @@
 					$('.mi_about').addClass("anim_mi_about_up");
 					$('.mi_about').bind("animationend webkitAnimationEnd", function() 
 					{
-						
 						//вызываем callback
 						t_uti.f_fdone(args.fdone);
-						
 					});
+				},
+				
+				f_menu_2_up_fast:function(args)
+				{
+					//поднимаем меню вверх
+					$('.mi_main').addClass("mi_main_up_stl");
+					$('.mi_gallery').addClass("mi_gallery_up_stl");
+					$('.mi_service_and_price').addClass("mi_service_and_price_up_stl");
+					$('.mi_virtual_tour').addClass("mi_virtual_tour_up_stl");
+					$('.mi_about').addClass("mi_about_up_stl");
+					
+					//вызываем callback
+					t_uti.f_fdone(args.fdone);
 				},
 				
 				
@@ -424,10 +442,10 @@
 					$('.blur_bg').addClass("hidden");
 					$('.main_logo').removeClass("main_logo_hide_anim");
 					$('.main_blur_bg_stl').removeClass("hidden");
-					$('.content_1').removeClass("hidden");
-					$('.content_1').addClass("main_logo_show_anim");
+					$('.content_logo').removeClass("hidden");
+					$('.content_logo').addClass("main_logo_show_anim");
 					
-					$('.content_1').bind("animationend webkitAnimationEnd", function() 
+					$('.content_logo').bind("animationend webkitAnimationEnd", function() 
 					{
 					
 						$('.head').addClass("hidden");
@@ -535,6 +553,10 @@
 					else
 					{
 					
+						if (!$('.'+node_class_name).hasClass("hidden"))
+						{
+							f();
+						}
 						//console.log("error","f_show_content_2_1", args);
 						$('.'+node_class_name).addClass("main_logo_show_anim_2");
 						$('.'+node_class_name).removeClass("hidden");
@@ -547,9 +569,7 @@
 				{
 					var self=this;
 					var node_class_name=args.kvl_1_mix.node_class_name;
-					
-					$('.'+node_class_name).removeClass("hidden");
-					$('.'+node_class_name).addClass("main_logo_hide_anim_2");
+					var how=args.kvl_1_mix.how||"smoothly";
 					
 					var f=function() 
 					{
@@ -561,7 +581,28 @@
 						t_uti.f_fdone(args.fdone);
 					};
 					
-					$('.'+node_class_name).bind("animationend.hide webkitAnimationEnd.hide", f);
+					if ($('.'+node_class_name).hasClass("hidden"))
+					{
+						t_uti.f_fdone(args.fdone);
+						return;
+					}
+					
+					if (how=="fast")
+					{
+						f();
+					}
+					else
+					{
+						$('.'+node_class_name).removeClass("hidden");
+						$('.'+node_class_name).addClass("main_logo_hide_anim_2");
+						$('.'+node_class_name).bind("animationend.hide webkitAnimationEnd.hide", f);
+					}
+					
+					
+					
+					
+					
+					
 				},
 				
 
@@ -720,28 +761,114 @@
 <body 	class="body claro body_stl_smpl" 
 		ontouchmove_="event.preventDefault() ;"
 		data-josi-kvl-str="
-		f:waiter_show>
+		f:waiter_show
 		
 		<!--новый правильный лоадер выключен пока не реализован механизм 
 		{{f:tpl^page_path:loader.scl&service:{{f:show_val^service&key:service}}&k:v}}-->
 
+		/*
 		{{f:tpl^page_path:loader.scl&service:res/je_mod/paradise_spa/tpl/main.tpl}}
+		*/
+		
+		>f:fill_from_hash
 		
 		<!--чистим хеш-->
-		>f:hash_set^key:page&val:main
-		>f:hash_set^key:part&val:logo
+		>f:hash_set&
+		if_exp: '#hash.page#'=='' &
+		calc_key_limiter:true&
+		^
+		key:page&val:main
 		
-		>f:f
+		>f:hash_set&
+		if_exp: '#hash.part#'=='' &
+		calc_key_limiter:true&
+		^
+		key:part&val:logo
+		
+		>f:hash_set^key:prev_page
+		>f:hash_set^key:prev_part
+		
+		>f:tpl&
+		if_exp: '#hash.part#'=='logo' &
+		^
+		tpl_path:res/je_mod/paradise_spa/tpl/main_logo.tpl&
+		node_class_query:.content&
+		struct_res_key:&
+		parse_arr:false&
+		replace:true&
+		rooted:false&
+		append:false&
+		
+		>	f:tpl&
+			if_exp: '#hash.part#'!='logo' &
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/main.scl&
+			node_class_query:.content_2&
+			struct_res_key:&
+			parse_arr:false&
+			replace:true&
+			rooted:false&
+			append:false&
+			
+		>	f:tpl&
+			if_exp: '#hash.part#'!='logo' &
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/page_loader.scl&
+			node_class_query:.content_2&
+			struct_res_key:&
+			parse_arr:false&
+			replace:true&
+			rooted:false&
+			append:false&
+		
+		>f:f&
+		if_exp: '#hash.part#'=='logo' &
+		calc_key_limiter:true&
 		^
 		mod_name:paradise_spa&
 		f_name:f_main_logo_init
 		
-		>f:f
+		>f:f&
 		^
 		mod_name:paradise_spa&
 		f_name:f_mi_init&
 		menu_group:main_menu&
 		menu_group_class_name:menu_item
+		
+		>f:f&
+		if_exp: '#hash.part#'!='logo' &
+		^
+		mod_name:paradise_spa&
+		f_name:f_show_content&
+		node_class_name:content_1&
+		how:fast&
+		
+		>f:f&
+		if_exp: '#hash.part#'!='logo' &
+		^
+		mod_name:paradise_spa&
+		f_name:f_menu_2_up_fast&
+		
+		>f:f&
+		if_exp: '#hash.part#'!='logo' &
+		^
+		mod_name:paradise_spa&
+		f_name:f_show_content&
+		node_class_name:foot&
+		how:fast&
+		
+		>f:f&
+		if_exp: '#hash.part#'!='logo' &
+		^
+		mod_name:paradise_spa&
+		f_name:f_show_content&
+		node_class_name:content_2
+		
+		>f:ymap&
+		if_exp: '#hash.page#'=='about' &
+		^
+		map_node_class_name:map_node&
+		rooted:false
 		
 		>f:waiter_hide"
 		

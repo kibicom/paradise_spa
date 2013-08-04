@@ -16,9 +16,9 @@
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
 
-			<h3>ВОСТОК</h3>
+			<h3>PLAYBOY</h3>
 			
-			<div class="font_open_sans_white_stl">
+			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам </div>
 				<div>- теплые каменные лежаки</div>
 				<div>- бассейн</div>
@@ -26,9 +26,13 @@
 				<div>- банкетный стол на 8 персон</div>
 			</div>
 
+			<div class="p_sp_price">ЦЕНА: 800 руб./час</div>
+			
+			<div class="p_sp_price">ЦЕНА: 7200 руб./сутки</div>
+
 			<div class="p_sp_text_link">посмотреть фото</div>
 
-			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
+			
 		</div>
 	</div>
 	<div style="width:50%; height:100%; float:left;text-align: center;">
@@ -38,19 +42,20 @@
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>БУДДА</h3>
+			<h3>ЗЕРКАЛЬНЫЙ</h3>
 
-			<div class="font_open_sans_white_stl">
+			<div class="font_open_sans_white_stl hidden">
 				<div>- турецкий хамам</div>
 				<div>- джакузи</div>
 				<div>- банкетный стол на 10 персон </div>
 				<div>- 2 комнаты отдыха </div>
 				<div>- бильярдная зона</div>
 			</div>
+			
+			<div class="p_sp_price">ЦЕНА: 800 руб./час</div>
+			<div class="p_sp_price">ЦЕНА: 7200 руб./сутки</div>
 
 			<div class="p_sp_text_link">посмотреть фото</div>
-
-			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
 		</div>
 	</div>
 </div>
@@ -62,8 +67,9 @@
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>БАРОККО</h3>
-			<div class="font_open_sans_white_stl">
+			<h3>КРАСНЫЙ</h3>
+			
+			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам</div>
 				<div>- бассейн 3х6, джакузи</div>
 				<div>- 3 комнаты отдыха</div>
@@ -71,10 +77,10 @@
 				<div>- бильярдная зона</div>
 			</div>
 
+			<div class="p_sp_price">ЦЕНА: 900 руб./час</div>
+			<div class="p_sp_price">ЦЕНА: 8400 руб./сутки</div>
+
 			<div class="p_sp_text_link">посмотреть фото</div>
-
-
-			<div class="p_sp_price">ЦЕНА: 3000 руб./час</div>
 		</div>
 	</div>
 	<div style="width:50%; height:100%; float:left;text-align: center;">
@@ -84,9 +90,9 @@
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>РАЙ</h3>
+			<h3>СИНИЙ</h3>
 			
-			<div class="font_open_sans_white_stl">
+			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам</div>
 				<div>- бассейн 2.6х6, джакузи</div>
 				<div>- 3 комнаты отдыха, массажная     комната</div>
@@ -94,10 +100,10 @@
 				<div>- бильярдный стол на 12 футов</div>
 			</div>
 
+			<div class="p_sp_price">ЦЕНА: 900 руб./час</div>
+			<div class="p_sp_price">ЦЕНА: 8400 руб./сутки</div>
+
 			<div class="p_sp_text_link">посмотреть фото</div>
-
-
-			<div class="p_sp_price">ЦЕНА: 4000 руб./час</div>
 		</div>
 	</div>
 </div>

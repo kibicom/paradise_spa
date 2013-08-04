@@ -52,7 +52,119 @@ require
 						"e5d3ee67be4defede668f64978afc05e.png",
 						"1c25967b68da8a3105465be73e3d7a52.jpg",
 						"34ba9fd9383390d7762d710b1d5574d4.jpg",
-					]
+					],
+					baths_east:
+					[
+						"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"7.jpg",
+						"8.jpg",
+						"9.jpg",
+					],
+					baths_baroque:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"7.jpg",
+						//"8.jpg",
+						//"9.jpg",
+					],
+					baths_buddha:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"7.jpg",
+						"8.jpg",
+						"9.jpg",
+					],
+					baths_paradise:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"7.jpg",
+						"8.jpg",
+						"9.jpg",
+						"10.jpg",
+						"11.jpg",
+						"12.jpg",
+					],
+					hotel_playboy:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						/*"5.jpg",
+						"7.jpg",
+						"8.jpg",
+						"9.jpg",
+						"10.jpg",
+						"11.jpg",
+						"12.jpg",*/
+					],
+					hotel_mirror:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"6.jpg",
+						/*"7.jpg",
+						"8.jpg",
+						"9.jpg",
+						"10.jpg",
+						"11.jpg",
+						"12.jpg",*/
+					],
+					hotel_red:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						"7.jpg",
+						/*"8.jpg",
+						"9.jpg",
+						"10.jpg",
+						"11.jpg",
+						"12.jpg",*/
+					],
+					hotel_blue:
+					[
+						//"0.jpg",
+						"1.jpg",
+						"2.jpg",
+						"3.jpg",
+						"4.jpg",
+						"5.jpg",
+						/*"7.jpg",
+						"8.jpg",
+						"9.jpg",
+						"10.jpg",
+						"11.jpg",
+						"12.jpg",*/
+					],
 				},
 				current:
 				{
@@ -61,7 +173,7 @@ require
 				current_i:0,
 				main_img:
 				{
-					h:400,
+					h:500,
 					//w:600,
 				},
 				thumb_img:
@@ -82,11 +194,14 @@ require
 				var self=this;
 				args=args||{};
 				
-				self.f_thumb_prepare(args);
+				
 				
 				self.args.current_image_i=1;
+				self.args.current_i=0;
 				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
 				var img_src=self._f_img_src({part:part, i:0});
+				
+				self.f_thumb_prepare(args);
 				
 				self.f_set_img({img_src:img_src});
 				
@@ -168,6 +283,9 @@ require
 				var kvl_1_mix=args["kvl_1_mix"];
 				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
 				
+				self.args.current_image_i=0;
+				self.args.current_i=0;
+				
 				console.log("je_mod.gallery", "f_load", "part", part, self.args.gallery[part]);
 				
 				if (t_uti.f_is_empty(self.args.gallery[part]))
@@ -175,7 +293,7 @@ require
 					
 				}
 				
-				self.args.current_i=0;
+				//self.args.current_i=0;
 				
 				var img_src=self._f_img_src({part:part, i:self.args.current_i});
 				
@@ -189,6 +307,8 @@ require
 				t_res.f_struct_res_arr_set({key:"je_mod.gallery.main_img_arr."+part, val:self.args.gallery[part]});
 				
 				self._f_load_thumb({});
+				
+				self.f_change_img({how:"fade"});
 				
 				t_uti.f_fdone(args.fdone);
 			},
@@ -352,13 +472,13 @@ require
 				var cii=self.args.current_image_i;
 				var how=args.kvl_1_mix.how||"fast";
 				
-				var img_2_hide=".je_mod_gallery_main_img_1";
-				var img_2_show=".je_mod_gallery_main_img_2";
+				var img_2_hide=".je_mod_gallery_main_img_div_1";
+				var img_2_show=".je_mod_gallery_main_img_div_2";
 				
 				if (cii==2)
 				{
-					img_2_hide=".je_mod_gallery_main_img_2";
-					img_2_show=".je_mod_gallery_main_img_1";
+					img_2_hide=".je_mod_gallery_main_img_div_2";
+					img_2_show=".je_mod_gallery_main_img_div_1";
 				}
 				
 				console.log("je_mod.gallery_1", "f_change_img", args, cii, img_2_hide, img_2_show, cii, how, args.kvl_1_mix.how);

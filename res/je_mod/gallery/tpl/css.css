@@ -12,8 +12,9 @@
 	background: transparent; 
 	top: 108px;
 	/*position: relative;*/
-	height: 70%;
+	height: 60%;
 	overflow:hidden;
+	width:700px;
 }
 
 .je_mod_gallery_main_img_div_stl
@@ -27,7 +28,7 @@
 .je_mod_gallery_prev_btn_stl
 {
 	display:table; 
-	width:20%;
+	/*width:20%;*/
 	/*width: 150px;*/
 	height: 100%;
 	overflow: hidden;
@@ -37,7 +38,7 @@
 .je_mod_gallery_next_btn_stl
 {
 	display:table; 
-	width:20%;
+	/*width:20%;*/
 	/*width: 150px;*/
 	height: 100%;
 	overflow: hidden;

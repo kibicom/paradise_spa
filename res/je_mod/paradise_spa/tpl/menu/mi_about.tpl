@@ -14,43 +14,43 @@
 		"
 			f:waiter_show
 			
-			>
-			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_mi_click_1
+			f_name:f_mi_click_1&
 			
-			>
 			
-			f:tpl_struct_arr
+			>f:hash_set^key:page&val:about&
+			>f:hash_set^key:part&val:page&
+			
+			>f:f
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/about.tpl&
+			mod_name:paradise_spa&
+			f_name:f_hide_content&
+			node_class_name:content_2&
+			
+			>f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/about_page.tpl&
 			node_class_query:.content_2&
 			replace:true&
 			rooted:false&
 			append:false&
-			parse_arr:false
+			parse_arr:false&
 			
-			>
-
-			f:ymap
+			>f:ymap
 			^
 			map_node_class_name:map_node&
-			rooted:false
+			rooted:false&
 			
-			>
-			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_show_content_2_1
+			f_name:f_show_content&
+			node_class_name:content_2&
 			
-			>
-
-			f:hash_set^key:page&val:about>
-
-			f:waiter_hide
+			
+			>f:waiter_hide
 		
 		">
 	<div class="" style="border-radius: 5px;">

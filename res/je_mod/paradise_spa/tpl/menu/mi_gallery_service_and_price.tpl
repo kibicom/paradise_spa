@@ -14,36 +14,73 @@
 		"
 			f:waiter_show
 			
-			>
+			>f:hash_set^key:page&val:service_and_price&
+			>f:hash_set^key:part&val:page&
 			
-			f:f
+			>f:hash_set^key:prev_page
+			>f:hash_set^key:prev_part
+			
+			>f:tpl
 			^
-			mod_name:paradise_spa&
-			f_name:f_mi_click_1
-			
-			>
-			
-			f:tpl_struct_arr
-			^
-			tpl_path:res/je_mod/paradise_spa/tpl/service_and_price.tpl&
-			node_class_query:.content_2&
+			tpl_path:res/je_mod/paradise_spa/tpl/main.tpl&
+			node_class_query:.content&
+			struct_res_key:&
+			parse_arr:false&
 			replace:true&
 			rooted:false&
 			append:false&
-			parse_arr:false
+			parse_arr:false&
 			
-			>
-
-			f:f
+			
+			>f:f&
+			if_exp: '#hash.part#'!='logo' &
 			^
 			mod_name:paradise_spa&
-			f_name:f_show_content_2_1
+			f_name:f_menu_2_up_fast&
+			
+			>f:f&
+			if_exp: '#hash.part#'!='logo' &
+			^
+			mod_name:paradise_spa&
+			f_name:f_show_content&
+			node_class_name:foot&
+			how:fast&
+			
+			>f:f
+			^
+			mod_name:				paradise_spa&
+			f_name:					f_show_content&
+			node_class_name:		content&
+			how:fast&
+			
+			
+			>f:f
+			^
+			mod_name:				paradise_spa&
+			f_name:					f_show_content&
+			node_class_name:		content_1&
+			how:fast&
 			
 			>
+			[[
+				f:tpl
+				^
+				tpl_res:&
+				tpl_path:res/je_mod/paradise_spa/tpl/loader.scl&
+				node_class_name:&
+				
+				content_node_class_name:content_2&
+				page:service_and_price&
+				part:page&
+			]]
 			
-			f:hash_set^key:page&val:service_and_price>
-
-			f:waiter_hide
+			>f:ymap&
+			if_exp: '#hash.page#'=='about' &
+			^
+			map_node_class_name:map_node&
+			rooted:false
+			
+			>f:waiter_hide
 		
 		">
 	<div class="" style="border-radius: 5px;">
@@ -52,8 +89,8 @@
 		</div-->
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price.png" alt="Услуги и цены">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_service_and_price_alt.png" alt="Услуги и цены">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_price.png" alt="Услуги и цены">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_price_alt.png" alt="Услуги и цены">
 			</div>
 		</div>
 	</div>
