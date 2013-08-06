@@ -14,20 +14,20 @@
 	<div style="width: 650px;height: 100%;margin: 0 auto;">
 		<div style="width:200px; float:left">
 			<div class="font_open_sans_white_stl f_s_2_stl" style="margin-top: -10px; text">
-				телефоны:
+				<div class="gold_1_stl">телефоны:</div>
 			</div>
 			<div class="font_serif_gold_stl f_s_1_stl" >
-				+7(961)210 99 99
+				+7(861)210 99 99
 			</div>
 			<div class="font_serif_gold_stl f_s_1_stl" >
-				+7(961)444 44 94
+				+7(928)444 44 94
 			</div>
 		</div>
-		<div class="font_open_sans_white_stl f_s_2_stl" style="width:300px; float:right; margin-top: 20px;">
-			<div style="text-align: right;">
-				Спа комплекс "Рай SPA" русская баня, сауна.
+		<div class="font_open_sans_white_stl f_s_2_stl" style="width:400px; float:right; margin-top: 20px;">
+			<div style="text-align: right;" class="gold_1_stl">
+				Банный комплекс &laquo;RAЙ-SPA&raquo; русская баня, хамам.
 			</div>
-			<div style="text-align: right;">
+			<div style="text-align: right;" class="gold_1_stl">
 				г.Краснодар, ул. Адыгейская набережная, 186
 			</div>
 		</div>

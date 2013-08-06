@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 
 <head>
-	<title>«Рай SPA» - оздоровительно-банный комплекс в Краснодаре: баня, сауна, турецкий хамам, джакузи, vip номера</title>
+	<title>«RAЙ-SPA» - оздоровительно-банный комплекс в Краснодаре: баня, турецкий хамам, джакузи, vip номера</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 0.20" />
 	
@@ -758,7 +758,7 @@
 
 </head>
 
-<body 	class="body claro body_stl_smpl" 
+<body 	class="body claro body_stl_smpl body_bg" 
 		ontouchmove_="event.preventDefault() ;"
 		data-josi-kvl-str="
 		f:waiter_show
@@ -923,7 +923,7 @@
 	</textarea>
 	
 	<!--основной контент страницы-->
-	<div class="service_div content" style="height:100%">
+	<div class="service_div content body_bg" style="height:100%">
 		{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main.tpl}}
 	</div>
 	
@@ -935,6 +935,48 @@
 					required="true" />
 	</div>
 	
+	<div class="popup_div_1_1 hidden">
+		<div style="z-index: 1000;position: absolute;width: 100%;height: 100%;top: 0;margin: 0;">
+			<div class="div_tab" style="height:100%;width: 100%;">
+				<div class="popup_main_div div_cell"
+						data-josi-ev-resp="click"
+						data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
+					<div style="
+			top:-50%;
+			overflow: hidden;
+			width: 800px;
+			
+			background: white;
+			margin: 0 auto;
+			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 100px 0px black;
+			border-radius: 10px;">
+						<div>
+							
+							<div class="josi_store_div " style="width: 800px;height: 600px;background-color: #D2B645;">
+								<div style="margin:5px;height:590px;width:790px;float:left" class="map_node_2 ">
+								
+								</div>
+								<div style="margin-right:-50px;height:590px;width:50px;float:right" class="map_node_2 ">
+									<div class="div_right" style="position:absolute;z-index: 1500;left: 1380px;">
+										<div 	class="red_btn_div btn_div btn_close_div popup_close_btn"
+												data-josi-ev-resp="click"
+												data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
+											<div style="cursor:pointer">
+												<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hidden popup_shadow_back"></div>
+	</div>
 	
 	{{f:tpl^tpl_path:res/je_mod/form/tpl/popup/form.tpl}}
 

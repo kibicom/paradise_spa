@@ -8,7 +8,7 @@
 -->
 
 <!--Изображение-->
-<div 	style="height:400px;width:500px;position: relative; top:0px; left:0px; overflow:hidden;" 
+<div 	style="height:500px;width:500px;position: relative; top:0px; left:0px; overflow:hidden;" 
 		class="je_mod_gallery_main_img_div_1">
 	<img 
 			style="height:500px;width:500px;" 
@@ -18,7 +18,7 @@
 
 	>
 </div>
-<div	style="height:400px;width:500px; position:absolute;top: 0px;opacity:0; overflow:hidden;" 
+<div	style="height:500px;width:500px; position:absolute;top: 0px;opacity:0; overflow:hidden;" 
 		class="je_mod_gallery_main_img_div_2">
 	<img 
 			style="height:500px;width:500px;" 

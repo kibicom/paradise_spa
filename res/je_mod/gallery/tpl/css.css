@@ -12,7 +12,7 @@
 	background: transparent; 
 	top: 108px;
 	/*position: relative;*/
-	height: 60%;
+	height: 500px;
 	overflow:hidden;
 	width:820px;
 }
@@ -20,7 +20,7 @@
 .je_mod_gallery_main_img_div_stl
 {
 	text-align:center; 
-	width:60%;
+	width:500px;
 	/*height:500px;
 	width:500px;*/
 }

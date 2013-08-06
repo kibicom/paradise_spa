@@ -7,80 +7,9 @@
         Основной шаблон paradise spa
 -->
 
-<div style="height_:50%; margin-top: 5%;overflow: hidden;">
-	<div style="width:50%; height:100%; float:left;text-align: center;">
-		<div style="width:35%; height:100%; display:table;float: left;">
-			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_food.png" alt=""/>
-			</div>
-		</div>
-		<div class="f_s_3_stl" style="width:63%; height:100%; float:left;text-align: left;">
 
-			<h3>ВОСТОК</h3>
-			
-			<div class="font_open_sans_white_stl">
-				<div>- Русская баня, турецкий хамам </div>
-				<div>- теплые каменные лежаки</div>
-				<div>- бассейн</div>
-				<div>- комната отдыха</div>
-				<div>- банкетный стол на 8 персон</div>
-			</div>
-			<div class="div_6px"></div>
-			[[
-				f:tpl
-				^
-				tpl_res:&
-				tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap.tpl&
-				node_class_query:	&
-				replace:			true&
-				rooted:				true&
-				append:				false&
-				parse_arr:			false&
-				
-				page:				gallery&
-				part:				baths_east&
-			]]
-			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
-		</div>
-	</div>
-	<div style="width:50%; height:100%; float:left;text-align: center;">
-		<div style="width:35%; height:100%; display:table;float: left;">
-			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_jac.png" alt=""/>
-			</div>
-		</div>
-		<div class="f_s_3_stl" style="width:65%; height:100%; float:left;text-align: left;">
-			<h3>БУДДА</h3>
-
-			<div class="font_open_sans_white_stl">
-				<div>- турецкий хамам</div>
-				<div>- джакузи</div>
-				<div>- банкетный стол на 10 персон </div>
-				<div>- 2 комнаты отдыха </div>
-				<div>- бильярдная зона</div>
-			</div>
-			<div class="div_6px"></div>
-			[[
-				f:tpl
-				^
-				tpl_res:&
-				tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap.tpl&
-				node_class_query:	&
-				replace:			true&
-				rooted:				true&
-				append:				false&
-				parse_arr:			false&
-				
-				page:				gallery&
-				part:				baths_buddha&
-				
-			]]
-			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
-		</div>
-	</div>
-</div>
 <div style="height_:50%; margin-top: 5%;overflow: hidden;">
-	<div style="width:50%; height:100%; float:left;text-align: center;">
+	<div style="width:45%; height:100%; float:left;text-align: center;">
 		<div style="width:35%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
 				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_rubath.png" alt=""/>
@@ -114,10 +43,10 @@
 			<div class="p_sp_price">ЦЕНА: 3000 руб./час</div>
 		</div>
 	</div>
-	<div style="width:50%; height:100%; float:left;text-align: center;">
+	<div style="width:45%; height:100%; float:right;text-align: center;">
 		<div style="width:35%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_ham.png" alt=""/>
+				<img class="vt_apples_stl"  width=110px height=118px src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_ham.png" alt=""/>
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:65%; height:100%; float:left;text-align: left;">
@@ -146,6 +75,78 @@
 				part:				baths_paradise&
 			]]
 			<div class="p_sp_price">ЦЕНА: 4000 руб./час</div>
+		</div>
+	</div>
+</div>
+<div style="height_:50%; margin-top: 5%;overflow: hidden;">
+	<div style="width:45%; height:100%; float:left;text-align: center;">
+		<div style="width:35%; height:100%; display:table;float: left;">
+			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
+				<img class="vt_apples_stl"  src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_food.png" alt=""/>
+			</div>
+		</div>
+		<div class="f_s_3_stl" style="width:63%; height:100%; float:left;text-align: left;">
+
+			<h3>ВОСТОК</h3>
+			
+			<div class="font_open_sans_white_stl">
+				<div>- Русская баня, турецкий хамам </div>
+				<div>- теплые каменные лежаки</div>
+				<div>- бассейн</div>
+				<div>- комната отдыха</div>
+				<div>- банкетный стол на 8 персон</div>
+			</div>
+			<div class="div_6px"></div>
+			[[
+				f:tpl
+				^
+				tpl_res:&
+				tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap.tpl&
+				node_class_query:	&
+				replace:			true&
+				rooted:				true&
+				append:				false&
+				parse_arr:			false&
+				
+				page:				gallery&
+				part:				baths_east&
+			]]
+			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
+		</div>
+	</div>
+	<div style="width:45%; height:100%; float:right;text-align: center;">
+		<div style="width:35%; height:100%; display:table;float: left;">
+			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
+				<img class="vt_apples_stl" width=110px height=118px src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_jac.png" alt=""/>
+			</div>
+		</div>
+		<div class="f_s_3_stl" style="width:63%; height:100%; float:left;text-align: left;">
+			<h3>БУДДА</h3>
+
+			<div class="font_open_sans_white_stl">
+				<div>- турецкий хамам</div>
+				<div>- джакузи</div>
+				<div>- банкетный стол на 10 персон </div>
+				<div>- 2 комнаты отдыха </div>
+				<div>- бильярдная зона</div>
+			</div>
+			<div class="div_6px"></div>
+			[[
+				f:tpl
+				^
+				tpl_res:&
+				tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap.tpl&
+				node_class_query:	&
+				replace:			true&
+				rooted:				true&
+				append:				false&
+				parse_arr:			false&
+				
+				page:				gallery&
+				part:				baths_buddha&
+				
+			]]
+			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
 		</div>
 	</div>
 </div>

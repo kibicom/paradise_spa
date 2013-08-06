@@ -2,11 +2,21 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
 
+.body_bg
+{
+	background: url(../img/bg_grd_01.png) repeat-x;
+}
+
 .font_serif_gold_stl
 {
 	font-family: 'Noto Serif', serif;
 	/*color: #F8ED81;*/
 	color: #d2b645;
+}
+
+.gold_1_stl
+{
+	color:#fee47c;
 }
 
 .font_serif_white_stl
@@ -52,7 +62,7 @@ h3
 
 .f_s_2_stl
 {
-	font-size:80%;
+	font-size:12px;
 }
 
 .f_s_3_stl
@@ -643,4 +653,11 @@ body
 	width:30%;
 	float:left;
 	/*text-align:center;*/
+}
+
+.p_sp_mi_1_stl
+{
+	width:30%;
+	float:left;
+	text-align:center;
 }
