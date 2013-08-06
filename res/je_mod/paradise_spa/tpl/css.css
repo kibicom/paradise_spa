@@ -5,7 +5,8 @@
 .font_serif_gold_stl
 {
 	font-family: 'Noto Serif', serif;
-	color: #F8ED81;
+	/*color: #F8ED81;*/
+	color: #d2b645;
 }
 
 .font_serif_white_stl
@@ -17,13 +18,26 @@
 .font_open_sans_gold_stl
 {
 	font-family: 'Open Sans Light', serif;
-	color: #F8ED81;
+	/*color: #F8ED81;*/
+	color: #d2b645;
 }
 
 .font_open_sans_white_stl
 {
 	font-family: 'Open Sans Light', serif;
 	color: #fff;
+}
+
+h3
+{
+	font-size:14px;
+	font-weight:normal;
+	color:#fee47c;
+}
+
+.div_6px
+{
+	height: 6px;
 }
 
 .italic
@@ -43,7 +57,13 @@
 
 .f_s_3_stl
 {
-	font-size:90%;
+	font-size:14px;
+	text-indent: 8px;
+}
+
+.f_s_4_stl
+{
+	font-size:12px;
 }
 
 html
@@ -437,7 +457,7 @@ body
 .mi_service_and_price_up_stl
 {
 	top: 25px;
-	left: 130px;
+	left: 120px;
 }
 
 .anim_mi_service_and_price_up
@@ -451,12 +471,12 @@ body
 @keyframes mi_service_and_price_up
 {
     from {top:451px}
-	to {top:25px;left: 130px;}
+	to {top:25px;left: 120px;}
 }
 @-webkit-keyframes mi_service_and_price_up
 {
     0%{top:451px}
-	100%{top:25px;left: 150px;}
+	100%{top:25px;left: 120px;}
 }
 
 
@@ -503,7 +523,7 @@ body
 .mi_virtual_tour_up_stl
 {
 	top:25px;
-	left: 130px;
+	left: 140px;
 }
 
 
@@ -518,12 +538,12 @@ body
 @keyframes mi_virtual_tour_up
 {
     from {top:458px}
-	to {top:25px;left: 130px;}
+	to {top:25px;left: 140px;}
 }
 @-webkit-keyframes mi_virtual_tour_up
 {
     from {top:458px}
-	to {top:25px;left: 150px;}
+	to {top:25px;left: 140px;}
 }
 
 .mi_about_down_stl
@@ -536,7 +556,7 @@ body
 .mi_about_up_stl
 {
 	top:50px;
-	left: 100px;
+	left: 110px;
 }
 
 
@@ -551,12 +571,17 @@ body
 @keyframes mi_about_up
 {
     from {top:406px}
-	to {top:50px;left: 130px;}
+	to {top:50px;left: 110px;}
 }
 @-webkit-keyframes mi_about_up
 {
     from {top:406px}
-	to {top:50px;left: 100px;}
+	to {top:50px;left: 110px;}
+}
+
+.pg_main_page_txt
+{
+	text-align:center;
 }
 
 /*** страницы ***/
@@ -602,11 +627,20 @@ body
 	text-align:right; 
 	font-family: 'Noto Serif', serif;
 	color: #fff;
+	line-height: 160%;
+}
+
+.p_sp_price_1
+{
+	text-align:left; 
+	font-family: 'Noto Serif', serif;
+	color: #fff;
+	/*line-height: 160%;*/
 }
 
 .p_sp_mi_stl
 {
 	width:30%;
 	float:left;
-	text-align:center;
+	/*text-align:center;*/
 }

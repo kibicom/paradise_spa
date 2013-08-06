@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 
 <head>
-	<title>[[f:struct_val^key:service_conf.title]]</title>
+	<title>«Рай SPA» - оздоровительно-банный комплекс в Краснодаре: баня, сауна, турецкий хамам, джакузи, vip номера</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="generator" content="Geany 0.20" />
 	
@@ -774,7 +774,7 @@
 		
 		<!--чистим хеш-->
 		>f:hash_set&
-		if_exp: '#hash.page#'=='' &
+		if_exp: '#hash.page#'=='' \|\| '#hash.page#'=='gallery' &
 		calc_key_limiter:true&
 		^
 		key:page&val:main
@@ -785,11 +785,18 @@
 		^
 		key:part&val:logo
 		
+		>f:hash_set&
+		if_exp: '#hash.page#'=='gallery' &
+		calc_key_limiter:true&
+		^
+		key:part&val:page
+		
 		>f:hash_set^key:prev_page
 		>f:hash_set^key:prev_part
 		
 		>f:tpl&
 		if_exp: '#hash.part#'=='logo' &
+		calc_key_limiter:true&
 		^
 		tpl_path:res/je_mod/paradise_spa/tpl/main_logo.tpl&
 		node_class_query:.content&
@@ -801,6 +808,7 @@
 		
 		>	f:tpl&
 			if_exp: '#hash.part#'!='logo' &
+			calc_key_limiter:true&
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/main.scl&
 			node_class_query:.content_2&
@@ -811,7 +819,31 @@
 			append:false&
 			
 		>	f:tpl&
-			if_exp: '#hash.part#'!='logo' &
+			if_exp: '#hash.page#'=='service_and_price' &
+			calc_key_limiter:true&
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/service_and_price_page.tpl&
+			node_class_query:.content_2&
+			struct_res_key:&
+			parse_arr:false&
+			replace:true&
+			rooted:false&
+			append:false&
+			
+		>	f:tpl&
+			if_exp: '#hash.page#'=='gallery' &
+			calc_key_limiter:true&
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&
+			node_class_query:.content&
+			replace:true&
+			rooted:true&
+			append:false&
+			parse_arr:false&
+			
+		>	f:tpl&
+			if_exp: '#hash.part#'!='logo' \&\& '#hash.page#'!='service_and_price' &
+			calc_key_limiter:true&
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/page_loader.scl&
 			node_class_query:.content_2&
@@ -868,7 +900,18 @@
 		if_exp: '#hash.page#'=='about' &
 		^
 		map_node_class_name:map_node&
+		lat:45.013205&
+		long:39.005712&
+		zoom:16&
+		mark_img_href:res/je_mod/paradise_spa/img/marker.png&
 		rooted:false
+		
+		>f:f
+		^
+		mod_name:				paradise_spa&
+		f_name:					f_mi_init&
+		menu_group:				sub_menu&
+		menu_group_class_name:	sub_menu_item
 		
 		>f:waiter_hide"
 		

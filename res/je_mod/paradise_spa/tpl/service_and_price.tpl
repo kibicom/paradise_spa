@@ -20,7 +20,22 @@
 		</div>
 	</div>
 	<div class="font_open_sans_gold_stl f_s_3_stl content_3" style="width:100%; height:100%; padding-bottom: 20px; overflow:auto">
-		{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/sap_main.tpl}}
+		
+		[[
+			f:tpl
+			^
+			tpl_path:				res/je_mod/paradise_spa/tpl/page_loader_3.scl&
+			node_class_query:		&
+			struct_res_key:			&
+			replace:				true&
+			rooted:					true&
+			append:					false&
+			parse_arr:				false&
+			
+			node_class_name:		content_3
+		]]
+		
+		/*{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/sap_main.tpl}}*/
 	</div>
 </div>
 

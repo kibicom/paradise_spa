@@ -56,7 +56,7 @@
 					
 					"
 					>
-				<img class="" style="cursor:pointer" src="[[f:kvl_1_mix_val^mix_key:left_slider_img_src]]" alt="Previous">
+				<img class="" style="cursor:pointer;padding: 30px;" src="[[f:kvl_1_mix_val^mix_key:left_slider_img_src]]" alt="Previous">
 			</div>
 		</div>
 	</div>
@@ -114,7 +114,7 @@
 					"
 					
 					>
-				<img class="" style="cursor:pointer" src="[[f:kvl_1_mix_val^mix_key:right_slider_img_src]]" alt="Next">
+				<img class="" style="cursor:pointer;padding: 30px;" src="[[f:kvl_1_mix_val^mix_key:right_slider_img_src]]" alt="Next">
 			</div>
 		</div>
 	</div>

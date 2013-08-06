@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div style="width:10%" class="div_left">
-		<div style="margin:0 auto;overflow:hidden;">
+		<div style="width:10%;position: relative;right: -180px;">
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_back_from_gallery.tpl}}
 		</div>
 	</div>

@@ -91,6 +91,10 @@
 			if_exp: '#hash.page#'=='about' &
 			^
 			map_node_class_name:map_node&
+			lat:45.013205&
+			long:39.005712&
+			zoom:16&
+			mark_img_href:res/je_mod/paradise_spa/img/marker.png&
 			rooted:false
 			
 			>f:waiter_hide
@@ -103,7 +107,7 @@
 		<div class="js_btn_label_stl_smpl">
 			<div>
 				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back_alt.png" alt="X">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
 			</div>
 		</div>
 	</div>

@@ -29,7 +29,7 @@
 			f_name:f_hide_content&
 			node_class_name:content_2&
 			
-			>f:tpl_struct_arr
+			>f:tpl
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/about_page.tpl&
 			node_class_query:.content_2&
@@ -41,6 +41,10 @@
 			>f:ymap
 			^
 			map_node_class_name:map_node&
+			lat:45.013205&
+			long:39.005712&
+			zoom:16&
+			mark_img_href:res/je_mod/paradise_spa/img/marker.png&
 			rooted:false&
 			
 			>f:f

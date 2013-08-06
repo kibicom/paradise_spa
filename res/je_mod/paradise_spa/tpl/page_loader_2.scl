@@ -1,0 +1,43 @@
+
+<!--
+        main.tpl
+        
+        Copyright 2012 Жлобенцев Владимир <dnclive@gmail.com>
+        
+        Основной шаблон paradise spa
+-->
+
+
+
+[[f:fill_from_hash]]
+
+[[
+	f:f
+	^
+	mod_name:paradise_spa&
+	f_name:f_hide_content&
+	node_class_name:[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]
+]]
+
+[[
+	f:tpl_struct_arr
+	^
+	tpl_res:&
+	tpl_path:			res/je_mod/paradise_spa/tpl/
+						[[f:struct_val^key:hash.page]]_
+						[[f:struct_val^key:hash.part]].tpl&
+	node_class_query:	&
+	replace:			true&
+	rooted:				true&
+	append:				false&
+	parse_arr:			false
+]]
+
+[[
+	f:f
+	^
+	mod_name:paradise_spa&
+	f_name:f_show_content&
+	node_class_name:[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]
+]]
+

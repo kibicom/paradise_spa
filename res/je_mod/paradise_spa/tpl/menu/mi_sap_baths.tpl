@@ -29,7 +29,7 @@
 			
 			f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/sap_baths.tpl&
+			tpl_path:	res/je_mod/paradise_spa/tpl/service_and_price_baths.tpl&
 			node_class_query:.content_3&
 			replace:true&
 			rooted:false&
@@ -53,12 +53,12 @@
 		<div class="js_btn_label_stl_smpl">
 			<div>
 				<div class="mi_name_img">
-					<div class="font_open_sans_white_stl f_s_3_stl">
+					<div class="font_open_sans_white_stl f_s_4_stl">
 						НАШИ БАНИ
 					</div>
 				</div>
 				<div class="mi_name_img_alt hidden">
-					<div class="font_open_sans_gold_stl f_s_3_stl">
+					<div class="font_open_sans_gold_stl f_s_4_stl">
 						НАШИ БАНИ
 					</div>
 				</div>

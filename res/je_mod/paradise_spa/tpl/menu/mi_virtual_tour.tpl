@@ -9,7 +9,8 @@
 
 
 <div 	class="toolbar_item_div div_left menu_item menu_item_stl mi_virtual_tour mi_virtual_tour_down_stl"
-		data-josi-ev-resp="click"
+		data-josi-ev-resp="clic_k"
+		onclick="window.open('http://www.rai-spa.ru/tour/tour.html','new_window');"
 		data-josi-kvl-str=
 		"
 			f:waiter_show
@@ -54,11 +55,12 @@
 				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour.png" alt="Виртуальный тур">
 				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/btn_virtual_tour_alt.png" alt="Виртуальный тур">
 			</div>
+			
+
 		</div>
 	</div>
 	
 </div>
-
 
 	
 	

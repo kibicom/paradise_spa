@@ -10,16 +10,30 @@ mod_name:			paradise_spa&
 f_name:				f_hide_content&
 node_class_name:	[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]
 
->f:tpl_struct_arr
-^
-tpl_path:			res/je_mod/paradise_spa/tpl/
-					[[f:kvl_1_mix_val^mix_key:page&def_val:main]]_
-					[[f:kvl_1_mix_val^mix_key:part&def_val:page]].tpl&
-node_class_query:	.[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]&
-replace:			true&
-rooted:				[[f:kvl_1_mix_val^mix_key:rooted&def_val:false]]&
-append:				false&
-parse_arr:			false
+>	f:tpl&
+	if_exp: '#hash.page#'=='service_and_price' &
+	calc_key_limiter:true&
+	^
+	tpl_path:			res/je_mod/paradise_spa/tpl/service_and_price_page.tpl&
+	node_class_query:	.[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]&
+	struct_res_key:&
+	parse_arr:false&
+	replace:true&
+	rooted:				[[f:kvl_1_mix_val^mix_key:rooted&def_val:false]]&
+	append:false&
+
+>	f:tpl&
+	if_exp: '#hash.part#'!='logo' \&\& '#hash.page#'!='service_and_price' &
+	calc_key_limiter:true&
+	^
+	tpl_path:			res/je_mod/paradise_spa/tpl/
+						[[f:kvl_1_mix_val^mix_key:page&def_val:main]]_
+						[[f:kvl_1_mix_val^mix_key:part&def_val:page]].tpl&
+	node_class_query:	.[[f:kvl_1_mix_val^mix_key:content_node_class_name&def_val:content]]&
+	replace:			true&
+	rooted:				[[f:kvl_1_mix_val^mix_key:rooted&def_val:false]]&
+	append:				false&
+	parse_arr:			false
 
 >f:f
 ^

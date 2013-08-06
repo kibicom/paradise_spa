@@ -10,7 +10,7 @@
 <!--Изображение-->
 <div class="je_mod_gallery_thumb_band je_mod_gallery_thumb_band_stl">
 	[[
-		f:tpl_struct_arr
+		f:tpl
 		^
 		tpl_path:				res/je_mod/gallery/tpl/img_thumb.tpl&
 		node_class_query:		&
