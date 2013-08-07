@@ -8,11 +8,12 @@
 -->
 
 <div class="" style="width:70%; height:100%;margin: 0 auto;">
-	<div style="width: 30%;height: 30px;margin: 0 auto; font-family: 'Noto Serif', serif;color: white;margin-top: 10px; float:left;"
-				class="f_s_2_stl">
+	<div style="width: 30%;height: 30px;margin: 0 auto;color: white;margin-top: 10px; float:left;"
+				class="f_s_2_stl font_open_sans_light">
 		СХЕМА ПРОЕЗДА:
 	</div>
-	<div style = "float:right;margin-top: 10px;color: #D2B645;cursor: pointer;"
+	<div 	class="font_open_sans_light"
+			style = "float:right;margin-top: 10px;color: #D2B645;cursor: pointer;"
 			onclick_="window.open('http://maps.yandex.ru/-/CVbAFK1A', 'blank');"
 			data-josi-ev-resp="click"
 			data-josi-kvl-str=

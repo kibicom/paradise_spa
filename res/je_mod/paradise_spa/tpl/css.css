@@ -27,15 +27,23 @@
 
 .font_open_sans_gold_stl
 {
-	font-family: 'Open Sans Light', serif;
+	font-family: 'Open Sans', serif;
+	font-weight: 300; 
 	/*color: #F8ED81;*/
 	color: #d2b645;
 }
 
 .font_open_sans_white_stl
 {
-	font-family: 'Open Sans Light', serif;
+	font-family: 'Open Sans', serif;
+	font-weight: 300; 
 	color: #fff;
+}
+
+.font_open_sans_light
+{
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
 }
 
 h3
@@ -384,7 +392,7 @@ body
 	width:1024px; 
 	margin:0 auto;
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans ', sans-serif;
 	/*background: transparent url('../img/bg.jpg') no-repeat 0 0px;*/
 }
 

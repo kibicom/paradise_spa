@@ -11,13 +11,42 @@
 	<div style="width:50%; height:100%; float:left;text-align: center;">
 		<div style="width:35%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_playboy.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_playboy.png" alt=""/>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_apple.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_playboy&
+					img_name:			sp_playboy&
+				]]
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-
-			<h3>PLAYBOY</h3>
-			
+			<h3>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_header.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_playboy&
+					header:				PLAYBOY&
+				]]
+			</h3>
 			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам </div>
 				<div>- теплые каменные лежаки</div>
@@ -50,12 +79,42 @@
 	<div style="width:50%; height:100%; float:left;text-align: center;">
 		<div style="width:35%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_mirror.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_mirror.png" alt=""/>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_apple.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_mirror&
+					img_name:			sp_mirror&
+				]]
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>ЗЕРКАЛЬНЫЙ</h3>
-
+			<h3>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_header.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_mirror&
+					header:				ЗЕРКАЛЬНЫЙ&
+				]]
+			</h3>
 			<div class="font_open_sans_white_stl hidden">
 				<div>- турецкий хамам</div>
 				<div>- джакузи</div>
@@ -89,12 +148,42 @@
 	<div style="width:50%; height:100%; float:left;text-align: center;">
 		<div style="width:35%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_red.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_red.png" alt=""/>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_apple.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_red&
+					img_name:			sp_red&
+				]]
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>КРАСНЫЙ</h3>
-			
+			<h3>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_header.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_red&
+					header:				КРАСНЫЙ&
+				]]
+			</h3>
 			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам</div>
 				<div>- бассейн 3х6, джакузи</div>
@@ -126,12 +215,42 @@
 	<div style="width:50%; height:100%; float:left;text-align: center;">
 		<div style="width:36%; height:100%; display:table;float: left;">
 			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_blue.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_blue.png" alt=""/>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_apple.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_blue&
+					img_name:			sp_blue&
+				]]
 			</div>
 		</div>
 		<div class="f_s_3_stl" style="width:50%; height:100%; float:left;text-align: left;">
-			<h3>СИНИЙ</h3>
-			
+			<h3>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_header.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				hotel_blue&
+					header:				СИНИЙ&
+				]]
+			</h3>
 			<div class="font_open_sans_white_stl hidden">
 				<div>- Русская баня, турецкий хамам</div>
 				<div>- бассейн 2.6х6, джакузи</div>

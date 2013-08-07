@@ -173,13 +173,13 @@ require
 				current_i:0,
 				main_img:
 				{
-					h:500,
+					h:480,
 					//w:600,
 				},
 				thumb_img:
 				{
 					//h:60,
-					w:200,
+					w:80,
 				},
 				thumb:
 				{
@@ -375,6 +375,14 @@ require
 				args=args||{};
 				var thumb_band_class_name=self.args.thumb.thumb_band_class_name;
 				
+				var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+				
+				alert(isiDivice||1==1);
+				
+				if (isiDivice||1==1)
+				{
+					t_query(".je_mod_gallery_thumb_decorator").addClass("hidden");
+				}
 				
 				console.log("je_mod.gallery", "f_thumb_prepare", args, 
 							"."+thumb_band_class_name, t_query("."+thumb_band_class_name));

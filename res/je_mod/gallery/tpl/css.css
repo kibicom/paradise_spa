@@ -12,9 +12,15 @@
 	background: transparent; 
 	top: 108px;
 	/*position: relative;*/
-	height: 500px;
+	height: 470px;
 	overflow:hidden;
-	width:820px;
+	width:780px;
+}
+
+.je_mod_gallery_mi_w_h_stl
+{
+	height:460px;
+	width:460px;
 }
 
 .je_mod_gallery_main_img_div_stl
@@ -49,7 +55,7 @@
 {
 	height:20%;
 	overflow:hidden;
-	margin-top: 3%;
+	/*margin-top: 3%;*/
 }
 
 .je_mod_gallery_thumb_img_div_stl

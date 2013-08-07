@@ -7,7 +7,7 @@
         Основной шаблон paradise spa
 -->
 
-<div class="" style="background: transparent url('res/je_mod/paradise_spa/img/gallery_bg_1.jpg') repeat 0 0px;
+<div class="" style="background-color: black;background: transparent url('res/je_mod/paradise_spa/img/gallery_bg_1.jpg') repeat 0 0px;
 		width:100%;height:100%;margin:0 auto">
 	<div class="" style="
 			width:1024px;height:100%;margin:0 auto">

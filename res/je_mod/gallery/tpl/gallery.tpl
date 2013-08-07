@@ -62,7 +62,7 @@
 	</div>
 	<!--Изображение-->
 	<div class="je_mod_gallery_main_img_div je_mod_gallery_main_img_div_stl div_left" 
-			style="height:500px;width:500px;overflow hidden;">
+			style="height:460px;width:460px;overflow hidden;">
 		[[
 			f:tpl_struct_arr
 			^

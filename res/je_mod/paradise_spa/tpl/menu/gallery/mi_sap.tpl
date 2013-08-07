@@ -8,7 +8,7 @@
 
 
 <div class="p_sp_text_link">
-	<div 	class="toolbar_item_div sub_menu_item sub_menu_item_stl mi_service_and_price 					mi_service_and_price_down_stl "
+	<div 	class="toolbar_item_div sub_menu_item sub_menu_item_stl mi_service_and_price mi_service_and_price_down_stl "
 			data-josi-ev-resp="click"
 			data-josi-kvl-str=
 			"

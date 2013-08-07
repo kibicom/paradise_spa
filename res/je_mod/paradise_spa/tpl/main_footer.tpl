@@ -23,7 +23,7 @@
 				+7(928)444 44 94
 			</div>
 		</div>
-		<div class="font_open_sans_white_stl f_s_2_stl" style="width:400px; float:right; margin-top: 20px;">
+		<div class="font_open_sans_white_stl f_s_3_stl" style="width:400px; float:right; margin-top: 20px;">
 			<div style="text-align: right;" class="gold_1_stl">
 				Банный комплекс &laquo;RAЙ-SPA&raquo; русская баня, хамам.
 			</div>
