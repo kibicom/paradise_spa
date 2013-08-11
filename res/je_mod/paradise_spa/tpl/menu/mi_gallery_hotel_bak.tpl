@@ -8,30 +8,25 @@
 -->
 
 
-<div 	class="toolbar_item_div div_left menu_item sub_menu_item_stl mi_ballery_baths "
+<div 	class="toolbar_item_div menu_item sub_menu_item_stl mi_gallery_baths "
 		data-josi-ev-resp="click"
-		data-josi-ev-stop=true
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 			
-			/*
 			>f:hash_set^key:page&val:gallery
-			>f:hash_set^key:part&val:baths_east
-			*/
-			
-			>f:hash_set^key:gallery_main_part&val:baths
+			>f:hash_set^key:part&val:hotel_playboy
 			
 			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_hide_content&
-			node_class_name:popup_content_2
-			
+			node_class_name:content_2
+
 			>f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_baths.tpl&
-			node_class_query:.popup_div_1_2 .popup_content_2&
+			tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_hotel.tpl&
+			node_class_query:.content_2&
 			replace:true&
 			rooted:false&
 			append:false&
@@ -41,9 +36,9 @@
 			right_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
 			
 			/*
-			>f:tpl
-			^			
-			tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_menu_baths.tpl&
+			>f:tpl_struct_arr
+			^
+			tpl_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_hotel.tpl&
 			node_class_query:.gallery_menu_2&
 			replace:true&
 			rooted:false&
@@ -60,8 +55,9 @@
 			^
 			mod_name:paradise_spa&
 			f_name:f_show_content&
-			node_class_name:popup_content_2&
-			how:&
+			node_class_name:content_2&
+			how:
+			
 			
 			>f:f
 			^
@@ -79,8 +75,8 @@
 		</div-->
 		<div class="js_btn_label_stl_smpl">
 			<div>
-				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_baths.png" alt="Наши бани">
-				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_baths_alt.png" alt="Наши бани">
+				<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_hotel.png" alt="Гостинечные номера">
+				<img class="mi_name_img_alt hidden" src="res/je_mod/paradise_spa/img/menu/mi_gallery_hotel_alt.png" alt="Гостинечные номера">
 			</div>
 		</div>
 	</div>

@@ -27,6 +27,7 @@
 						
 						page:				gallery&
 						part:				hotel_playboy&
+						gallery_main_part:	hotel&
 						img_name:			service_and_price/sp_playboy&
 						header:				PLAYBOY&
 					]]
@@ -48,6 +49,7 @@
 						parse_arr:			false&
 						
 						page:				gallery&
+						gallery_main_part:	hotel&
 						part:				hotel_mirror&
 						img_name:			service_and_price/sp_mirror&
 						header:				ЗЕРКАЛЬНЫЙ&
@@ -73,6 +75,7 @@
 						parse_arr:			false&
 						
 						page:				gallery&
+						gallery_main_part:	hotel&
 						part:				hotel_red&
 						img_name:			service_and_price/sp_red&
 						header:				КРАСНЫЙ&
@@ -95,6 +98,7 @@
 						parse_arr:			false&
 						
 						page:				gallery&
+						gallery_main_part:	hotel&
 						part:				hotel_blue&
 						img_name:			service_and_price/sp_blue&
 						header:				СИНИЙ&

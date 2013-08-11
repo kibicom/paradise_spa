@@ -13,11 +13,15 @@
 		"
 			f:waiter_show
 
+			>f:hash_set^key:gallery_part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
+
+			/*
 			>f:hash_set^key:prev_page&val_key:hash.page
 			>f:hash_set^key:prev_part&val_key:hash.part
 			
 			>f:hash_set^key:page&val:[[f:kvl_1_mix_val^mix_key:page&def_val:]]
 			>f:hash_set^key:part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
+			*/
 			
 			/* старая галерея
 			>f:f
@@ -71,6 +75,7 @@
 			append:false&
 			parse_arr:false&
 			
+			gallery_main_part:		[[f:kvl_1_mix_val^mix_key:gallery_main_part&def_val:baths]]&
 			header:		[[f:kvl_1_mix_val^mix_key:header&def_val:]]&
 			left_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
 			right_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&

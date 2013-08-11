@@ -215,11 +215,9 @@ require
 				var self=this;
 				args=args||{};
 				
-				
-				
 				self.args.current_image_i=1;
 				self.args.current_i=0;
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				var img_src=self._f_img_src({part:part, i:0});
 				
 				self.f_thumb_prepare(args);
@@ -238,7 +236,7 @@ require
 				var self=this;
 				var fdone=args.fdone;
 				var kvl_1_mix=args["kvl_1_mix"];
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				
 				var prev_i=--self.args.current_i;
 				
@@ -272,7 +270,7 @@ require
 				var self=this;
 				var fdone=args.fdone;
 				var kvl_1_mix=args["kvl_1_mix"];
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				
 				var prev_i=++self.args.current_i;
 				
@@ -309,7 +307,7 @@ require
 				var self=this;
 				var fdone=args.fdone;
 				var kvl_1_mix=args["kvl_1_mix"];
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				
 				self.args.current_image_i=0;
 				self.args.current_i=0;
@@ -347,7 +345,7 @@ require
 				var self=this;
 				var fdone=args.fdone;
 				var kvl_1_mix=args["kvl_1_mix"];
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				
 				var thumb_img_arr=[];
 				//var i=0;
@@ -454,13 +452,13 @@ require
 				var self=this;
 				
 				var thumb_img_w=self.args.thumb_img.w;
-				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+				var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 				var img_qu=self.args.gallery[part].length;
 				
 				//var node_w=t_attr.getNodeProp(node, "clientWidth");
 					
 				//var node_w=self.args.thumb_img.w*img_qu;
-				var node_w=900;
+				var node_w=614;
 				
 				var band_left=node_w/2-thumb_img_w/2;
 				
@@ -544,7 +542,7 @@ require
 					$(img_2_hide).bind("animationend webkitAnimationEnd", function() 
 					{
 						/*
-						var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+						var part=t_res.f_struct_res_arr_get({key:"hash.gallery_part"});
 						if(self.args.current_i+1<self.args.gallery[part].length)
 						{
 							var i=self.args.current_i+1;

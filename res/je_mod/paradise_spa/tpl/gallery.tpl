@@ -25,11 +25,11 @@
 				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_baths.tpl}}
 			</div>
 			<div class="content_2_stl content_2_ " style="top:130px; bottom:0px; max-height: 700px;">
-				<div class="content_2 hidden" style="width:900px;margin:0 auto;height: 100%;overflow: hidden;">
+				<div class="content_2 popup_content_2" style="width:900px;margin:0 auto;height: 100%;overflow: hidden;">
 					[[
 						f:tpl_struct_arr
 						^
-						tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_baths.tpl&
+						tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_[[f:kvl_1_mix_val^mix_key:gallery_main_part&def_val:baths]].tpl&
 						node_class_query:&
 						replace:true&
 						rooted:true&

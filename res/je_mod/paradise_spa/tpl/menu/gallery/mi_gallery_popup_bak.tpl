@@ -9,26 +9,15 @@
 
 <div 	class="toolbar_item_div sub_menu_item sub_menu_item_stl mi_service_and_price mi_service_and_price_down_stl "
 		data-josi-ev-resp="click"
-		data-josi-ev-stop=true
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 
-			>f:hash_set^key:gallery_part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
-
-			/*
 			>f:hash_set^key:prev_page&val_key:hash.page
 			>f:hash_set^key:prev_part&val_key:hash.part
 			
 			>f:hash_set^key:page&val:[[f:kvl_1_mix_val^mix_key:page&def_val:]]
 			>f:hash_set^key:part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
-			*/
-			
-			>f:f
-			^
-			mod_name:paradise_spa&
-			f_name:f_hide_content&
-			node_class_name:popup_content&
 			
 			>f:tpl
 			^
@@ -39,11 +28,9 @@
 			append:false&
 			parse_arr:false&
 			
-			gallery_main_part:		[[f:kvl_1_mix_val^mix_key:gallery_main_part&def_val:baths]]&
-			gallery_part:			[[f:struct_val^key:hash.gallery_part]]&
-			header:					[[f:kvl_1_mix_val^mix_key:header&def_val:]]&
-			left_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
-			right_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
+			header:		[[f:kvl_1_mix_val^mix_key:header&def_val:]]&
+			left_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+			right_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
 			
 			
 			
@@ -52,20 +39,16 @@
 			mod_name:			gallery&
 			f_name:				f_init&
 			
-			
 			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_show_content&
-			node_class_name:popup_content&
-			how:fast&
+			f_name:f_hide_content&
+			node_class_name:content_1
 			
-			/*
 			>f:popup.show
 			^
 			node_class_query:.popup_div_1_2&
 			anim:false&
-			*/
 			
 			>f:waiter_hide
 		

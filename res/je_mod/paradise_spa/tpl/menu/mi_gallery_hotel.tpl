@@ -10,23 +10,28 @@
 
 <div 	class="toolbar_item_div menu_item sub_menu_item_stl mi_gallery_baths "
 		data-josi-ev-resp="click"
+		data-josi-ev-stop=true
 		data-josi-kvl-str=
 		"
 			f:waiter_show
 			
+			/*
 			>f:hash_set^key:page&val:gallery
 			>f:hash_set^key:part&val:hotel_playboy
+			*/
+			
+			>f:hash_set^key:gallery_main_part&val:hotel
 			
 			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_hide_content&
-			node_class_name:content_2
+			node_class_name:popup_content_2
 
 			>f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_hotel.tpl&
-			node_class_query:.content_2&
+			node_class_query:.popup_div_1_2 .popup_content_2&
 			replace:true&
 			rooted:false&
 			append:false&
@@ -55,7 +60,7 @@
 			^
 			mod_name:paradise_spa&
 			f_name:f_show_content&
-			node_class_name:content_2&
+			node_class_name:popup_content_2&
 			how:
 			
 			

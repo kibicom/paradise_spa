@@ -14,47 +14,26 @@
 		"
 			f:waiter_show
 			
-			>f:f
-			^
-			mod_name:paradise_spa&
-			f_name:f_mi_click_1
-			
-			/*
 			>f:hash_set^key:prev_page&val_key:hash.page
 			>f:hash_set^key:prev_part&val_key:hash.part
 			
 			>f:hash_set^key:page&val:gallery
 			>f:hash_set^key:part&val:baths_east
-			*/
 			
 			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_hide_content&
-			node_class_name:content_2
-			
+			node_class_name:content
 			
 			>f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/gallery.tpl&
-			node_class_query:.popup_div_1_2 .popup_content&
+			node_class_query:.service_div&
 			replace:true&
 			rooted:false&
 			append:false&
 			parse_arr:false
-			
-			>f:f
-			^
-			mod_name:paradise_spa&
-			f_name:f_show_content&
-			node_class_name:content&
-			
-			>f:f
-			^
-			mod_name:paradise_spa&
-			f_name:f_show_content&
-			node_class_name:content_2&
-			how:fast
 			
 			/*
 			>f:f
@@ -66,23 +45,22 @@
 			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_mi_init&
-			menu_group:sub_menu&
-			menu_group_class_name:sub_menu_item&
+			f_name:f_show_content&
+			node_class_name:content
 			
-			/*
 			>f:f
 			^
 			mod_name:paradise_spa&
-			f_name:f_hide_content&
-			node_class_name:content_1
-			*/
+			f_name:f_show_content&
+			node_class_name:content_2&
+			how:fast
 			
-			>f:popup.show
+			>f:f
 			^
-			node_class_query:.popup_div_1_2&
-			anim:false&
-			
+			mod_name:paradise_spa&
+			f_name:f_mi_init&
+			menu_group:sub_menu&
+			menu_group_class_name:sub_menu_item&
 			
 			>f:waiter_hide">
 	<div class="" style="border-radius: 5px;">

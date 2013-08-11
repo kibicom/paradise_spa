@@ -1005,11 +1005,13 @@
 												node_class_name:content_2&
 												how:fast&
 												
+												/*
 												>f:hash_set^key:page&val_key:hash.prev_page&def_val:main
 												>f:hash_set^key:part&val_key:hash.prev_part&def_val:page
 												
 												>f:hash_set^key:prev_page
 												>f:hash_set^key:prev_part
+												*/
 												
 												>f:hash_set&
 												if_exp: '#hash.part#'=='logo' &
@@ -1065,11 +1067,16 @@
 														node_class_name:content_2&
 														how:fast&
 														
+														/*
 														>f:hash_set^key:page&val_key:hash.prev_page&def_val:main
 														>f:hash_set^key:part&val_key:hash.prev_part&def_val:page
 														
 														>f:hash_set^key:prev_page
 														>f:hash_set^key:prev_part
+														*/
+														
+														>f:hash_set^key:gallery_part&
+														>f:hash_set^key:gallery_main_part&
 														
 														>f:hash_set&
 														if_exp: '#hash.part#'=='logo' &

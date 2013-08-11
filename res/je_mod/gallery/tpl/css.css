@@ -12,7 +12,7 @@
 	background: transparent; 
 	top: 108px;
 	/*position: relative;*/
-	height: 510px;
+	height: 490px;
 	overflow:hidden;
 	width:780px;
 }
@@ -20,7 +20,7 @@
 .je_mod_gallery_mi_w_h_stl
 {
 	height:460px;
-	width:460px;
+	width:700px;
 }
 
 .je_mod_gallery_main_img_div_stl
@@ -56,6 +56,8 @@
 	height:20%;
 	overflow:hidden;
 	/*margin-top: 3%;*/
+	width: 60%;
+	margin: 0 auto;
 }
 
 .je_mod_gallery_thumb_img_div_stl
