@@ -55,6 +55,7 @@ require
 					],
 					baths_east:
 					[
+						/*
 						"0.jpg",
 						"1.jpg",
 						"2.jpg",
@@ -64,22 +65,36 @@ require
 						"7.jpg",
 						"8.jpg",
 						"9.jpg",
+						*/
+						
+						"2_1.jpg",
+						"2_2.jpg",
+						"2_3.jpg",
+						"2_4.jpg",
+						"2_5.jpg",
+						"2_6.jpg",
+						"2_7.jpg",
 					],
 					baths_baroque:
 					[
-						//"0.jpg",
+						/*
 						"1.jpg",
 						"2.jpg",
 						"3.jpg",
 						"4.jpg",
 						"5.jpg",
 						"7.jpg",
-						//"8.jpg",
-						//"9.jpg",
+						*/
+						"2_1.jpg",
+						"2_2.jpg",
+						"2_3.jpg",
+						"2_4.jpg",
+						"2_5.jpg",
+						"2_6.jpg",
 					],
 					baths_buddha:
 					[
-						//"0.jpg",
+						/*
 						"1.jpg",
 						"2.jpg",
 						"3.jpg",
@@ -88,10 +103,16 @@ require
 						"7.jpg",
 						"8.jpg",
 						"9.jpg",
+						*/
+						"2_1.jpg",
+						"2_2.jpg",
+						"2_3.jpg",
+						"2_4.jpg",
+						"2_5.jpg",
 					],
 					baths_paradise:
 					[
-						//"0.jpg",
+						/*
 						"1.jpg",
 						"2.jpg",
 						"3.jpg",
@@ -103,21 +124,21 @@ require
 						"10.jpg",
 						"11.jpg",
 						"12.jpg",
+						*/
+						"2_1.jpg",
+						"2_2.jpg",
+						"2_3.jpg",
+						"2_4.jpg",
+						"2_5.jpg",
+						"2_6.jpg",
+						"2_7.jpg",
 					],
 					hotel_playboy:
 					[
-						//"0.jpg",
 						"1.jpg",
 						"2.jpg",
 						"3.jpg",
 						"4.jpg",
-						/*"5.jpg",
-						"7.jpg",
-						"8.jpg",
-						"9.jpg",
-						"10.jpg",
-						"11.jpg",
-						"12.jpg",*/
 					],
 					hotel_mirror:
 					[
@@ -221,6 +242,8 @@ require
 				
 				var prev_i=--self.args.current_i;
 				
+				self.args.last_action="prev";
+				
 				if (prev_i<0)
 				{
 					prev_i=0;
@@ -252,6 +275,8 @@ require
 				var part=t_res.f_struct_res_arr_get({key:"hash.part"});
 				
 				var prev_i=++self.args.current_i;
+				
+				self.args.last_action="next";
 				
 				console.log("je_mod.gallery", "f_next", self.args.gallery[part].length, prev_i, self.args.current_i);
 				
@@ -515,16 +540,31 @@ require
 					});
 					t_query(img_2_show).removeClass("je_mod_gallery_img_fade_in_stl");
 					t_query(img_2_show).addClass("je_mod_gallery_img_fade_out_stl");
-					/*
+					
 					$(img_2_hide).bind("animationend webkitAnimationEnd", function() 
 					{
-						t_query(img_2_hide).addClass("hidden");
+						/*
+						var part=t_res.f_struct_res_arr_get({key:"hash.part"});
+						if(self.args.current_i+1<self.args.gallery[part].length)
+						{
+							var i=self.args.current_i+1;
+							if (self.args.last_action=="prev")
+							{
+								i=self.args.current_i-1;
+							}
+							var img_src=self._f_img_src({part:part, i:i});
+							self.f_set_img({img_src:img_src});
+						}
+						*/
+						//t_query(img_2_hide).addClass("hidden");
 					});
-					$(img_2_hide).bind("animationend webkitAnimationEnd", function() 
+					/*
+					$(img_2_show).bind("animationend webkitAnimationEnd", function() 
 					{
-						t_query(img_2_show).removeClass("hidden");
+						//t_query(img_2_show).removeClass("hidden");
 					});
 					*/
+					
 				}
 				else
 				{

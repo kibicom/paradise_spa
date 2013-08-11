@@ -46,6 +46,7 @@
 					
 					page:				gallery&
 					part:				baths_baroque&
+					header:				БАРОККО&
 				]]
 			</h3>
 			<div class="font_open_sans_white_stl">
