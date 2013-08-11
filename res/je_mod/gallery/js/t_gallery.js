@@ -205,6 +205,9 @@ require
 				
 				self.f_set_img({img_src:img_src});
 				
+				t_query(".je_mod_gallery_main_img_div").addClass("hidden");
+				t_query(".je_mod_gallery_main_img_div").removeClass("hidden");
+				
 				t_uti.f_fdone(args.fdone);
 			},
 			
@@ -308,7 +311,7 @@ require
 				
 				self._f_load_thumb({});
 				
-				self.f_change_img({how:"fade"});
+				self.f_change_img({kvl_1_mix:{how:"fade"}});
 				
 				t_uti.f_fdone(args.fdone);
 			},
@@ -375,6 +378,7 @@ require
 				args=args||{};
 				var thumb_band_class_name=self.args.thumb.thumb_band_class_name;
 				
+				/*
 				var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 				
 				alert(isiDivice||1==1);
@@ -383,7 +387,7 @@ require
 				{
 					t_query(".je_mod_gallery_thumb_decorator").addClass("hidden");
 				}
-				
+				*/
 				console.log("je_mod.gallery", "f_thumb_prepare", args, 
 							"."+thumb_band_class_name, t_query("."+thumb_band_class_name));
 

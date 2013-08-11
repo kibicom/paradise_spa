@@ -2,9 +2,20 @@
 
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:300&subset=latin,cyrillic-ext);
 
+
+
 .body_bg
 {
 	background: url(../img/bg_grd_01.png) repeat-x;
+}
+
+.main_main_bg
+{
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	background-color: black;
+	
 }
 
 .font_serif_gold_stl
@@ -668,4 +679,76 @@ body
 	width:30%;
 	float:left;
 	text-align:center;
+}
+
+
+/* полосы прокрутки */
+
+::-webkit-scrollbar 
+{
+    width: 13px;
+    height: 13px;
+    background: rgba(150, 150, 150, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  border: 2px white;
+  border-radius: 10px;
+}
+
+/*::-webkit-scrollbar-button { background: gray;border-radius: 10px;} /* arrow buttons */
+::-webkit-scrollbar-track { background: rgba(150, 150, 150, 0.4);border-radius: 10px;} /* slider area */
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5);} /* slider */
+::-webkit-scrollbar-corner { background: white;} /* sizer (only visible in TEXTAREA) */
+
+::-webkit-scrollbar-corner {
+    /*background-image: url(resources/corner.png);
+    background-repeat: no-repeat;*/
+   background-color: white;
+}
+
+::-webkit-scrollbar-corner:window-inactive {
+    /*background-image: url(resources/corner-inactive.png);*/
+    background-color: white;
+}
+
+::-webkit-resizer {
+    /*background-image: url(resources/resizer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;*/
+   background-color: white;
+}
+
+::-webkit-resizer:window-inactive 
+{
+    /*background-image: url(resources/resizer-inactive.png);*/
+    background-color: white;
+}
+
+::-webkit-scrollbar-track-piece:disabled {
+    display: none !important;
+}
+
+::-webkit-scrollbar-button:disabled {
+    display: none !important;
+}
+
+::-webkit-scrollbar-track:disabled {
+    margin: 6px;
+}
+
+.dark_scroll
+{
+	
+	scrollbar-face-color:#5997CA; 
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-3dlight-color: #5997CA;
+	scrollbar-darkshadow-color: #5997CA; 
+	scrollbar-track-color: #F6F6F6;
+	scrollbar-arrow-color: #F6F6F6;
+	
+	
 }

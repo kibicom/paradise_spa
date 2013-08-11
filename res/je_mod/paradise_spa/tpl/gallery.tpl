@@ -20,7 +20,7 @@
 			<div style="height: 70px;width: 55%;margin: 0 auto;margin-top:30px">
 				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/gallery_menu.tpl}}
 			</div>
-			<div 	class="gallery_menu_2"
+			<div 	class="gallery_menu_2 hidden"
 					style="height: 30px;width: 55%;margin: 0 auto;position: relative;top: -10px;">
 				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_baths.tpl}}
 			</div>
@@ -29,7 +29,7 @@
 					[[
 						f:tpl_struct_arr
 						^
-						tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+						tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_baths.tpl&
 						node_class_query:&
 						replace:true&
 						rooted:true&

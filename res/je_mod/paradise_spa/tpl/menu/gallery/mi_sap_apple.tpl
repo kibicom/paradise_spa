@@ -19,6 +19,7 @@
 			>f:hash_set^key:page&val:[[f:kvl_1_mix_val^mix_key:page&def_val:]]
 			>f:hash_set^key:part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
 			
+			/* старая галерея
 			>f:f
 			^
 			mod_name:paradise_spa&
@@ -58,6 +59,37 @@
 			f_name:f_mi_init&
 			menu_group:sub_menu&
 			menu_group_class_name:sub_menu_item&
+			*/
+			
+			>f:tpl
+			^
+			tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+			node_class_query:.popup_div_1_2 .popup_content&
+			replace:true&
+			rooted:false&
+			append:false&
+			parse_arr:false&
+			
+			header:		[[f:kvl_1_mix_val^mix_key:header&def_val:]]&
+			left_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
+			right_slider_img_src:res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
+			
+			>f:f
+			^
+			mod_name:			gallery&
+			f_name:				f_init&
+			
+			>f:f
+			^
+			mod_name:paradise_spa&
+			f_name:f_hide_content&
+			node_class_name:content_1&
+			how:fast&
+			
+			>f:popup.show
+			^
+			node_class_query:.popup_div_1_2&
+			anim:false&
 			
 			>f:waiter_hide
 		

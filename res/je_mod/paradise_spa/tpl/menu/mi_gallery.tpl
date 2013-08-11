@@ -35,10 +35,12 @@
 			append:false&
 			parse_arr:false
 			
+			/*
 			>f:f
 			^
 			mod_name:			gallery&
 			f_name:				f_init
+			*/
 			
 			>f:f
 			^

@@ -7,7 +7,7 @@
         Основной шаблон paradise spa
 -->
 
-<div class="" style="width:900px; height:96%; margin:0 auto; text-align: justify;padding-left: 10px;overflow: auto;margin-top: 3%;">
+<div class="dark_scroll" style="width:900px; height:85%; margin:0 auto; text-align: justify;padding-left: 10px;overflow: auto;margin-top: 3%;">
 	<div style="width:650px;margin:0 auto;">
 		<div class="font_open_sans_gold_stl f_s_3_stl" style="width:100%; padding-bottom: 20px;">
 			<h3>ЧТО ТАКОЕ КАЧЕСТВЕННЫЙ ОТДЫХ?</h3>
@@ -29,7 +29,7 @@
 		<div class="font_open_sans_gold_stl f_s_3_stl" style="width:100%; padding-bottom: 20px;">
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/autor_kitchen.png" alt=""/>
+				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/main/food_1.png" alt=""/>
 
 				<div class="f_s_3_stl" style="text-align: justify; margin: 10px">
 				
@@ -44,7 +44,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/baths_sauns.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/hamam.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -58,7 +58,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			baths_sauns&
+					img_name:			hamam&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">БАНИ.</h3>
@@ -69,7 +69,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/turkish_hamam.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/hamam.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -83,7 +83,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			turkish_hamam&
+					img_name:			hamam&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">ТУРЕЦКИЙ ХАМАМ</h3>
@@ -94,7 +94,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/jacuzzi.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/hamam.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -108,7 +108,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			jacuzzi&
+					img_name:			jakuzi&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">ДЖАКУЗИ</h3>
@@ -119,7 +119,7 @@
 		<div class="font_open_sans_gold_stl f_s_3_stl" style="width:100%; padding-bottom: 20px;">
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/autor_kitchen.png" alt=""/>
+				<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/main/service.png" alt=""/>
 
 				<div class="f_s_3_stl" style="text-align: justify; margin: 10px">
 				
@@ -131,7 +131,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/baths_sauns.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/pool.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -145,7 +145,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			baths_sauns&
+					img_name:			pool&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">БАССЕЙН</h3>
@@ -154,7 +154,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/turkish_hamam.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/nomer.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -168,7 +168,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			turkish_hamam&
+					img_name:			nomera&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">НОМЕРА</h3>
@@ -177,7 +177,7 @@
 			</div>
 			<div style="width:25%; height:100%; float:left;text-align: center;">
 				<div></div>
-				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/virtual_tour/jacuzzi.png" alt=""/>
+				<img class="vt_apples_stl hidden" src="res/je_mod/paradise_spa/img/pages/main/parking.png" alt=""/>
 				[[
 					f:tpl
 					^
@@ -191,7 +191,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			jacuzzi&
+					img_name:			service&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">ПАРКОВКА</h3>

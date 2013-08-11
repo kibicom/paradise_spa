@@ -25,7 +25,7 @@
 
 			>f:tpl_struct_arr
 			^
-			tpl_path:res/je_mod/gallery/tpl/gallery.tpl&
+			tpl_path:res/je_mod/paradise_spa/tpl/gallery/gallery_hotel.tpl&
 			node_class_query:.content_2&
 			replace:true&
 			rooted:false&
@@ -35,6 +35,7 @@
 			left_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_left.png&
 			right_slider_img_src:	res/je_mod/paradise_spa/img/gallery/gallery_arrow_right.png&
 			
+			/*
 			>f:tpl_struct_arr
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/menu/gallery/gallery_menu_hotel.tpl&
@@ -48,6 +49,7 @@
 			^
 			mod_name:			gallery&
 			f_name:				f_init
+			*/
 			
 			>f:f
 			^
@@ -55,6 +57,7 @@
 			f_name:f_show_content&
 			node_class_name:content_2&
 			how:
+			
 			
 			>f:f
 			^

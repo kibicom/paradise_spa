@@ -12,7 +12,7 @@
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_gallery_baths.tpl}}
 		</div>
 	</div>
-	<div style="width:40%" class="div_left">
+	<div style="width:50%" class="div_left">
 		<div style="margin:0 auto;overflow:hidden;width:200px">
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_gallery_hotel.tpl}}
 		</div>
@@ -22,8 +22,8 @@
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_gallery_service_and_price.tpl}}
 		</div>
 	</div>
-	<div style="width:10%" class="div_left">
-		<div style="width:10%;position: relative;right: -180px;">
+	<div style="width:10%;position: relative;right: -180px;" class="div_left hidden">
+		<div style="">
 			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_back_from_gallery.tpl}}
 		</div>
 	</div>

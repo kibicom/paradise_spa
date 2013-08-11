@@ -26,6 +26,7 @@
 					page:				gallery&
 					part:				hotel_playboy&
 					img_name:			sp_playboy&
+					header:				PLAYBOY&
 				]]
 			</div>
 		</div>
@@ -71,6 +72,7 @@
 				
 				page:				gallery&
 				part:				hotel_playboy&
+				header:				PLAYBOY&
 			]]
 
 			
@@ -94,6 +96,7 @@
 					page:				gallery&
 					part:				hotel_mirror&
 					img_name:			sp_mirror&
+					header:				ЗЕРКАЛЬНЫЙ&
 				]]
 			</div>
 		</div>
@@ -139,6 +142,7 @@
 				
 				page:				gallery&
 				part:				hotel_mirror&
+				header:				ЗЕРКАЛЬНЫЙ&
 			]]
 			
 		</div>
@@ -163,6 +167,7 @@
 					page:				gallery&
 					part:				hotel_red&
 					img_name:			sp_red&
+					header:				КРАСНЫЙ&
 				]]
 			</div>
 		</div>
@@ -208,6 +213,7 @@
 				
 				page:				gallery&
 				part:				hotel_red&
+				header:				КРАСНЫЙ&
 			]]
 			
 		</div>
@@ -230,6 +236,7 @@
 					page:				gallery&
 					part:				hotel_blue&
 					img_name:			sp_blue&
+					header:				СИНИЙ&
 				]]
 			</div>
 		</div>
@@ -275,6 +282,7 @@
 				
 				page:				gallery&
 				part:				hotel_blue&
+				header:				СИНИЙ&
 			]]
 			
 		</div>

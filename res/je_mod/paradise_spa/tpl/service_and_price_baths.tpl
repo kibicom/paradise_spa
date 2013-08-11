@@ -27,6 +27,7 @@
 					page:				gallery&
 					part:				baths_baroque&
 					img_name:			sp_rubath&
+					header:				БАРОККО&
 				]]
 			</div>
 		</div>
@@ -45,7 +46,6 @@
 					
 					page:				gallery&
 					part:				baths_baroque&
-					header:			БАРОККО&
 				]]
 			</h3>
 			<div class="font_open_sans_white_stl">
@@ -69,6 +69,7 @@
 				
 				page:				gallery&
 				part:				baths_baroque&
+				header:				БАРОККО&
 				
 			]]
 			<div class="p_sp_price">ЦЕНА: 3000 руб./час</div>
@@ -92,6 +93,7 @@
 					page:				gallery&
 					part:				baths_paradise&
 					img_name:			sp_ham&
+					header:				РАЙ&
 				]]
 			</div>
 		</div>
@@ -134,6 +136,7 @@
 				
 				page:				gallery&
 				part:				baths_paradise&
+				header:				РАЙ&
 			]]
 			<div class="p_sp_price">ЦЕНА: 4000 руб./час</div>
 		</div>
@@ -158,6 +161,7 @@
 					page:				gallery&
 					part:				baths_east&
 					img_name:			sp_food&
+					header:				ВОСТОК&
 				]]
 			</div>
 		</div>
@@ -200,6 +204,7 @@
 				
 				page:				gallery&
 				part:				baths_east&
+				header:				ВОСТОК&
 			]]
 			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
 		</div>
@@ -222,6 +227,7 @@
 					page:				gallery&
 					part:				baths_buddha&
 					img_name:			sp_jac&
+					header:				БУДДА&
 				]]
 			</div>
 		</div>
@@ -264,6 +270,7 @@
 				
 				page:				gallery&
 				part:				baths_buddha&
+				header:				БУДДА&
 				
 			]]
 			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>

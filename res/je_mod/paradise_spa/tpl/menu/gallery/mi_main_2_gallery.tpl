@@ -62,7 +62,7 @@
 			>f:waiter_hide
 		
 		">
-	<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/virtual_tour/[[f:kvl_1_mix_val^mix_key:img_name&def_val:]].png" alt=""/>
+	<img class="vt_apples_stl" src="res/je_mod/paradise_spa/img/pages/main/[[f:kvl_1_mix_val^mix_key:img_name&def_val:]].png" alt=""/>
 </div>
 
 

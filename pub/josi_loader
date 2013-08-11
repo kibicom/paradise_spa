@@ -917,54 +917,56 @@
 		
 		data-josi-ev-resp="load">
 	
-	<!--окно для вывода отладочной информации-->
-	<textarea class="trans_resp hidden">
-	
-	</textarea>
-	
-	<!--основной контент страницы-->
-	<div class="service_div content body_bg" style="height:100%">
-		{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main.tpl}}
-	</div>
-	
-	<!--какой то мусор-->
-	<div class="hidden">
-				<input 	class="josi_form_input_div_stl_smpl" type="text" name="date1" id="time1" value="T15:00:00"
-					data-dojo-type_="dijit.form.TimeTextBox"
-					onChange="dojo.byId('val').value=arguments[0].toString().replace(/.*1970\s(\S+).*/,'T$1')"
-					required="true" />
-	</div>
-	
-	<div class="popup_div_1_1 hidden">
-		<div style="z-index: 1000;position: absolute;width: 100%;height: 100%;top: 0;margin: 0;">
-			<div class="div_tab" style="height:100%;width: 100%;">
-				<div class="popup_main_div div_cell"
-						data-josi-ev-resp="click"
-						data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
-					<div style="
-			top:-50%;
-			overflow: hidden;
-			width: 800px;
-			
-			background: white;
-			margin: 0 auto;
-			-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-			-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-			box-shadow: 0 0 100px 0px black;
-			border-radius: 10px;">
-						<div>
-							
-							<div class="josi_store_div " style="width: 800px;height: 600px;background-color: #D2B645;">
-								<div style="margin:5px;height:590px;width:790px;float:left" class="map_node_2 ">
+	<div class="main_main_bg">
+		<!--окно для вывода отладочной информации-->
+		<textarea class="trans_resp hidden">
+		
+		</textarea>
+		
+		<!--основной контент страницы-->
+		<div class="service_div content body_bg" style="height:100%">
+			{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/main.tpl}}
+		</div>
+		
+		<!--какой то мусор-->
+		<div class="hidden">
+					<input 	class="josi_form_input_div_stl_smpl" type="text" name="date1" id="time1" value="T15:00:00"
+						data-dojo-type_="dijit.form.TimeTextBox"
+						onChange="dojo.byId('val').value=arguments[0].toString().replace(/.*1970\s(\S+).*/,'T$1')"
+						required="true" />
+		</div>
+		
+		<div class="popup_div_1_1 hidden">
+			<div style="z-index: 1000;position: absolute;width: 100%;height: 100%;top: 0;margin: 0;">
+				<div class="div_tab" style="height:100%;width: 100%;">
+					<div class="popup_main_div div_cell"
+							data-josi-ev-resp="click"
+							data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
+						<div style="
+				top:-50%;
+				overflow: hidden;
+				width: 800px;
+				
+				background: white;
+				margin: 0 auto;
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+				box-shadow: 0 0 100px 0px black;
+				border-radius: 10px;">
+							<div>
 								
-								</div>
-								<div style="margin-right:-50px;height:590px;width:50px;float:right" class="map_node_2 ">
-									<div class="div_right" style="position:absolute;z-index: 1500;left: 1380px;">
-										<div 	class="red_btn_div btn_div btn_close_div popup_close_btn"
-												data-josi-ev-resp="click"
-												data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
-											<div style="cursor:pointer">
-												<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
+								<div class="josi_store_div " style="width: 800px;height: 600px;background-color: #D2B645;">
+									<div style="margin:5px;height:590px;width:790px;float:left" class="map_node_2 ">
+									
+									</div>
+									<div style="margin-right:-50px;height:590px;width:50px;float:right" class="map_node_2_ ">
+										<div class="div_right" style="position:absolute;z-index: 1500;left: 1380px;">
+											<div 	class="red_btn_div btn_div btn_close_div popup_close_btn"
+													data-josi-ev-resp="click"
+													data-josi-kvl-str="f:popup.close^node_class_query:.popup_div_1_1">
+												<div style="cursor:pointer">
+													<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
+												</div>
 											</div>
 										</div>
 									</div>
@@ -974,17 +976,137 @@
 					</div>
 				</div>
 			</div>
+			<div class="hidden popup_shadow_back"></div>
 		</div>
-		<div class="hidden popup_shadow_back"></div>
-	</div>
-	
-	{{f:tpl^tpl_path:res/je_mod/form/tpl/popup/form.tpl}}
+		
+		<div class="popup_div_1_2 hidden">
+			<div style="z-index: 1000;position: absolute;width: 100%;height: 100%;top: 0;margin: 0;">
+				<div class="div_tab" style="height:100%;width: 100%;">
+					<div class="popup_main_div div_cell"
+							data-josi-ev-resp="click"
+							data-josi-ev-stop=true 
+							data-josi-kvl-str="
+							
+												f:popup.close^node_class_query:.popup_div_1_2
+																		
+												>f:f
+												^
+												mod_name:paradise_spa&
+												f_name:f_show_content&
+												node_class_name:content&
+												how:fast&
+												
+												>f:f
+												^
+												mod_name:paradise_spa&
+												f_name:f_show_content&
+												node_class_name:content_1&
+												how:fast&
+												
+												>f:f
+												^
+												mod_name:paradise_spa&
+												f_name:f_show_content&
+												node_class_name:content_2&
+												how:fast&
+												
+												>f:hash_set^key:page&val_key:hash.prev_page&def_val:main
+												>f:hash_set^key:part&val_key:hash.prev_part&def_val:page
+												
+												>f:hash_set^key:prev_page
+												>f:hash_set^key:prev_part
+												
+												>f:hash_set&
+												if_exp: '#hash.part#'=='logo' &
+												^
+												key:part&
+												val:page&
+							
+							">
+						<div style="
+									top:-50%;
+									overflow: hidden;
+									width: 1024px;
+									height:100%;
+									background: black;
+									margin: 0 auto;
+									-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+									-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+									box-shadow: 0 0 100px 0px black;
+									border-radius: 10px;">
+							<div style="height:100%;">
+								
+								<div class="josi_store_div " style="width: 100%;height: 100%;background-color: #000;overflow:hidden">
+									<div style="margin:0px;height:100%;width:100%;" class="popup_content ">
+										
+									</div>
+									<div style="position: absolute;top: 5%;left: 80%;" class="map_node_2_ ">
+										<div class="div_right" style="position:absolute;z-index: 1500;">
+											<div 	class="red_btn_div btn_div btn_close_div popup_close_btn"
+													data-josi-ev-resp="click"
+													data-josi-ev-stop=true 
+													data-josi-kvl-str=
+													"
+														f:popup.close^node_class_query:.popup_div_1_2
+														
+														>f:f
+														^
+														mod_name:paradise_spa&
+														f_name:f_show_content&
+														node_class_name:content&
+														how:fast&
+														
+														>f:f
+														^
+														mod_name:paradise_spa&
+														f_name:f_show_content&
+														node_class_name:content_1&
+														how:fast&
+														
+														>f:f
+														^
+														mod_name:paradise_spa&
+														f_name:f_show_content&
+														node_class_name:content_2&
+														how:fast&
+														
+														>f:hash_set^key:page&val_key:hash.prev_page&def_val:main
+														>f:hash_set^key:part&val_key:hash.prev_part&def_val:page
+														
+														>f:hash_set^key:prev_page
+														>f:hash_set^key:prev_part
+														
+														>f:hash_set&
+														if_exp: '#hash.part#'=='logo' &
+														^
+														key:part&
+														val:page&
+														
+													">
+												<div style="cursor:pointer">
+													<img class="mi_name_img" src="res/je_mod/paradise_spa/img/menu/mi_gallery_back.png" alt="X">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden popup_shadow_back"></div>
+		</div>
+		
+		
+		{{f:tpl^tpl_path:res/je_mod/form/tpl/popup/form.tpl}}
 
-	{{f:tpl^tpl_path:res/je_mod/paradise_spa/tpl/waiter.tpl}}
-	
-	{{f:tpl^tpl_path:res/je_mod/formtpl//city_selector/form.tpl}}
-	
-	{{f:tpl^tpl_path:res/je_mod/form/tpl/other_browser.tpl}}
+		{{f:tpl^tpl_path:res/je_mod/paradise_spa/tpl/waiter.tpl}}
+		
+		{{f:tpl^tpl_path:res/je_mod/formtpl//city_selector/form.tpl}}
+		
+		{{f:tpl^tpl_path:res/je_mod/form/tpl/other_browser.tpl}}
+	</div>
 </body>
 
 </html>
