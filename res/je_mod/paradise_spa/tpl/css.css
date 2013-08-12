@@ -686,9 +686,10 @@ body
 
 ::-webkit-scrollbar 
 {
-    width: 13px;
+    width: 19px;
     height: 13px;
-    background: rgba(150, 150, 150, 0.4);
+    /*background-image: url('../img/slider_03.png');*/
+    /*background: rgba(150, 150, 150, 0.4);*/
     border-radius: 10px;
 }
 
@@ -699,8 +700,20 @@ body
 }
 
 /*::-webkit-scrollbar-button { background: gray;border-radius: 10px;} /* arrow buttons */
-::-webkit-scrollbar-track { background: rgba(150, 150, 150, 0.4);border-radius: 10px;} /* slider area */
-::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5);} /* slider */
+::-webkit-scrollbar-track 
+{
+	/*background: rgba(150, 150, 150, 0.4);border-radius: 10px;*/
+	/*background:transparent;*/
+	background: url('../img/slider_04.png') repeat-y;
+	
+} /* slider area */
+::-webkit-scrollbar-thumb 
+{ 
+	/*background: rgba(0, 0, 0, 0.5);*/
+	width:15px;
+	height: 30px;
+	background: url('../img/slider_06.png') no-repeat;
+} /* slider */
 ::-webkit-scrollbar-corner { background: white;} /* sizer (only visible in TEXTAREA) */
 
 ::-webkit-scrollbar-corner {

@@ -191,7 +191,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			service&
+					img_name:			parking&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">ПАРКОВКА</h3>

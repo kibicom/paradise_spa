@@ -8,8 +8,8 @@
 -->
 
 
-<div class="content_3 " style="width:600px; margin:0 auto">
-	<div style="height_:50%; margin-top: 5%;overflow: hidden;">
+<div class="content_3 " style="width:700px; margin:0 auto">
+	<div style="height_:50%; margin-top: 5%;overflow: hidden;width: 70%; margin:0 auto;">
 		<div style="width:50%; height:100%; float:left;text-align: center;">
 			<div style="">
 				<div style="">

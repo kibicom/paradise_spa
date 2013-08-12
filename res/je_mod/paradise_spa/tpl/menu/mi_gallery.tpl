@@ -27,6 +27,12 @@
 			>f:hash_set^key:part&val:baths_east
 			*/
 			
+			>f:hash_set&
+			if_exp: '#hash.part#'=='logo' &
+			calc_key_limiter:true&
+			^
+			key:part&val:page&
+			
 			>f:f
 			^
 			mod_name:paradise_spa&
