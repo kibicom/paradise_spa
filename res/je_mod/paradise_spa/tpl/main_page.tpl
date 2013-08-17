@@ -58,7 +58,7 @@
 					
 					page:				gallery&
 					part:				baths_east&
-					img_name:			hamam&
+					img_name:			rubath&
 				]]
 				<div class="f_s_3_stl" style="text-align: justify;; margin: 10px">
 					<h3 class="pg_main_page_txt">БАНИ.</h3>

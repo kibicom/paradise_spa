@@ -10,7 +10,7 @@
 
 <div 	class="toolbar_item_div div_left menu_item menu_item_stl mi_virtual_tour mi_virtual_tour_down_stl"
 		data-josi-ev-resp="clic_k"
-		onclick="window.open('http://www.rai-spa.ru/tour/tour.html','new_window');"
+		onclick="window.open('tour/tour.html','new_window');"
 		data-josi-kvl-str=
 		"
 			f:waiter_show
