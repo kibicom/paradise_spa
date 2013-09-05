@@ -26,6 +26,12 @@
 			key:part&
 			val:page&
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			>f:tpl
 			^
 			tpl_path:res/je_mod/paradise_spa/tpl/main.tpl&

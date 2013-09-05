@@ -23,6 +23,12 @@
 			>f:hash_set^key:page&val:about&
 			>f:hash_set^key:part&val:page&
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			>f:f
 			^
 			mod_name:paradise_spa&

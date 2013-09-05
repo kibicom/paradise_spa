@@ -686,7 +686,7 @@ body
 
 ::-webkit-scrollbar 
 {
-    width: 19px;
+    width: 39px;
     height: 13px;
     /*background-image: url('../img/slider_03.png');*/
     /*background: rgba(150, 150, 150, 0.4);*/
@@ -704,17 +704,30 @@ body
 {
 	/*background: rgba(150, 150, 150, 0.4);border-radius: 10px;*/
 	/*background:transparent;*/
-	background: url('../img/slider_04.png') repeat-y;
+	/*background: url('../img/slider_04.png') repeat-y;*/
+	background: url('../img/scroll_bar/scroller_line.png') repeat-y;
 	
 } /* slider area */
 ::-webkit-scrollbar-thumb 
 { 
 	/*background: rgba(0, 0, 0, 0.5);*/
-	width:15px;
-	height: 30px;
-	background: url('../img/slider_06.png') no-repeat center;
+	width:39px;
+	height: 43px;
+	/*background: url('../img/slider_06.png') no-repeat center;*/
+	background: url('../img/scroll_bar/scroller_.png') no-repeat center;
 } /* slider */
 ::-webkit-scrollbar-corner { background: white;} /* sizer (only visible in TEXTAREA) */
+
+::-webkit-scrollbar-button:vertical:decrement
+{
+    background: url('../img/scroll_bar/scroller_ar_up.png') no-repeat center;
+}
+
+::-webkit-scrollbar-button:vertical:increment
+{
+    background: url('../img/scroll_bar/scroller_ar_dwn.png') no-repeat center;
+}
+
 
 ::-webkit-scrollbar-corner {
     /*background-image: url(resources/corner.png);

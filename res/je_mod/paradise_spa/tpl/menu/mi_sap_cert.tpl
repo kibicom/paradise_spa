@@ -19,6 +19,12 @@
 			f:hash_set^key:page&val:service_and_price>
 			f:hash_set^key:part&val:cert>
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			f:f
 			^
 			mod_name:paradise_spa&

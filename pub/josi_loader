@@ -90,8 +90,9 @@
 			[	
 				"tlib/tjosi",
 				"tlib/tres",
+				"tlib/thash",
 			],
-			function(t_josi, t_res)
+			function(t_josi, t_res, t_hash)
 			{
 				
 				//josi_conf.js
@@ -125,7 +126,8 @@
 	<!--модуль paradise_spa-->
 	<script type="text/javascript">
 		
-		var je_mod={};
+		
+		var je_mod=je_mod||{};
 			
 		var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 		
@@ -907,6 +909,23 @@
 		f_name:					f_mi_init&
 		menu_group:				sub_menu&
 		menu_group_class_name:	sub_menu_item
+		
+		/*
+		>f:f&
+		^
+		mod_name:thash&
+		f_name:f_history_push&
+		part:hash&
+		*/
+		
+		/*
+		>f:f&
+		^
+		mod_name:thash&
+		f_name:f_history_check&
+		part:hash&
+		freq:1000&
+		*/
 		
 		>f:waiter_hide"
 		

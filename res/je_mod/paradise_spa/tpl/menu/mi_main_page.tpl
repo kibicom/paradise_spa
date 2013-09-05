@@ -32,11 +32,21 @@
 			append:false&
 			parse_arr:false
 			
-			>
+			>f:hash_set^key:page&val:service_and_price
 
-			f:hash_set^key:page&val:service_and_price>
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
 
-			f:waiter_hide
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+
+			>f:waiter_hide
 		
 		">
 	<div class="" style="border-radius: 5px;">

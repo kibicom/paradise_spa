@@ -22,6 +22,12 @@
 			
 			>f:hash_set^key:gallery_main_part&val:baths
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			>f:f
 			^
 			mod_name:paradise_spa&
