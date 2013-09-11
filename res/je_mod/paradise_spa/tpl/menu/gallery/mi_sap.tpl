@@ -16,6 +16,12 @@
 
 				>f:hash_set^key:gallery_part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
 				
+				>f:f&
+				^
+				mod_name:thash&
+				f_name:f_history_push&
+				part:hash&
+				
 				/*
 				>f:hash_set^key:prev_page&val_key:hash.page
 				>f:hash_set^key:prev_part&val_key:hash.part

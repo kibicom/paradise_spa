@@ -769,6 +769,7 @@
 		
 		>f:fill_from_hash
 		
+		/*
 		<!--чистим хеш-->
 		>f:hash_set&
 		if_exp: '#hash.page#'=='' \|\| '#hash.page#'=='gallery' &
@@ -787,9 +788,13 @@
 		calc_key_limiter:true&
 		^
 		key:part&val:page
+		*/
 		
 		>f:hash_set^key:prev_page
 		>f:hash_set^key:prev_part
+		
+		>f:popup.close^node_class_query:.popup_div_1_2
+		>f:popup.close^node_class_query:.popup_div_1_1
 		
 		>f:tpl&
 		if_exp: '#hash.part#'=='logo' &
@@ -918,14 +923,14 @@
 		part:hash&
 		*/
 		
-		/*
+		
 		>f:f&
 		^
 		mod_name:thash&
 		f_name:f_history_check&
 		part:hash&
 		freq:1000&
-		*/
+		
 		
 		>f:waiter_hide"
 		

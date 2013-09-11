@@ -14,10 +14,9 @@
 		"
 			f:waiter_show
 			
-			>
 			
-			f:hash_set^key:page&val:service_and_price>
-			f:hash_set^key:part&val:hotel>
+			>f:hash_set^key:page&val:service_and_price
+			>f:hash_set^key:part&val:hotel
 			
 			>f:f&
 			^
@@ -25,7 +24,7 @@
 			f_name:f_history_push&
 			part:hash&
 			
-			f:f
+			>f:f
 			^
 			mod_name:paradise_spa&
 			f_name:f_hide_content&

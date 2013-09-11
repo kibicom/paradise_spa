@@ -17,6 +17,12 @@
 			>f:hash_set^key:page&val:gallery
 			>f:hash_set^key:part&val:hotel_blue
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			>f:f
 			^
 			mod_name:paradise_spa&

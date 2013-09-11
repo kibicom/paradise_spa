@@ -19,6 +19,12 @@
 			>f:hash_set^key:page&val:[[f:kvl_1_mix_val^mix_key:page&def_val:]]
 			>f:hash_set^key:part&val:[[f:kvl_1_mix_val^mix_key:part&def_val:]]
 			
+			>f:f&
+			^
+			mod_name:thash&
+			f_name:f_history_push&
+			part:hash&
+			
 			>f:f
 			^
 			mod_name:paradise_spa&
