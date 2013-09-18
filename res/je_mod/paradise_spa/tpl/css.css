@@ -706,7 +706,7 @@ body
 	/*background:transparent;*/
 	/*background: url('../img/slider_04.png') repeat-y;*/
 	background: url('../img/scroll_bar/scroller_line.png') repeat-y;
-	
+	cursor:pointer;
 } /* slider area */
 ::-webkit-scrollbar-thumb 
 { 
@@ -721,11 +721,13 @@ body
 ::-webkit-scrollbar-button:vertical:decrement
 {
     background: url('../img/scroll_bar/scroller_ar_up.png') no-repeat center;
+    cursor:pointer;
 }
 
 ::-webkit-scrollbar-button:vertical:increment
 {
     background: url('../img/scroll_bar/scroller_ar_dwn.png') no-repeat center;
+    cursor:pointer;
 }
 
 

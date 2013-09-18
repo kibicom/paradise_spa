@@ -769,7 +769,7 @@
 		
 		>f:fill_from_hash
 		
-		/*
+		
 		<!--чистим хеш-->
 		>f:hash_set&
 		if_exp: '#hash.page#'=='' \|\| '#hash.page#'=='gallery' &
@@ -788,7 +788,7 @@
 		calc_key_limiter:true&
 		^
 		key:part&val:page
-		*/
+		
 		
 		>f:hash_set^key:prev_page
 		>f:hash_set^key:prev_part

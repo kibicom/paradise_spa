@@ -22,6 +22,9 @@
 			<div class="font_serif_gold_stl f_s_1_stl" >
 				+7(928)444 44 94
 			</div>
+			<div class="font_open_sans_white_stl f_s_2_stl" style="">
+				<div class="gold_1_stl" style="width: 80%;text-align: right;">круглосуточно</div>
+			</div>
 		</div>
 		<div class="font_open_sans_white_stl f_s_3_stl" style="width:400px; float:right; margin-top: 20px;">
 			<div style="text-align: right;" class="gold_1_stl">
