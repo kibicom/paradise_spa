@@ -56,6 +56,7 @@
 				<div>- банкетный стол на 15 персон</div>
 				<div>- бильярдная зона</div>
 				<div>- Wi-Fi, Кальяны</div>
+				<div>- Караоке</div>
 			</div>
 			<div class="div_6px"></div>
 			[[
@@ -124,6 +125,7 @@
 				<div>- банкетный стол на 18 персон</div>
 				<div>- бильярдный стол на 12 футов</div>
 				<div>- Wi-Fi, Кальяны</div>
+				<div>- Караоке</div>
 			</div>
 			<div class="div_6px"></div>
 			[[
@@ -282,7 +284,75 @@
 		</div>
 	</div>
 </div>
-
+<div style="height_:50%; margin-top: 5%;overflow: hidden;">
+	<div style="width:45%; height:100%; float:left;text-align: center;">
+		<div style="width:35%; height:100%; display:table;float: left;">
+			<div style="width:50%; height:100%; display:table-cell; vertical-align: top;">
+				<img class="vt_apples_stl hidden"  src="res/je_mod/paradise_spa/img/pages/service_and_price/sp_food.png" alt=""/>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_apple.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				baths_russian&
+					img_name:			sp_food&
+					header:				Русская парная&
+				]]
+			</div>
+		</div>
+		<div class="f_s_3_stl" style="width:63%; height:100%; float:left;text-align: left;">
+			<h3>
+				[[
+					f:tpl
+					^
+					tpl_res:&
+					tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap_header.tpl&
+					node_class_query:	&
+					replace:			true&
+					rooted:				true&
+					append:				false&
+					parse_arr:			false&
+					
+					page:				gallery&
+					part:				baths_russian&
+					header:				Русская парная&
+				]]
+			</h3>
+			<div class="font_open_sans_white_stl">
+				<div>- Русская парная </div>
+				<div>- теплые каменные лежаки</div>
+				<div>- бассейн</div>
+				<div>- комната отдыха</div>
+				<div>- банкетный стол на 8 персон</div>
+				<div>- Wi-Fi, Кальяны</div>
+			</div>
+			<div class="div_6px"></div>
+			[[
+				f:tpl
+				^
+				tpl_res:&
+				tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_sap.tpl&
+				node_class_query:	&
+				replace:			true&
+				rooted:				true&
+				append:				false&
+				parse_arr:			false&
+				
+				page:				gallery&
+				part:				baths_russian&
+				header:				Русская парная&
+			]]
+			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
+		</div>
+	</div>
+</div>
 
 
 

@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<div style="height_:50%; margin-top: 5%;overflow: hidden;">
-		<div style="width:50%; height:100%; float:left;text-align: center;">
+		<div style="width:30%; height:100%; float:left;text-align: center;">
 			<div style="">
 				<div style="">
 					[[
@@ -80,7 +80,7 @@
 				</div>
 			</div>
 		</div>
-		<div style="width:50%; height:100%; float:right;text-align: center;">
+		<div style="width:40%; height:100%; float:left;text-align: center;">
 			<div style="">
 				<div style="">
 					[[
@@ -98,6 +98,28 @@
 						part:				baths_buddha&
 						img_name:			service_and_price/sp_jac&
 						header:				БУДДА&
+					]]
+				</div>
+			</div>
+		</div>
+		<div style="width:30%; height:100%; float:right;text-align: center;">
+			<div style="">
+				<div style="">
+					[[
+						f:tpl
+						^
+						tpl_res:&
+						tpl_path:			res/je_mod/paradise_spa/tpl/menu/gallery/mi_gallery_popup.tpl&
+						node_class_query:	&
+						replace:			true&
+						rooted:				true&
+						append:				false&
+						parse_arr:			false&
+						
+						page:				gallery&
+						part:				baths_russian&
+						img_name:			service_and_price/sp_jac&
+						header:				Русская парная&
 					]]
 				</div>
 			</div>
