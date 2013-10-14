@@ -55,7 +55,7 @@
 				<div>- 3 комнаты отдыха</div>
 				<div>- банкетный стол на 15 персон</div>
 				<div>- бильярдная зона</div>
-				<div>- Wi-Fi, Кальяны</div>
+				<div>- Wi-Fi, Кальян</div>
 				<div>- Караоке</div>
 			</div>
 			<div class="div_6px"></div>
@@ -124,7 +124,7 @@
 				<div>- 3 комнаты отдыха, массажная     комната</div>
 				<div>- банкетный стол на 18 персон</div>
 				<div>- бильярдный стол на 12 футов</div>
-				<div>- Wi-Fi, Кальяны</div>
+				<div>- Wi-Fi, Кальян</div>
 				<div>- Караоке</div>
 			</div>
 			<div class="div_6px"></div>
@@ -194,7 +194,7 @@
 				<div>- бассейн</div>
 				<div>- комната отдыха</div>
 				<div>- банкетный стол на 8 персон</div>
-				<div>- Wi-Fi, Кальяны</div>
+				<div>- Wi-Fi, Кальян</div>
 			</div>
 			<div class="div_6px"></div>
 			[[
@@ -261,7 +261,7 @@
 				<div>- банкетный стол на 10 персон </div>
 				<div>- 2 комнаты отдыха </div>
 				<div>- бильярдная зона</div>
-				<div>- Wi-Fi, Кальяны</div>
+				<div>- Wi-Fi, Кальян</div>
 			</div>
 			<div class="div_6px"></div>
 			[[
@@ -326,12 +326,9 @@
 				]]
 			</h3>
 			<div class="font_open_sans_white_stl">
-				<div>- Русская парная </div>
-				<div>- теплые каменные лежаки</div>
-				<div>- бассейн</div>
-				<div>- комната отдыха</div>
-				<div>- банкетный стол на 8 персон</div>
-				<div>- Wi-Fi, Кальяны</div>
+				<div>- Русская парная из бревен</div>
+				<div>- бассейн на свежем воздухе</div>
+				<div>- Wi-Fi, Кальян</div>
 			</div>
 			<div class="div_6px"></div>
 			[[
@@ -349,7 +346,7 @@
 				part:				baths_russian&
 				header:				Русская парная&
 			]]
-			<div class="p_sp_price">ЦЕНА: 2000 руб./час</div>
+			<div class="p_sp_price">ЦЕНА: 1000 руб./час</div>
 		</div>
 	</div>
 </div>

@@ -119,7 +119,7 @@
 						page:				gallery&
 						part:				baths_russian&
 						img_name:			service_and_price/sp_jac&
-						header:				Русская парная&
+						header:				РУССКАЯ ПАРНАЯ&
 					]]
 				</div>
 			</div>

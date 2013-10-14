@@ -17,6 +17,12 @@
 			<div class="p_sp_mi_stl">
 				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_sap_hotel.tpl}}
 			</div>
+			<div class="p_sp_mi_stl">
+				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_sap_menu.tpl}}
+			</div>
+			<div class="p_sp_mi_stl">
+				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_sap_spa.tpl}}
+			</div>
 			<div class="p_sp_mi_stl" style="float:right">
 				{{f:tpl^page_path:res/je_mod/paradise_spa/tpl/menu/mi_sap_cert.tpl}}
 			</div>

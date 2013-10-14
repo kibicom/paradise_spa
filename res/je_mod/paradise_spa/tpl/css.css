@@ -508,6 +508,19 @@ body
 	100%{top:25px;left: 120px;}
 }
 
+.sap_cert_mini_text
+{
+	font-size:10px;
+	color:#fee47c;
+}
+
+.mi_sap_block
+{
+	text-align: left;
+	text-indent: 0px;
+	/*overflow: hidden;*/
+	width: 30px;
+}
 
 .mi_gallery_down_stl
 {
@@ -669,7 +682,7 @@ body
 
 .p_sp_mi_stl
 {
-	width:30%;
+	width:20%;
 	float:left;
 	/*text-align:center;*/
 }
@@ -779,4 +792,51 @@ body
 	scrollbar-arrow-color: #F6F6F6;
 	
 	
+}
+
+
+/* sap menu */
+
+.sap_menu_block
+{
+	overflow: hidden;
+	padding: 15px;
+}
+
+.sap_menu_block_alt
+{
+	overflow: hidden;
+	padding: 15px;
+	background-color: rgba(254, 228, 124, 0.1);
+}
+
+.sap_menu_caption
+{
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+	font-family: 'Open Sans', serif;
+	font-weight: 400; 
+}
+
+.sap_menu_sub
+{
+	font-size: 12px;
+	font-family: 'Open Sans', serif;
+	font-weight: 300;
+	width:70%;
+	overflow:hidden;
+}
+
+.sap_menu_item
+{
+	float:left;
+	font-family: 'Open Sans', serif;
+	font-weight: 400; 
+	font-size:14px;
+}
+
+.sap_menu_price
+{
+	float:right;
 }

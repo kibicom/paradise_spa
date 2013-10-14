@@ -57,12 +57,12 @@
 		<div class="js_btn_label_stl_smpl">
 			<div>
 				<div class="mi_name_img">
-					<div class="font_open_sans_white_stl f_s_4_stl">
+					<div class="font_open_sans_white_stl f_s_4_stl mi_sap_block">
 						ПОДАРОЧНЫЙ СЕРТИФИКАТ
 					</div>
 				</div>
 				<div class="mi_name_img_alt hidden">
-					<div class="font_open_sans_gold_stl f_s_4_stl">
+					<div class="font_open_sans_gold_stl f_s_4_stl mi_sap_block">
 						ПОДАРОЧНЫЙ СЕРТИФИКАТ
 					</div>
 				</div>
